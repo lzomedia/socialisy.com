@@ -1,3 +1,4 @@
-#Social Network
+#Lzo Media - Socialisy.com
 
-##October CMS
+##Larave social network with lots of futures
+### Build with Laravel and OctoberCMS
