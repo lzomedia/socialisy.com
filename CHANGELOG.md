@@ -1,1 +1,1 @@
-Changelog can be found here: http://octobercms.com/changelog
+Changelog can be found here: https://socialisy.com/changelog
