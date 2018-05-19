@@ -2,55 +2,30 @@
 
 require_once 'api.php';
 
-
-use LzoMedia\Groups\Models\Group;
-use LzoMedia\GroupGenerator\GroupGenerator;
-
-
-\Route::get('/test', function () {
-
-    $multi = [
-        '672092929556283',
-        '795110130605085',
-        '529456420556801',
-        '735758176536843',
-        '430161893812721',
-        '1056319347746170'
-    ];
+use LzoMedia\GroupsExtractor\Social\Yahoo\YahooApp;
+use LzoMedia\GroupsExtractor\Social\Yahoo\Extractors\YahooGroupExtractor;
 
 
-    $ar = array_random($multi);
+Route::get('/yahoo/', function (){
 
-    $facebook = new GroupGenerator($ar);
+    //client
+    $client = new Managers\ClientManager();
 
-    echo ($facebook->get());
+    //start the Yahoo
+    $socialType = new YahooApp();
+
+    //Type of extractor
+    $typeOfDataToExtract = new YahooGroupExtractor();
+
+    //extractor type should be a interface up
+    $socialType->setExtractorType($typeOfDataToExtract);
+
+    // set socialType
+    $client->setSocialType($socialType);
+
+    $groups  = ($client->process());
+
+    return $groups;
 
 
 });
-\Route::get('/single/{token}', function ($token) {
-
-    $multi = [
-        '672092929556283',
-        '150804474975278',
-        '795110130605085',
-    ];
-
-
-//    $yahoo = new \LzoMedia\SocialExtractor\Clients\NewYahooClient();
-//
-    $ar = array_random($multi);
-
-    $facebook = new \LzoMedia\SocialExtractor\Clients\NewFacebookClient();
-
-    $facebook->setGroups($ar);
-
-    $facebook->setToken($token);
-
-    dd (
-
-        $facebook->clean()
-
-    );
-
-});
-

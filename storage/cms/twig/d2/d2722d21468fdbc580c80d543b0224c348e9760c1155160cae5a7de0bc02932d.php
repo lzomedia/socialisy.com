@@ -1,7 +1,7 @@
 <?php
 
 /* /shared/httpd/socialisy/htdocs/themes/network/pages/group.htm */
-class __TwigTemplate_7774dc6db0a6a8f3f2d1128ce66b1fdcf9766bf9051856ae7796ef668090e9e1 extends Twig_Template
+class __TwigTemplate_8bf6740f1258d3823fa8fa4478c5f4ac6b4a8c2a1a7d251b5847366f3ba8a3b5 extends Twig_Template
 {
     private $source;
 

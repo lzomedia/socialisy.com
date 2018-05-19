@@ -32,7 +32,8 @@
     28 => 'October\\Rain\\Mail\\MailServiceProvider',
     29 => 'October\\Rain\\Argon\\ArgonServiceProvider',
     30 => 'LzoMedia\\SocialExtractor\\SocialExtractorServiceProvider',
-    31 => 'System\\ServiceProvider',
+    31 => 'LzoMedia\\GroupsExtractor\\GroupsExtractorServiceProvider',
+    32 => 'System\\ServiceProvider',
   ),
   'eager' => 
   array (
@@ -53,7 +54,8 @@
     14 => 'October\\Rain\\Flash\\FlashServiceProvider',
     15 => 'October\\Rain\\Argon\\ArgonServiceProvider',
     16 => 'LzoMedia\\SocialExtractor\\SocialExtractorServiceProvider',
-    17 => 'System\\ServiceProvider',
+    17 => 'LzoMedia\\GroupsExtractor\\GroupsExtractorServiceProvider',
+    18 => 'System\\ServiceProvider',
   ),
   'deferred' => 
   array (

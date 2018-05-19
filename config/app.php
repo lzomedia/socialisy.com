@@ -115,6 +115,7 @@ return [
 
         // 'Illuminate\Html\HtmlServiceProvider', // Example
         'LzoMedia\SocialExtractor\SocialExtractorServiceProvider',
+        'LzoMedia\GroupsExtractor\GroupsExtractorServiceProvider',
         'System\ServiceProvider',
     ]),
 

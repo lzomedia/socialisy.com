@@ -75,7 +75,6 @@ class GroupGenerator{
 
         $items = ($this->posts);
 
-        dd($items->unique());
 
 
     }

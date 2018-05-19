@@ -1,4 +1,4 @@
-1526668284a:1:{s:17:"group/default.htm";a:5:{s:8:"fileName";s:17:"group/default.htm";s:7:"content";s:4349:"<div id="response"></div>
+1526739345a:1:{s:17:"group/default.htm";a:5:{s:8:"fileName";s:17:"group/default.htm";s:7:"content";s:4390:"<div id="response"></div>
 
 
 
@@ -94,16 +94,17 @@
                                 {% for post in posts %}
 
 
-                                <!-- {{ post }} -->
 
                                 {% if post.body != '' %}
                                 <div>
-
                                     <div class="uk-card uk-card-default">
                                         {% if post.extra_info != '' %}
-                                        <div class="uk-card-media-top">
-                                            <img src="{{ post.extra_info }}" alt="">
-                                        </div>
+                                            {% if post.extra_info != 0 %}
+                                             <div class="uk-card-media-top">
+
+                                                    <img src="{{ post.extra_info }}" alt="">
+
+                                             </div>
                                         {% endif %}
                                         <div class="uk-card-body">
                                             <p>
@@ -140,7 +141,7 @@
 
 
 
-";s:5:"mtime";i:1525948637;s:6:"markup";s:4344:"<div id="response"></div>
+";s:5:"mtime";i:1526681047;s:6:"markup";s:4385:"<div id="response"></div>
 
 
 
@@ -236,16 +237,17 @@
                                 {% for post in posts %}
 
 
-                                <!-- {{ post }} -->
 
                                 {% if post.body != '' %}
                                 <div>
-
                                     <div class="uk-card uk-card-default">
                                         {% if post.extra_info != '' %}
-                                        <div class="uk-card-media-top">
-                                            <img src="{{ post.extra_info }}" alt="">
-                                        </div>
+                                            {% if post.extra_info != 0 %}
+                                             <div class="uk-card-media-top">
+
+                                                    <img src="{{ post.extra_info }}" alt="">
+
+                                             </div>
                                         {% endif %}
                                         <div class="uk-card-body">
                                             <p>
