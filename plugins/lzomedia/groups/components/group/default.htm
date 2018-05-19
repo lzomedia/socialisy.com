@@ -1,0 +1,271 @@
+
+
+
+
+
+<div id="response"></div>
+
+<section class="hero hero-profile" style="background-image: url('https://img.youtube.com/vi/D3pYbbA1kfk/maxresdefault.jpg');">
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <div class="hero-block">
+
+            <h1 title="{{ group.name }}" style="color:#fff">
+                {{ group.name }}
+            </h1>
+
+            <p>
+                {{ group.description | striptags }}
+            </p>
+
+        </div>
+    </div>
+
+
+</section>
+
+<!-- Sticky !-->
+<div id="sticky-wrapper" class="sticky-wrapper" style="margin-bottom: 20px">
+
+
+
+    <section class="toolbar toolbar-profile" data-fixed="true">
+
+        <div class="container">
+
+        <div class="profile-avatar">
+
+            {% if group.image | length > 0  %}
+
+                <img src="{{ group.image }}" alt="{{ group.title }}">
+
+            {% else %}
+
+                <a href="#"  data-toggle="tooltip" data-placement="left" title="" data-original-title="You should try  to add one picture to this groupt">
+                    <i class="fa fa-plus fa-5x"></i>
+                </a>
+
+            {% endif %}
+
+
+
+            <!-- small interface for the sticky !-->
+            <div class="sticky">
+
+                {% if group.image | length > 0  %}
+
+                <a href="#"  data-toggle="tooltip" data-placement="left" title="" data-original-title="You should try  to add one picture to this groupt">
+
+                    <i class="fa fa-plus fa-5x"></i>
+
+                </a>
+
+
+                {% else %}
+
+                <a href="#"><img src="{{ group.image }}" alt="{{ group.title }}"></a>
+
+
+                {% endif %}
+
+                <div class="profile-info">
+                    <h5 title="{{ group.name }}">{{ group.name }}</h5>
+                    <span>{{group.created_at | date ('d M Y') }}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown float-right hidden-md-down">
+            <a class="btn btn-secondary btn-icon btn-sm m-l-25 float-right" href="#" data-toggle="dropdown" role="button"><i class="fa fa-cog"></i></a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <!--
+                <a class="dropdown-item active" href="#">Setting</a>
+                <a class="dropdown-item" href="#">Mail</a>
+                <a class="dropdown-item" href="#">Block</a>
+                !-->
+                <a       data-request-flash data-request-update="response: '#response'"
+                         data-request-data="group_id: '{{ group.id }}'" data-request="onReportGroup"
+                         class="dropdown-item" href="#">Report</a>
+            </div>
+        </div>
+
+        <ul class="nav nav-icon-left toolbar-nav" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" href="#boxed-profile" aria-controls="profile" role="tab" data-toggle="tab">
+                    <i class="fa fa-area-chart"></i>
+                    Feed
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#boxed-settings" aria-controls="settings" role="tab" data-toggle="tab">
+                    <i class="fa fa-users"></i> Members</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#boxed-inbox" aria-controls="inbox" role="tab" data-toggle="tab">
+                <i class="fa fa-money"></i> Ads</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#boxed-games" aria-controls="games" role="tab" data-toggle="tab">
+                <i class="fa fa-video-camera"></i> Streams</a>
+            </li>
+        </ul>
+
+    </div>
+    </section>
+</div>
+
+
+<section class="p-y-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 hidden-md-down">
+
+
+                <div class="widget widget-join">
+
+                    <button class="btn btn-success btn-md  "
+                            style="width: 11vw"
+                       data-request-flash data-request-update="response: '#response'"
+                       data-request-data="group_id: '{{ group.id }}'" data-request="onJoinGroup"
+                       role="button">
+
+                        <span style="color:#fff">Join <i class="fa fa-pluss"></i></span>
+                    </button>
+
+
+                </div>
+
+                <!-- widget about -->
+                <div class="widget widget-about">
+
+                    <p>
+                        {{ group.description | striptags }}
+                    </p>
+
+                    <ul>
+                        <li><i class="fa fa-clock-o"></i> Created at {{ group.created_at | date ('d M')  }}</li>
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="col-lg-9">
+
+                <div class="tab-content">
+
+
+
+                    <div class="tab-pane active" id="boxed-profile" role="tabpanel">
+
+
+                        <!--- start the posts !-->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h5 class="m-t-70">Toggle</h5>
+                                <p>It is possible to use accordions with different style like transparent background or with icons like in the example.</p>
+                                <div id="accordion-transparent" class="accordion accordion-transparent accordion-icon" role="tablist">
+
+
+                                    {% for post in group.posts %}
+                                    <div class="card">
+                                        <div class="card-header" role="tab" id="headingOne{{post.id}}">
+                                            <h5>
+                                                <a class="collapsed" data-toggle="collapse" href="#transparentOne{{post.id}}" aria-expanded="true" aria-controls="transparentOne{{post.id}}">
+                                                    Collapsible Group Item #1
+                                                </a>
+                                            </h5>
+                                        </div>
+
+                                        <div id="transparentOne{{post.id}}" class="collapse" role="tabpanel" aria-labelledby="headingOne{{post.id}}" data-parent="#accordion-transparent">
+                                            <div class="card-body">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                                on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                                                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                        {% for post in posts %}
+                        <!-- post -->
+                        <div class="post card post-card post-profile">
+                            <div class="post-header">
+                                <div>
+                                    <a href="{{ url('profile') }}">
+                                        <i class="fa fa-user fa-5x"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <h2 class="post-title">
+                                        <a href="{{ url('profile') }}/{{ post.user.username }}" alt="{{ post.user.name }}">
+                                            {{ post.user.name }}
+                                        </a>
+                                    </h2>
+                                    <div class="post-meta">
+                                        <span><i class="fa fa-clock-o"></i>Created at {{ post.created_at | date ('d M Y') }} </span>
+                                    </div>
+                                    <div class="dropdown float-right">
+                                        <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-chevron-down"></i></a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" href="#">Category 1</a>
+                                            <a class="dropdown-item" href="#">Category 2</a>
+                                            <a class="dropdown-item" href="#">Category 3</a>
+                                            <a class="dropdown-item" href="#">Category 4</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {% if post.extra_info %}
+
+                            <img src="{{ post.extra_info }}" alt="">
+                            
+                            {% endif %}
+
+                           <p>
+                               {{ post.body }}
+                           </p>
+
+
+                            <div class="post-footer">
+                                <a href="#" class="pull-left"><i class="fa fa-comment-o"></i> 0 comments</a>
+                                <a href="#" class="pull-right"><i class="fa fa-heart-o"></i> 0 likes</a>
+                            </div>
+                        </div>
+                        <!-- endpost !-->
+                        {% endfor %}
+
+
+
+
+
+                    <div class="tab-pane" id="boxed-settings" role="tabpanel">
+
+                    </div>
+                    <div class="tab-pane" id="boxed-inbox" role="tabpanel">
+
+                    </div>
+                    <div class="tab-pane" id="boxed-games" role="tabpanel">
+                        <p class="m-b-0">Suspendisse massa nisi, maximus eu ligula posuere, blandit scelerisque neque. Praesent consequat leo malesuada, eleifend augue nec, porta quam.</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /main -->

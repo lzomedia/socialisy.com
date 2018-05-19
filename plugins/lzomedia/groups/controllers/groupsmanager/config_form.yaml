@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Groups Manager
+
+# Model Form Field configuration
+form: $/lzomedia/groups/models/group/fields.yaml
+
+# Model Class name
+modelClass: LzoMedia\Groups\Models\Group
+
+# Default redirect location
+defaultRedirect: lzomedia/groups/groupsmanager
+
+# Create page
+create:
+    title: Create Groups Manager
+    redirect: lzomedia/groups/groupsmanager/update/:id
+    redirectClose: lzomedia/groups/groupsmanager
+
+# Update page
+update:
+    title: Edit Groups Manager
+    redirect: lzomedia/groups/groupsmanager
+    redirectClose: lzomedia/groups/groupsmanager
+
+# Preview page
+preview:
+    title: Preview Groups Manager

@@ -1,0 +1,42 @@
+// 1. Your custom variables and variable overwrites.
+$global-link-color: #DA7D02;
+$white:#fff;
+$black:#333;
+$footer-bg:#242629;
+$border-color: #e8e8e8;
+// 2. Import default variables and available mixins.
+@import "../../node_modules/uikit/src/scss/variables-theme.scss";
+@import "../../node_modules/uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-card() { color: #000; }
+
+
+// 4. Import UIkit.
+@import "../../node_modules/uikit/src/scss/uikit-theme.scss";
+
+@import "partials/header";
+@import "partials/footer";
+
+
+
+/*--------------------------------------
+  03. Group Header Element
+----------------------------------------*/
+section.group-header{
+
+  padding:20vh 0;
+
+}
+
+
+
+
+
+/*--------------------------------------
+  03. Group Content Element
+----------------------------------------*/
+section.group-content{
+
+}
+

@@ -1,0 +1,199 @@
+<!-- Create group modal !-->
+<section class="hero hero-game " style="background-image: url('{{ 'assets/img/cover/cover-social.jpg' | theme }}');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="hero-block">
+            <div class="hero-center">
+                <h2 class="hero-title">
+                    <i class="fa fa-heart"></i>
+                    Recent Communities
+                </h2>
+                <p>All public <b>groups available</b>
+                    <small>just search for any thing in mind @ai powered</small>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% partial 'site/breadcrumb.htm' %}
+
+<section class="container">
+
+
+    <div ng-app='GroupsDisplayApps' ng-controller='GroupsController'>
+
+
+        <section class="container">
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm-30 p-l-0 ">
+                <div class="title outline">
+                    <h4 title="recent communities"><i class="fa fa-heart"></i> Recent Communities</h4>
+                    <p>
+                        The most recent communities created and most active
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 margin-bottom-20" style="margin-bottom: 2rem">
+
+                <div class="input-icon-right">
+                    <input type="text" class="form-control large" ng-model="search"
+                           placeholder="Search for something...">
+
+                    <i ng-show="loadingLocations" class="fa fa-glass"></i>
+
+                    <div ng-show="noResults">
+                        <i class="glyphicon glyphicon-remove"></i> No Results Found
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-sm-12  text-right">
+                {% partial 'modals/create_group.htm' %}
+            </div>
+
+
+        </section>
+
+
+        <div class="text-center" ng-show='groups.busy'>
+
+            We are searching for results so please be patient ...
+
+        </div>
+
+        <div masonry='{ "transitionDuration" : "0.4s" , "itemSelector" : ".group"}' class="row"
+             infinite-scroll='groups.nextPage()' infinite-scroll-disabled='groups.busy' infinite-scroll-distance='1'>
+
+
+            <div masonry-tile class="group col-lg-3 col-md-4 col-sm-6 margin-bottom-sm-30"
+                 ng-repeat='item in groups.items | filter:search '>
+
+
+                <div class="card card-lg">
+
+                    <div class="card-img animated zoomIn">
+
+                        <a href="{{ url('group') }}/<% item.url %>" class="card-img-top">
+
+                            <img class="opacity" ng-if="item.image !=0 "
+                                 ng-src="<% item.image || 'assets/img/groups/no-group-image.png' %>">
+                            <img class="opacity" ng-if="item.image == 0"
+                                 ng-src="{{ 'assets/img/groups/no-group-image.png' | theme }}">
+                            <img class="opacity" ng-if="item.image == null"
+                                 ng-src="{{ 'assets/img/groups/no-group-image.png' | theme }}">
+
+
+                        </a>
+
+                        <div class="badge badge-facebook pull-right">
+                            <a href="#" style="color:white">
+                                15
+                                <i class="fa fa-hand-scissors-o"></i>
+                                <i class="fa fa-users">
+
+                                </i>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="card-block">
+
+                        <h3 class="card-title" title="<% item.name %>">
+
+                            <a href="{{ url('group') }}/<% item.url %>">
+                                <% item.name %>
+                            </a>
+
+                        </h3>
+
+                        <div class="card-meta"><span><% item.created_at | date:'dd MMM yyyy'  %></span></div>
+
+                        <p>
+                            <% item.description %>
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer">
+
+                        <a class="btn btn-light float-right pull-right btn btn-default btn-group-lg pull-right p-t-10 "
+                           href="{{ url('/group/') }}/<% item.url %>"
+                           data-toggle="modal" data-target="#modal-primary-<% item.id %>"
+                           role="button">
+                            <i class="fa fa-eye-slash"></i>
+
+                        </a>
+
+
+                        <div class="modal quick-view jackInTheBox animated" id="modal-primary-<% item.id %>">
+
+                            <div class="modal-dialog row" role="document">
+
+                                <div class="col-lg-6 row">
+
+
+                                    <img class="opacity" ng-if="item.image !=0 "
+                                         ng-src="<% item.image || 'assets/img/groups/no-group-image.png' %>">
+                                    <img class="opacity" ng-if="item.image == 0"
+                                         ng-src="{{ 'assets/img/groups/no-group-image.png' | theme }}">
+                                    <img class="opacity" ng-if="item.image == null"
+                                         ng-src="{{ 'assets/img/groups/no-group-image.png' | theme }}">
+
+
+                                </div>
+                                <div class="col-lg-6 pull-right text-left">
+
+
+                                    <!-- insert twig for content !-->
+
+                                    <h2 title="<% item.name %>">
+                                        <% item.name %>
+                                    </h2>
+
+                                    <div class="description">
+                                        <p>
+                                            <% item.description %>
+                                        </p>
+                                    </div>
+
+
+                                    <a data-request-flash data-request-update="response: '#response'"
+                                       data-request-data="group_id: '<% item.id %>'" data-request="onJoinGroup"
+                                       class="btn btn-success p-t-10 "
+                                       href="#">
+                                        <i class="fa fa-heart-o"></i> Join
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+
+                        <a data-request-flash data-request-update="response: '#response'"
+                           data-request-data="group_id: '<% item.id %>'" data-request="onFollowGroup"
+                           class="btn-light float-right pull-right btn btn-default btn-group-lg pull-right p-t-10 "
+                           href="#">
+                            <i class="fa fa-heart-o"></i> Like
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

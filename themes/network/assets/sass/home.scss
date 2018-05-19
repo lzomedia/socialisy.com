@@ -1,0 +1,145 @@
+// 1. Your custom variables and variable overwrites.
+$global-link-color: #DA7D02;
+$white: #fff;
+$black: #333;
+$footer-bg: #242629;
+$border-color: #e8e8e8;
+// 2. Import default variables and available mixins.
+
+@import "../../node_modules/uikit/src/scss/variables-theme.scss";
+@import "../../node_modules/uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-card() {
+  color: #000;
+}
+
+// 4. Import UIkit.
+@import "../../node_modules/uikit/src/scss/uikit-theme.scss";
+
+
+
+
+@import "_organisms/header";
+@import "_organisms/footer";
+
+
+
+@import "helpers";
+
+
+.uk-section-default {
+  background: #f2f2f2;
+}
+
+.side-menu-header{
+  margin-bottom: 4vh;
+}
+
+
+
+.top-streamers {
+
+  //padding:10vh 0;
+  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
+
+  div.uk-card-media-top {
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    img{
+      width: 100%;
+    }
+  }
+
+  h2 {
+    margin-bottom: 2vh;
+  }
+
+  p {
+    margin: 7vh 0;
+  }
+
+  .uk-card-body {
+    p {
+      margin: 1vh 0;
+    }
+  }
+  button {
+
+    border-radius: 1vw;
+    width: 2vw;
+
+  }
+
+}
+
+.top-commenters {
+
+  padding:10vh 0;
+  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
+  background: $global-muted-background;
+
+}
+
+section.subscribe {
+  background: $global-primary-background;
+  border-bottom: 1px solid $global-color;
+  border-top: 1px solid $global-color;
+  padding:10vh 0;
+
+
+  div.uk-section-small {
+    padding: 0;
+  }
+
+}
+
+/*--------------------------------------
+  02. Counter Element
+----------------------------------------*/
+section.counter {
+
+  padding:10vh 0;
+
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e5e5e5;
+
+
+  p {
+    margin:0;
+  }
+
+  h6{
+    margin:0;
+    font-size: 4rem;
+  }
+}
+/*--------------------------------------
+  03. Pricing Element
+----------------------------------------*/
+section.pricing {
+
+  padding:10vh 0;
+
+
+  background: $global-background;
+
+  div.uk-section-small {
+    padding: 0;
+  }
+
+  p.uk-text-center {
+    padding: 2vh 0;
+
+  }
+
+}
+
+.uk-card-body{
+  word-break: break-all;
+
+}
+
+

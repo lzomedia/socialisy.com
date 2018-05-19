@@ -1,0 +1,53 @@
+1526722916a:1:{s:11:"account.htm";a:11:{s:8:"fileName";s:11:"account.htm";s:7:"content";s:470:"title = "Account"
+description = "Create an account on your favorite groups network"
+url = "/account/:code?"
+layout = "default"
+is_hidden = 0
+
+[account]
+redirect = "account"
+paramCode = "code"
+==
+<body class="uk-height-1-1">
+    <div class="uk-flex uk-flex-center uk-flex-middle uk-background-primary uk-height-viewport uk-light">
+
+
+
+
+
+        <div class="uk-width-large uk-padding-small">
+
+
+            {% component 'account' %}
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+</body>";s:5:"mtime";i:1525779570;s:6:"markup";s:275:"<body class="uk-height-1-1">
+    <div class="uk-flex uk-flex-center uk-flex-middle uk-background-primary uk-height-viewport uk-light">
+
+
+
+
+
+        <div class="uk-width-large uk-padding-small">
+
+
+            {% component 'account' %}
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+</body>";s:4:"code";N;s:5:"title";s:7:"Account";s:11:"description";s:49:"Create an account on your favorite groups network";s:3:"url";s:15:"/account/:code?";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"account";a:2:{s:8:"redirect";s:7:"account";s:9:"paramCode";s:4:"code";}}}

@@ -1,0 +1,218 @@
+
+{% partial 'site/breadcrumb_members.htm' %}
+
+
+
+
+<section class="container">
+
+
+    <div ng-app='myApp' ng-controller='MembersController'>
+
+
+        <div class="row">
+
+
+
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-bottom-sm-30">
+                <div class="title outline">
+                    <h4 title="recent communities"><i class="fa fa-heart"></i> Recent Members</h4>
+                    <p>
+                        The most recent members created and most active
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-sm-2 margin-bottom-20 text-right">
+
+                {% partial 'modals/create_account.htm' %}
+
+            </div>
+
+            <div class="col-sm-10 margin-bottom-20" style="margin-bottom: 2rem">
+
+                <div class="input-icon-right">
+                    <i class="fa fa-search"></i>
+
+
+                    <input type="text" class="form-control" ng-model="search" id="inputiconright" placeholder="Search for something...">
+
+                    <i ng-show="loadingLocations" class="fa fa-glass"></i>
+
+                    <div ng-show="noResults">
+                        <i class="glyphicon glyphicon-remove"></i> No Results Found
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div masonry='{ "transitionDuration" : "0.4s" , "itemSelector" : ".group"}' class="row" infinite-scroll='reddit.nextPage()' infinite-scroll-disabled='reddit.busy' infinite-scroll-distance='1'>
+
+
+            <div masonry-tile class="group col-lg-4 col-md-6 col-sm-6 margin-bottom-sm-30" ng-repeat='item in reddit.items | filter:search '>
+
+
+                <div class="card card-lg">
+
+                    <div class="card-img text-center" style="padding-top: 4vh">
+
+                        <a style="margin-top: 20px"  href="{{ url('profile') }}/<% item.username %>" class="card-img-center">
+                           <i class="fa fa-users fa-5x text-center " layout-align="center" align="center"></i>
+                        </a>
+
+                        <!--@todo implement in future release-->
+
+                        <!--<div class="badge badge-facebook pull-right">-->
+                            <!--<a href="#" style="color:white">-->
+                                <!--15-->
+                                <!--<i class="fa fa-hand-scissors-o"></i>-->
+                                <!--<i class="fa fa-users">-->
+
+                                <!--</i>-->
+                            <!--</a>-->
+                        <!--</div>-->
+
+                    </div>
+                    <div class="card-block text-center">
+
+                        <h3 class="card-title" title="<% item.name %>">
+
+                            <a href="{{ url('profile') }}/<% item.username %>">
+                                <% item.name %>
+                            </a>
+
+                        </h3>
+                        <div class="card-meta">
+                            Member since <br>
+                            <span> <% item.created_at | date:'dd MMM yyyy'  %></span>
+                        </div>
+                        <p>
+                            <% item.description.slice(0,100 ) %>
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer">
+
+                        <a class="btn btn-default btn-group-lg" href="{{ url('/profile/') }}/<% item.username %>" role="button">
+                            About
+                        </a>
+
+                        <!-- todo implement like users method !-->
+
+                        <a data-request-flash data-request-update="response: '#response'"
+                           data-request-data="member_id: '<% item.id %>'" data-request="onLikeMember" class="btn-light float-right pull-right btn btn-default btn-group-lg pull-right p-t-10 " href="#">
+                            <i class="fa fa-heart-o"></i> Like
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="row">
+                <div class="container">
+                    <div class="col-sm-12">
+                        <div class="text-center" ng-show='reddit.busy'>Loading data...</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    {% put scripts %}
+    <script>
+
+        var myApp = angular.module('myApp', ['infinite-scroll','masonry']);
+
+        myApp.config(function($interpolateProvider){
+
+            $interpolateProvider.startSymbol('<%').endSymbol('%>');
+        });
+
+        myApp.controller('MembersController', function($scope, MembersFactory) {
+
+            $scope.reddit = new (MembersFactory);
+
+            $scope.gimphy =[];
+
+        });
+
+
+
+
+        myApp.factory("MembersFactory", ['$http',function($http){
+
+            /*This is an example of how you can process and return the required result*/
+
+            var MembersFactory = function() {
+                this.items = [];
+                this.busy = false;
+                this.end = false;
+                this.url = 'onGetJsonMembers';
+            };
+
+
+            MembersFactory.prototype.nextPage = function() {
+
+                if (this.busy) return;
+
+                this.busy = true;
+
+                //is the first url
+
+
+                var url = this.url;
+
+
+                if(this.end == false){
+
+                    this.busy = true;
+                }
+
+                //@todo improve this and add an way to check if we are at the end of the data if yes  print message
+
+                $http.get(url).then(function(response){
+
+                    var items = response.data.data;
+
+                    console.log(response);
+
+                    if(response.to <= 30 ){
+
+
+                        this.end = true;
+
+                        console.log('end' + this.end);
+
+                    }
+
+                    for (var i = 0; i < items.length; i++) {
+                        this.items.push(items[i]);
+                    }
+
+                    this.url = response.data.next_page_url;
+
+                    this.busy = false;
+
+
+                }.bind(this));
+
+            };
+
+            return MembersFactory;
+
+        }]);
+
+    </script>
+    {% endput %}
+
+</section>

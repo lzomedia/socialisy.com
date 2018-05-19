@@ -1,0 +1,27 @@
+<div id="offcanvas-usage" uk-offcanvas="mode: slide; overlay: true;flip: true">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type=button uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+            <li class="uk-nav-header">Social Twizy</li>
+            <li class="uk-nav-divider"></li>
+            <li>
+                <a href="{{ url('groups') }}"><span class="uk-margin-small-right" uk-icon="icon: users"></span>
+                    Groups
+                </a>
+            </li>
+            <li>
+                <a href="{{ url('feeds') }}"><span class="uk-margin-small-right" uk-icon="icon: rss"></span>
+                Feeds
+                </a>
+            </li>
+            <li>
+                <a href="{{ url('members') }}"><span class="uk-margin-small-right" uk-icon="icon: star"></span>
+                Members
+                </a>
+            </li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="{{ url('account') }}"><span class="uk-margin-small-right" uk-icon="icon: user"></span> Account
+            </a></li>
+        </ul>
+    </div>
+</div>

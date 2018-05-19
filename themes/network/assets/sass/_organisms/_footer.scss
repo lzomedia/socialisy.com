@@ -1,0 +1,21 @@
+footer{
+
+  padding: 6.5vh 0 2vh 0;
+  background: $footer-bg;
+
+
+
+  div.footer-copyright{
+    padding-top:4vh;
+
+
+    div.footer-social-icons{
+
+      margin:0 auto;
+
+      > a{
+        padding:1vh;
+      }
+    }
+  }
+}

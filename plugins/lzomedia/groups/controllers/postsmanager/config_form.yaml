@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Posts Manager
+
+# Model Form Field configuration
+form: $/lzomedia/groups/models/postsmanager/fields.yaml
+
+# Model Class name
+modelClass: LzoMedia\Groups\Models\PostsManager
+
+# Default redirect location
+defaultRedirect: lzomedia/groups/postsmanager
+
+# Create page
+create:
+    title: Create Posts Manager
+    redirect: lzomedia/groups/postsmanager/update/:id
+    redirectClose: lzomedia/groups/postsmanager
+
+# Update page
+update:
+    title: Edit Posts Manager
+    redirect: lzomedia/groups/postsmanager
+    redirectClose: lzomedia/groups/postsmanager
+
+# Preview page
+preview:
+    title: Preview Posts Manager

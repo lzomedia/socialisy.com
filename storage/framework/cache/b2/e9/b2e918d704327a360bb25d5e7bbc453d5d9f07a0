@@ -1,0 +1,60 @@
+1526679767a:1:{s:18:"groups/default.htm";a:5:{s:8:"fileName";s:18:"groups/default.htm";s:7:"content";s:872:"
+{% for group in groups %}
+<div>
+    <div class="uk-card uk-card-default uk-card-hover">
+        <div class=uk-card-media-top>
+            <img width="400" height="300" src="{{ group.image }}" alt="{{ group.name }}">
+        </div>
+        <div class=uk-card-body>
+            <div class="uk-card-badge uk-label">Badge</div>
+            <h3 class="uk-card-title " title="about {{group.name}}">
+                <a href="{{ url('group') }}/{{ group.url}}" class="uk-text-capitalize" title="about {{group.name}}">
+                    {{ group.name | title }}
+                </a>
+            </h3>
+            <p>
+                {{ str_words(group.description, 25, '...') | title }}
+            </p>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+<!-- start the pagination !-->
+<ul class="uk-pagination">
+    {{ groups.render | raw }}
+</ul>
+
+
+<!-- end the pagination !-->
+
+";s:5:"mtime";i:1525947257;s:6:"markup";s:869:"{% for group in groups %}
+<div>
+    <div class="uk-card uk-card-default uk-card-hover">
+        <div class=uk-card-media-top>
+            <img width="400" height="300" src="{{ group.image }}" alt="{{ group.name }}">
+        </div>
+        <div class=uk-card-body>
+            <div class="uk-card-badge uk-label">Badge</div>
+            <h3 class="uk-card-title " title="about {{group.name}}">
+                <a href="{{ url('group') }}/{{ group.url}}" class="uk-text-capitalize" title="about {{group.name}}">
+                    {{ group.name | title }}
+                </a>
+            </h3>
+            <p>
+                {{ str_words(group.description, 25, '...') | title }}
+            </p>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+<!-- start the pagination !-->
+<ul class="uk-pagination">
+    {{ groups.render | raw }}
+</ul>
+
+
+<!-- end the pagination !-->";s:4:"code";N;}}

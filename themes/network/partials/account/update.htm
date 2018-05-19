@@ -1,0 +1,36 @@
+
+{{ form_ajax('onUpdate', { model: user }) }}
+
+
+<fieldset class="uk-fieldset">
+
+    <legend class="uk-legend uk-text-center">
+        <span uk-icon="icon: user;ratio:3" style="color: #000;"></span>
+    </legend>
+
+    <div class="uk-margin">
+        <input name="name" type="text" class="uk-input" id="accountName" value="{{ form_value('name') }}">
+    </div>
+
+   <div class="uk-margin">
+       <input name="email" type="email" class="uk-input" id="accountEmail" value="{{ form_value('email') }}">
+   </div>
+
+    <div class="uk-margin">
+        <input name="password" type="password" class="uk-input" id="accountPassword" placeholder="Password">
+    </div>
+
+    <div class="uk-margin">
+        <input name="password_confirmation" type="password" class="uk-input" id="accountPasswordConfirm" placeholder="Password confirmation">
+    </div>
+
+
+    <div class="uk-margin">
+        <button class="uk-button uk-button-secondary" type="submit">Save</button>
+    </div>
+
+</fieldset>
+
+
+
+{{ form_close() }}

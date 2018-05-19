@@ -1,0 +1,54 @@
+{% if not user %}
+
+<div class="row">
+
+
+        <form data-request="onSignin">
+
+
+            <fieldset class="uk-fieldset">
+                <legend class="uk-legend">Login</legend>
+                <div class="uk-margin">
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon uk-form-icon-flip" style="color:white" data-uk-icon="icon: user"></span>
+                        <input class="uk-input uk-form-large" name="login" required placeholder="Enter your {{ loginAttributeLabel|lower }}" type="text">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon uk-form-icon-flip"  style="color:white" data-uk-icon="icon: lock"></span>
+                        <input class="uk-input uk-form-large" name="password" required placeholder="Password" type="password">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <button type="submit" class="uk-button uk-button-primary uk-button-primary uk-button-large uk-width-1-1">LOG IN</button>
+                    <a uk-toggle="target: #registerUser" class="uk-button uk-margin uk-button-danger uk-button-large uk-width-1-1">REGISTER</a>
+                </div>
+            </fieldset>
+        </form>
+
+
+    <!-- start the register modal !-->
+    {% partial 'modals/register' %}
+
+
+
+</div>
+
+{% else %}
+
+{% partial __SELF__ ~ '::activation_check' %}
+
+{% partial __SELF__ ~ '::update' %}
+
+{% partial __SELF__ ~ '::deactivate_link' %}
+
+{% endif %}
+
+
+
+
+
+
+
+

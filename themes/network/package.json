@@ -1,0 +1,28 @@
+{
+  "name": "network",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0"
+  },
+  "dependencies": {
+    "cross-env": "^5.1.4",
+    "giphy-js-sdk-core": "^1.0.3",
+    "jquery": "^3.3.1",
+    "laravel-mix": "^2.1.11",
+    "node-sass": "^4.9.0",
+    "readmore-js": "^2.1.0",
+    "uikit": "^3.0.0-beta.42"
+  }
+}
