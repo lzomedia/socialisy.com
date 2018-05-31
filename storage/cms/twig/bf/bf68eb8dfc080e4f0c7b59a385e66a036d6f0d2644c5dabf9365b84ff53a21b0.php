@@ -35,6 +35,9 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
 </section>
 
 <section class=\"uk-section-default top-streamers\">
+
+
+
     <div class=\"uk-section uk-section-small uk-background-cover\">
         <div class=uk-container>
             <h2 class=\"uk-heading-line uk-text-center\">
@@ -43,47 +46,11 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
             <p class=uk-text-center>
                 Here is a list of our newest social communities don't hesitate to join our full of fun community and start chating with your friends
             </p>
-            <div class=\"uk-child-width-1-3@m uk-grid-match uk-grid\" uk-grid=\"\">
-
-                ";
-        // line 26
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(range(1, 9));
-        foreach ($context['_seq'] as $context["_key"] => $context["i"]) {
-            // line 27
-            echo "                <div>
-                    <div>
-                        <div class=\"uk-card uk-card-default\">
-                            <div class=uk-card-media-top><img src=\"";
-            // line 30
-            echo $this->extensions['Cms\Twig\Extension']->themeFilter("./production/static/b544bda014136f485aa3dd182707b5ba.jpg");
-            echo "\" alt=\"\"></div>
-                            <div class=uk-card-body>
-                                <h3 class=uk-card-title>Media Top</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['i'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 40
-        echo "
-                <div class=\"uk-align-center uk-animation-toggle\">
-                    <a href=\"";
-        // line 42
-        echo url("groups");
-        echo "\" class=\"btn-load-more uk-button uk-button-primary uk-animation-fade\">
-                        View More <span class=\"uk-margin-small-left uk-icon\" uk-icon=\"icon: more\">
-                    </a>
-                </div>
-            </div>
+            <div id=\"top-groups\"></div>
         </div>
     </div>
+
+
 </section>
 
 
@@ -223,14 +190,9 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
         return "/shared/httpd/socialisy/htdocs/themes/network/pages/home.htm";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  79 => 42,  75 => 40,  59 => 30,  54 => 27,  50 => 26,  23 => 1,);
+        return array (  23 => 1,);
     }
 
     public function getSourceContext()
@@ -250,6 +212,9 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
 </section>
 
 <section class=\"uk-section-default top-streamers\">
+
+
+
     <div class=\"uk-section uk-section-small uk-background-cover\">
         <div class=uk-container>
             <h2 class=\"uk-heading-line uk-text-center\">
@@ -258,31 +223,11 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
             <p class=uk-text-center>
                 Here is a list of our newest social communities don't hesitate to join our full of fun community and start chating with your friends
             </p>
-            <div class=\"uk-child-width-1-3@m uk-grid-match uk-grid\" uk-grid=\"\">
-
-                {% for i in 1..9 %}
-                <div>
-                    <div>
-                        <div class=\"uk-card uk-card-default\">
-                            <div class=uk-card-media-top><img src=\"{{ './production/static/b544bda014136f485aa3dd182707b5ba.jpg' | theme }}\" alt=\"\"></div>
-                            <div class=uk-card-body>
-                                <h3 class=uk-card-title>Media Top</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-
-                <div class=\"uk-align-center uk-animation-toggle\">
-                    <a href=\"{{ url('groups') }}\" class=\"btn-load-more uk-button uk-button-primary uk-animation-fade\">
-                        View More <span class=\"uk-margin-small-left uk-icon\" uk-icon=\"icon: more\">
-                    </a>
-                </div>
-            </div>
+            <div id=\"top-groups\"></div>
         </div>
     </div>
+
+
 </section>
 
 

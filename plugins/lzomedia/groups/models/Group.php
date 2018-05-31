@@ -35,7 +35,9 @@ class Group extends Model
 
     }
 
-
+    /**
+     * @return mixed
+     */
     public function posts()
     {
         return $this->hasMany(Post::class, 'group_id');

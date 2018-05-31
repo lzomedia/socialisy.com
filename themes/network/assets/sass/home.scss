@@ -1,9 +1,4 @@
-// 1. Your custom variables and variable overwrites.
-$global-link-color: #DA7D02;
-$white: #fff;
-$black: #333;
-$footer-bg: #242629;
-$border-color: #e8e8e8;
+@import "vars";
 // 2. Import default variables and available mixins.
 
 @import "../../node_modules/uikit/src/scss/variables-theme.scss";

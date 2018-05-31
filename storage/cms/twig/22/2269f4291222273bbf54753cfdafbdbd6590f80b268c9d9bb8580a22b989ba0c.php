@@ -21,7 +21,7 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
     {
         // line 1
         echo "<!DOCTYPE html>
-<html>
+<html lang=\"en\">
 <head>
     <!-- META -->
     <meta charset=\"utf-8\">
@@ -142,45 +142,45 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
         // line 68
         echo "
 
+    <!-- Page !-->
     ";
-        // line 70
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
         // line 71
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        // line 72
         echo "
 
     <!--- Footer !-->
     ";
-        // line 74
+        // line 75
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/_footer.htm"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 75
+        // line 76
         echo "
     <!-- Side Menu !-->
     ";
-        // line 77
+        // line 78
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/_side_menu.htm"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 78
+        // line 79
         echo "
 
     <!-- Notification Side Menu !-->
     ";
-        // line 81
+        // line 82
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/_notifications.htm"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 82
+        // line 83
         echo "
 </div>
 
 <!-- /#wrapper -->
 <script src=\"";
-        // line 86
+        // line 87
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/production/home.min.js");
         echo "\"></script>
-
 ";
         // line 88
         echo '<script src="'. Request::getBasePath()
@@ -209,13 +209,13 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
 
     public function getDebugInfo()
     {
-        return array (  193 => 89,  186 => 88,  181 => 86,  175 => 82,  171 => 81,  166 => 78,  162 => 77,  158 => 75,  154 => 74,  149 => 71,  147 => 70,  143 => 68,  139 => 67,  134 => 64,  127 => 61,  122 => 60,  119 => 59,  103 => 46,  93 => 39,  89 => 38,  78 => 30,  73 => 28,  65 => 23,  61 => 22,  56 => 20,  49 => 16,  45 => 15,  41 => 14,  34 => 10,  23 => 1,);
+        return array (  193 => 89,  186 => 88,  182 => 87,  176 => 83,  172 => 82,  167 => 79,  163 => 78,  159 => 76,  155 => 75,  150 => 72,  148 => 71,  143 => 68,  139 => 67,  134 => 64,  127 => 61,  122 => 60,  119 => 59,  103 => 46,  93 => 39,  89 => 38,  78 => 30,  73 => 28,  65 => 23,  61 => 22,  56 => 20,  49 => 16,  45 => 15,  41 => 14,  34 => 10,  23 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("<!DOCTYPE html>
-<html>
+<html lang=\"en\">
 <head>
     <!-- META -->
     <meta charset=\"utf-8\">
@@ -283,6 +283,7 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
     {% partial \"site/_header.htm\" %}
 
 
+    <!-- Page !-->
     {% page %}
 
 
@@ -300,7 +301,6 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
 
 <!-- /#wrapper -->
 <script src=\"{{ '/production/home.min.js' | theme }}\"></script>
-
 {% framework extras %}
 
 

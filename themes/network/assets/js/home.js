@@ -1,6 +1,9 @@
 import UIkit from 'uikit';
 
+import Vue from 'vue';
+
 import Icons from 'uikit/dist/js/uikit-icons';
+
 
 // loads the Icon plugin
 UIkit.use(Icons);
@@ -11,7 +14,6 @@ window.$ = window.jQuery = require('jquery');
 let welcome = "welcome to socialisy homepage";
 
 console.log(welcome);
-
 
 
 function AddReadMore() {
@@ -44,12 +46,20 @@ function AddReadMore() {
 }
 
 
-
 $(function() {
     //Calling function after Page Load
     AddReadMore();
 });
 
 
+
+import Groups from '../../components/groups';
+
+
+
+new Vue({
+    el: '#top-groups',
+    render: (h) => h(Groups)
+});
 
 

@@ -237,4 +237,5 @@
   'LzoMedia\\Groups\\Models\\GroupBanner' => 'plugins/lzomedia/groups/models/GroupBanner.php',
   'RainLab\\Notify\\Classes\\EventParams' => 'plugins/rainlab/notify/classes/EventParams.php',
   'lzomedia\\feeds\\Plugin' => 'plugins/lzomedia/feeds/Plugin.php',
+  'RainLab\\User\\Classes\\UserRedirector' => 'plugins/rainlab/user/classes/UserRedirector.php',
 );

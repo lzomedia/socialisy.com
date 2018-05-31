@@ -17,12 +17,14 @@
     "purifycss-webpack": "^0.7.0"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "cross-env": "^5.1.4",
     "giphy-js-sdk-core": "^1.0.3",
     "jquery": "^3.3.1",
     "laravel-mix": "^2.1.11",
     "node-sass": "^4.9.0",
     "readmore-js": "^2.1.0",
-    "uikit": "^3.0.0-beta.42"
+    "uikit": "^3.0.0-beta.42",
+    "vue": "^2.5.16"
   }
 }

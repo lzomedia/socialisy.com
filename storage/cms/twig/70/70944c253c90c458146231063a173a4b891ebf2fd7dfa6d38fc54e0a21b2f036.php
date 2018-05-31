@@ -30,7 +30,7 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                             <a href=\"";
         // line 8
         echo url("groups");
-        echo "\">
+        echo "\" title=\"recent groups\">
                                 <span class=\"uk-icon uk-margin-small-right\" uk-icon=\"icon: users\"></span>
                                 Groups
                             </a>
@@ -39,7 +39,7 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                             <a href=\"";
         // line 14
         echo url("feeds");
-        echo "\">
+        echo "\" title=\"recent posts\">
                                 <span class=\"uk-icon uk-margin-small-right\" uk-icon=\"icon: rss\"></span>
                                 Feeds
                             </a>
@@ -48,7 +48,7 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                             <a href=\"";
         // line 20
         echo url("members");
-        echo "\">
+        echo "\" title=\"recent members\">
                                 <span class=\"uk-icon uk-margin-small-right\" uk-icon=\"icon: star\"></span>
                                 Our Stars
                             </a>
@@ -75,7 +75,7 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
             echo "                            <a href=\"#\" data-uk-icon=\"icon:user\"></a>
                             <div class=\"uk-navbar-dropdown uk-navbar-dropdown-bottom-left\">
                                 <ul class=\"uk-nav uk-navbar-dropdown-nav\">
-                                    <li class=\"uk-nav-header uk-text-small uk-text-primary\">YOUR ACCOUNT</li>
+                                    <li class=\"uk-nav-header uk-text-small uk-text-primary\">Your Account</li>
                                     <li><a href=\"";
             // line 41
             echo url("account");
@@ -173,19 +173,19 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                 <div class=\"uk-navbar-left\"><a class=\"uk-navbar-item uk-logo\" href=\"/\">Social Twizy</a>
                     <ul class=\"uk-navbar-nav uk-visible@m\">
                         <li>
-                            <a href=\"{{ url('groups') }}\">
+                            <a href=\"{{ url('groups') }}\" title=\"recent groups\">
                                 <span class=\"uk-icon uk-margin-small-right\" uk-icon=\"icon: users\"></span>
                                 Groups
                             </a>
                         </li>
                         <li>
-                            <a href=\"{{ url('feeds') }}\">
+                            <a href=\"{{ url('feeds') }}\" title=\"recent posts\">
                                 <span class=\"uk-icon uk-margin-small-right\" uk-icon=\"icon: rss\"></span>
                                 Feeds
                             </a>
                         </li>
                         <li>
-                            <a href=\"{{ url('members') }}\">
+                            <a href=\"{{ url('members') }}\" title=\"recent members\">
                                 <span class=\"uk-icon uk-margin-small-right\" uk-icon=\"icon: star\"></span>
                                 Our Stars
                             </a>
@@ -205,7 +205,7 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                             <a href=\"#\" data-uk-icon=\"icon:user\"></a>
                             <div class=\"uk-navbar-dropdown uk-navbar-dropdown-bottom-left\">
                                 <ul class=\"uk-nav uk-navbar-dropdown-nav\">
-                                    <li class=\"uk-nav-header uk-text-small uk-text-primary\">YOUR ACCOUNT</li>
+                                    <li class=\"uk-nav-header uk-text-small uk-text-primary\">Your Account</li>
                                     <li><a href=\"{{ url('account') }}\"><span data-uk-icon=\"icon: pencil\"></span> Edit</a></li>
                                     <li class=\"uk-nav-divider\"></li>
                                     <li><a href=\"{{ url('friends') }}\"><span data-uk-icon=\"icon: user\"></span> Your Friends</a></li>

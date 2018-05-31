@@ -1,19 +1,20 @@
-
 {% for group in groups %}
 <div>
     <div class="uk-card uk-card-default uk-card-hover">
+        {% if group.image !="" or group.image !="0" %}
         <div class=uk-card-media-top>
             <img width="400" height="300" src="{{ group.image }}" alt="{{ group.name }}">
         </div>
+        {% endif %}
         <div class=uk-card-body>
             <div class="uk-card-badge uk-label">Badge</div>
             <h3 class="uk-card-title " title="about {{group.name}}">
-                <a href="{{ url('group') }}/{{ group.url}}" class="uk-text-capitalize" title="about {{group.name}}">
+                <a href="{{ url('group') }}/{{ group.url}}" class="uk-text-capitalize" title="{{group.name}} community">
                     {{ group.name | title }}
                 </a>
             </h3>
             <p>
-                {{ str_words(group.description, 25, '...') | title }}
+                {{ str_words(group.description, 35, '...') | title }}
             </p>
         </div>
     </div>
@@ -25,7 +26,5 @@
 <ul class="uk-pagination">
     {{ groups.render | raw }}
 </ul>
-
-
 <!-- end the pagination !-->
 

@@ -1,8 +1,8 @@
-1526742108a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2231:"description = "Default layout"
+1527801681a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2259:"description = "Default layout"
 [session]
 ==
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <!-- META -->
     <meta charset="utf-8">
@@ -70,6 +70,7 @@
     {% partial "site/_header.htm" %}
 
 
+    <!-- Page !-->
     {% page %}
 
 
@@ -87,14 +88,13 @@
 
 <!-- /#wrapper -->
 <script src="{{ '/production/home.min.js' | theme }}"></script>
-
 {% framework extras %}
 
 
 
 </body>
-</html>";s:5:"mtime";i:1525944811;s:6:"markup";s:2187:"<!DOCTYPE html>
-<html>
+</html>";s:5:"mtime";i:1527021641;s:6:"markup";s:2215:"<!DOCTYPE html>
+<html lang="en">
 <head>
     <!-- META -->
     <meta charset="utf-8">
@@ -162,6 +162,7 @@
     {% partial "site/_header.htm" %}
 
 
+    <!-- Page !-->
     {% page %}
 
 
@@ -179,7 +180,6 @@
 
 <!-- /#wrapper -->
 <script src="{{ '/production/home.min.js' | theme }}"></script>
-
 {% framework extras %}
 
 

@@ -15,6 +15,6 @@ $border-color: #e8e8e8;
 // 4. Import UIkit.
 @import "../../node_modules/uikit/src/scss/uikit-theme.scss";
 
-@import "partials/header";
-@import "partials/footer";
+@import "_organisms/_header";
+@import "_organisms/footer";
 

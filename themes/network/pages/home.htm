@@ -2,6 +2,7 @@ title = "Socialisy the best social network community to join and chat with your 
 url = "/"
 layout = "default"
 meta_title = "Socialisy the best social network community to join and chat with your friends"
+meta_description = "Join the best community where you can chat with friends and family in your own private groups without the fear of beeing tracked ."
 is_hidden = 0
 
 [session]
@@ -25,6 +26,9 @@ redirect = "home"
 </section>
 
 <section class="uk-section-default top-streamers">
+
+
+
     <div class="uk-section uk-section-small uk-background-cover">
         <div class=uk-container>
             <h2 class="uk-heading-line uk-text-center">
@@ -33,31 +37,11 @@ redirect = "home"
             <p class=uk-text-center>
                 Here is a list of our newest social communities don't hesitate to join our full of fun community and start chating with your friends
             </p>
-            <div class="uk-child-width-1-3@m uk-grid-match uk-grid" uk-grid="">
-
-                {% for i in 1..9 %}
-                <div>
-                    <div>
-                        <div class="uk-card uk-card-default">
-                            <div class=uk-card-media-top><img src="{{ './production/static/b544bda014136f485aa3dd182707b5ba.jpg' | theme }}" alt=""></div>
-                            <div class=uk-card-body>
-                                <h3 class=uk-card-title>Media Top</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-
-                <div class="uk-align-center uk-animation-toggle">
-                    <a href="{{ url('groups') }}" class="btn-load-more uk-button uk-button-primary uk-animation-fade">
-                        View More <span class="uk-margin-small-left uk-icon" uk-icon="icon: more">
-                    </a>
-                </div>
-            </div>
+            <div id="top-groups"></div>
         </div>
     </div>
+
+
 </section>
 
 

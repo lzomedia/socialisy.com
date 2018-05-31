@@ -2,7 +2,7 @@ description = "Default layout"
 [session]
 ==
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <!-- META -->
     <meta charset="utf-8">
@@ -70,6 +70,7 @@ description = "Default layout"
     {% partial "site/_header.htm" %}
 
 
+    <!-- Page !-->
     {% page %}
 
 
@@ -87,7 +88,6 @@ description = "Default layout"
 
 <!-- /#wrapper -->
 <script src="{{ '/production/home.min.js' | theme }}"></script>
-
 {% framework extras %}
 
 

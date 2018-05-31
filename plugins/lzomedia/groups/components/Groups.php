@@ -26,7 +26,7 @@ class Groups extends ComponentBase
      */
     public function onRun(){
 
-        $this->page['groups'] = Group::orderBy('created_at', 'ASC')->paginate(9);
+        $this->page['groups'] = Group::orderBy('created_at', 'ASC')->paginate(63);
 
 
     }

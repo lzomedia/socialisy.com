@@ -80,3 +80,17 @@ use GuzzleHttp\Promise as GuzzlePromise;
     return json_encode($results);
 });
 
+\Route::get('/api/getGroups', function () {
+
+
+
+    $groups = \LzoMedia\Groups\Models\Group::paginate(9);
+
+    return $groups;
+
+
+});
+
+
+
+

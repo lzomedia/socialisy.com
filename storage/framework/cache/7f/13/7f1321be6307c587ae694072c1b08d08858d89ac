@@ -1,5 +1,4 @@
-1526739345a:1:{s:17:"group/default.htm";a:5:{s:8:"fileName";s:17:"group/default.htm";s:7:"content";s:4390:"<div id="response"></div>
-
+1527751280a:1:{s:17:"group/default.htm";a:5:{s:8:"fileName";s:17:"group/default.htm";s:7:"content";s:4224:"<div id="response"></div>
 
 
 <section class="uk-section uk-section-large uk-section-primary">
@@ -8,7 +7,7 @@
             {{ group.name }}
         </h1>
         <p class="uk-text-large addReadMore showlesscontent">
-            {{ group.description | striptags  }}
+            {{ group.description | striptags }}
         </p>
     </div>
 </section>
@@ -45,7 +44,6 @@
 </section>
 
 
-
 <section class="uk-section">
     <div class="uk-container">
 
@@ -77,72 +75,68 @@
 <section class="uk-container uk-container-center">
 
 
-        <ul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
-            <li><a href="">Posts</a></li>
-            <li><a href="">Members</a></li>
-        </ul>
+    <ul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
+        <li><a href="">Posts</a></li>
+        <li><a href="">Members</a></li>
+    </ul>
 
 
+    <ul id="my-id" class="uk-switcher uk-margin">
 
-        <ul id="my-id" class="uk-switcher uk-margin">
-
-            <li>
-                <div uk-grid>
-                    <div  masonry="true" class="uk-grid-match uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-3@l" uk-grid-parallax uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 300; repeat: true">
-
-
-                                {% for post in posts %}
+        <li>
+            <div uk-grid>
+                <div masonry="true" class="uk-grid-match uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-3@l"
+                     uk-grid-parallax
+                     uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 300; repeat: true">
 
 
+                    {% for post in posts %}
 
-                                {% if post.body != '' %}
-                                <div>
-                                    <div class="uk-card uk-card-default">
-                                        {% if post.extra_info != '' %}
-                                            {% if post.extra_info != 0 %}
-                                             <div class="uk-card-media-top">
-
-                                                    <img src="{{ post.extra_info }}" alt="">
-
-                                             </div>
-                                        {% endif %}
-                                        <div class="uk-card-body">
-                                            <p>
-                                                {{ post.body }}
-                                            </p>
-                                        </div>
+                        {% if post.body != '' %}
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                {% if post.extra_info != '' %}
+                                    {% if post.extra_info != 0 %}
+                                    <div class="uk-card-media-top">
+                                        <img src="{{ post.extra_info }}" alt="">
                                     </div>
-                                </div>
+                                    {% endif %}
                                 {% endif %}
+                                <div class="uk-card-body">
+                                    <p>
+                                        {{ post.body }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
 
-                                {% endfor %}
-
-
-                    </div>
-                </div>
-
-
-                <div class="uk-container uk-text-center">
-
-                    <ul class="uk-pagination">
-                        {{ posts.render | raw }}
-                    </ul>
+                    {% endfor %}
 
                 </div>
+            </div>
 
 
-            </li>
+            <div class="uk-container uk-text-center">
 
-            <li>Content 2</li>
-            <li>Content 3</li>
-        </ul>
-    </section>
+                <ul class="uk-pagination">
+                    {{ posts.render | raw }}
+                </ul>
+
+            </div>
+
+
+        </li>
+
+        <li>Content 2</li>
+        <li>Content 3</li>
+    </ul>
+</section>
 
 
 
 
-";s:5:"mtime";i:1526681047;s:6:"markup";s:4385:"<div id="response"></div>
-
+";s:5:"mtime";i:1527022018;s:6:"markup";s:4219:"<div id="response"></div>
 
 
 <section class="uk-section uk-section-large uk-section-primary">
@@ -151,7 +145,7 @@
             {{ group.name }}
         </h1>
         <p class="uk-text-large addReadMore showlesscontent">
-            {{ group.description | striptags  }}
+            {{ group.description | striptags }}
         </p>
     </div>
 </section>
@@ -188,7 +182,6 @@
 </section>
 
 
-
 <section class="uk-section">
     <div class="uk-container">
 
@@ -220,63 +213,60 @@
 <section class="uk-container uk-container-center">
 
 
-        <ul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
-            <li><a href="">Posts</a></li>
-            <li><a href="">Members</a></li>
-        </ul>
+    <ul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
+        <li><a href="">Posts</a></li>
+        <li><a href="">Members</a></li>
+    </ul>
 
 
+    <ul id="my-id" class="uk-switcher uk-margin">
 
-        <ul id="my-id" class="uk-switcher uk-margin">
-
-            <li>
-                <div uk-grid>
-                    <div  masonry="true" class="uk-grid-match uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-3@l" uk-grid-parallax uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 300; repeat: true">
-
-
-                                {% for post in posts %}
+        <li>
+            <div uk-grid>
+                <div masonry="true" class="uk-grid-match uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-3@l"
+                     uk-grid-parallax
+                     uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 300; repeat: true">
 
 
+                    {% for post in posts %}
 
-                                {% if post.body != '' %}
-                                <div>
-                                    <div class="uk-card uk-card-default">
-                                        {% if post.extra_info != '' %}
-                                            {% if post.extra_info != 0 %}
-                                             <div class="uk-card-media-top">
-
-                                                    <img src="{{ post.extra_info }}" alt="">
-
-                                             </div>
-                                        {% endif %}
-                                        <div class="uk-card-body">
-                                            <p>
-                                                {{ post.body }}
-                                            </p>
-                                        </div>
+                        {% if post.body != '' %}
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                {% if post.extra_info != '' %}
+                                    {% if post.extra_info != 0 %}
+                                    <div class="uk-card-media-top">
+                                        <img src="{{ post.extra_info }}" alt="">
                                     </div>
-                                </div>
+                                    {% endif %}
                                 {% endif %}
+                                <div class="uk-card-body">
+                                    <p>
+                                        {{ post.body }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
 
-                                {% endfor %}
-
-
-                    </div>
-                </div>
-
-
-                <div class="uk-container uk-text-center">
-
-                    <ul class="uk-pagination">
-                        {{ posts.render | raw }}
-                    </ul>
+                    {% endfor %}
 
                 </div>
+            </div>
 
 
-            </li>
+            <div class="uk-container uk-text-center">
 
-            <li>Content 2</li>
-            <li>Content 3</li>
-        </ul>
-    </section>";s:4:"code";N;}}
+                <ul class="uk-pagination">
+                    {{ posts.render | raw }}
+                </ul>
+
+            </div>
+
+
+        </li>
+
+        <li>Content 2</li>
+        <li>Content 3</li>
+    </ul>
+</section>";s:4:"code";N;}}
