@@ -238,4 +238,7 @@
   'RainLab\\Notify\\Classes\\EventParams' => 'plugins/rainlab/notify/classes/EventParams.php',
   'lzomedia\\feeds\\Plugin' => 'plugins/lzomedia/feeds/Plugin.php',
   'RainLab\\User\\Classes\\UserRedirector' => 'plugins/rainlab/user/classes/UserRedirector.php',
+  'lzomedia\\ads\\Plugin' => 'plugins/lzomedia/ads/Plugin.php',
+  'lzomedia\\stories\\Plugin' => 'plugins/lzomedia/stories/Plugin.php',
+  'LzoMedia\\Stories\\Components\\DisplayStories' => 'plugins/lzomedia/stories/components/DisplayStories.php',
 );

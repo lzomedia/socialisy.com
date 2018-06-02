@@ -95,8 +95,8 @@ class Group extends ComponentBase
     {
 
         $post = post();
-
-
+        
     }
+
 
 }

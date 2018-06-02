@@ -5,21 +5,21 @@
                 <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/">Social Twizy</a>
                     <ul class="uk-navbar-nav uk-visible@m">
                         <li>
-                            <a href="{{ url('groups') }}" title="recent groups">
+                            <a href="{{ url('communities') }}" title="recent groups">
                                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span>
-                                Groups
+                                Communities
                             </a>
                         </li>
                         <li>
-                            <a href="{{ url('feeds') }}" title="recent posts">
+                            <a href="{{ url('stories') }}" title="recent posts">
                                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: rss"></span>
-                                Feeds
+                                Stories
                             </a>
                         </li>
                         <li>
                             <a href="{{ url('members') }}" title="recent members">
-                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
-                                Our Stars
+                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span>
+                                Members
                             </a>
                         </li>
                     </ul>
@@ -30,11 +30,16 @@
 
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav">
+
+
                         <li>
+
                             {% if not user %}
-                            <a href="{{ url('account') }}" data-uk-icon="icon:user"></a>
+                                <a href="{{ url('account') }}" data-uk-icon="icon:user"></a>
                             {% else %}
+
                             <a href="#" data-uk-icon="icon:user"></a>
+
                             <div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li class="uk-nav-header uk-text-small uk-text-primary">Your Account</li>
@@ -52,9 +57,9 @@
 
                                 </ul>
                             </div>
+
                             {% endif %}
                         </li>
-
 
                     </ul>
 

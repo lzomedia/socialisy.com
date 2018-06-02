@@ -175,7 +175,7 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
         // line 83
         echo "
 </div>
-
+<script src=\"http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js\"></script>
 <!-- /#wrapper -->
 <script src=\"";
         // line 87
@@ -298,7 +298,7 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
     {% partial \"site/_notifications.htm\" %}
 
 </div>
-
+<script src=\"http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js\"></script>
 <!-- /#wrapper -->
 <script src=\"{{ '/production/home.min.js' | theme }}\"></script>
 {% framework extras %}

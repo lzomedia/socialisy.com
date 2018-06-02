@@ -15,6 +15,7 @@ mix.js('assets/js/home.js', 'production/')
     .sass('assets/sass/home.scss','production')
     .minify('production/home.js')
     .minify('production/home.css')
+    .disableNotifications()
     .options({
         purifyCss: false,
         processCssUrls: false

@@ -1,4 +1,4 @@
-1527801681a:1:{s:8:"home.htm";a:13:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:6513:"title = "Socialisy the best social network community to join and chat with your friends"
+1527900850a:1:{s:8:"home.htm";a:13:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:4948:"title = "Socialisy the best social network community to join and chat with your friends"
 url = "/"
 layout = "default"
 meta_title = "Socialisy the best social network community to join and chat with your friends"
@@ -13,14 +13,16 @@ redirect = "home"
 ==
 <section class="uk-section uk-section-large uk-section-primary">
     <div class="uk-container uk-container-small uk-text-center">
-        <h1>Album example</h1>
-        <p class="uk-text-large">This is a text that describes the album, its creator and something that you want to tell that is attractive.</p>
+        <h1>
+            Social trixy
+        </h1>
+        <p class="uk-text-large">
+            Open Source social network build with Laravel, Vuje, OctoberCMS.
+        </p>
         <div data-uk-margin="">
-            <div class="uk-button uk-button-primary uk-first-column">
-                CALL TO ACTION
+            <div class=" uk-first-column">
+                <a href="{{ url('account') }}" class="uk-button uk-button-primary">Join </a>
             </div>
-            <a class="uk-button uk-button-default" href="#modal-center" data-uk-toggle="">Open Modal</a>
-            <a class="uk-button uk-button-default" href="#modal-media-vimeo" data-uk-toggle="">Vimeo</a>
         </div>
     </div>
 </section>
@@ -30,15 +32,30 @@ redirect = "home"
 
 
     <div class="uk-section uk-section-small uk-background-cover">
-        <div class=uk-container>
-            <h2 class="uk-heading-line uk-text-center">
-                <span><i uk-icon=icon:star></i> Recent Communities <i uk-icon=icon:star></i></span>
-            </h2>
-            <p class=uk-text-center>
-                Here is a list of our newest social communities don't hesitate to join our full of fun community and start chating with your friends
-            </p>
-            <div id="top-groups"></div>
+
+
+        <div class=uk-container->
+
+            <div class="uk-grid-auto-flow-row">
+
+                <h2 class="uk-heading-line uk-text-center">
+                    <span><i uk-icon=icon:star></i> Recent Communities <i uk-icon=icon:star></i></span>
+                </h2>
+                <p class=uk-text-center>
+                    Here is a list of our newest social communities don't hesitate to join our full of fun community and start chating with your friends
+                </p>
+
+            </div>
+
+            <div class="uk-grid-auto-flow-row">
+                <div id="top-groups"></div>
+            </div>
+
+
         </div>
+
+
+
     </div>
 
 
@@ -52,63 +69,41 @@ redirect = "home"
   02. Counter Element
 ----------------------------------------*/
 !-->
-<section class="counter">
+<section class="counter uk-background-primary">
     <div class="uk-container uk-container-center">
-        <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+        <div class="uk-child-width-expand@ uk-child-width-1-3@m uk-grid-match" uk-grid>
             <div>
-                <h6 class=" uk-text-center">
+                <h6 class=" uk-text-center uk-card-title uk-text-center">
                     500k+
                 </h6>
-                <p class="uk-text-meta uk-text-center">Members</p>
+                <p class="uk-text-meta uk-text-center">
+                    <span uk-icon="users"></span>
+                    Members
+                </p>
             </div>
             <div>
-                <h6 class=" uk-text-center">
+                <h6 class=" uk-text-center uk-card-title uk-text-center">
                     10k+
                 </h6>
-                <p class="uk-text-meta uk-text-center">Groups</p>
+                <p class="uk-text-meta uk-text-center">
+                    <span uk-icon="happy"></span>
+                    Communities
+                </p>
             </div>
             <div>
-                <h6 class=" uk-text-center">
+                <h6 class=" uk-text-center uk-card-title uk-text-center">
                     100k+
                 </h6>
-                <p class="uk-text-meta uk-text-center">Posts</p>
-            </div>
-            <div>
-                <h6 class=" uk-text-center">
-                    100k+
-                </h6>
-                <p class="uk-text-meta uk-text-center">Streams</p>
+                <p class="uk-text-meta uk-text-center">
+                    <span uk-icon="happy"></span>
+                    Stories
+                </p>
             </div>
         </div>
     </div>
 </section>
 
-<section>
 
-    <div class="uk-section uk-section-primary uk-preserve-color">
-        <div class="uk-container">
-
-            <div class="uk-panel uk-light uk-margin-medium">
-                <h3>Section Primary with cards</h3>
-            </div>
-
-            <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</section>
 
 
 <section class="pricing uk-section-default">
@@ -149,40 +144,18 @@ redirect = "home"
         </div>
     </div>
 </section>
-
-
-<!-- section subscribe !-->
-<section class="subscribe uk-section-default uk-card-primary">
-
-    <div class="uk-container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2 class="uk-heading-line">Sign up for our Newsletter</h2>
-                <span>Join our newsletter to get the new updates regarding the futures that we are releasing everyday</span>
-            </div>
-            <div class="col-md-6">
-                <div class="subscribe-form">
-                    <div class=uk-margin>
-                        <div class=uk-inline>
-                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
-                            <input placeholder=Subscribe class=uk-input type=text>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>";s:5:"mtime";i:1527798686;s:6:"markup";s:6063:"<section class="uk-section uk-section-large uk-section-primary">
+";s:5:"mtime";i:1527899935;s:6:"markup";s:4496:"<section class="uk-section uk-section-large uk-section-primary">
     <div class="uk-container uk-container-small uk-text-center">
-        <h1>Album example</h1>
-        <p class="uk-text-large">This is a text that describes the album, its creator and something that you want to tell that is attractive.</p>
+        <h1>
+            Social trixy
+        </h1>
+        <p class="uk-text-large">
+            Open Source social network build with Laravel, Vuje, OctoberCMS.
+        </p>
         <div data-uk-margin="">
-            <div class="uk-button uk-button-primary uk-first-column">
-                CALL TO ACTION
+            <div class=" uk-first-column">
+                <a href="{{ url('account') }}" class="uk-button uk-button-primary">Join </a>
             </div>
-            <a class="uk-button uk-button-default" href="#modal-center" data-uk-toggle="">Open Modal</a>
-            <a class="uk-button uk-button-default" href="#modal-media-vimeo" data-uk-toggle="">Vimeo</a>
         </div>
     </div>
 </section>
@@ -192,15 +165,30 @@ redirect = "home"
 
 
     <div class="uk-section uk-section-small uk-background-cover">
-        <div class=uk-container>
-            <h2 class="uk-heading-line uk-text-center">
-                <span><i uk-icon=icon:star></i> Recent Communities <i uk-icon=icon:star></i></span>
-            </h2>
-            <p class=uk-text-center>
-                Here is a list of our newest social communities don't hesitate to join our full of fun community and start chating with your friends
-            </p>
-            <div id="top-groups"></div>
+
+
+        <div class=uk-container->
+
+            <div class="uk-grid-auto-flow-row">
+
+                <h2 class="uk-heading-line uk-text-center">
+                    <span><i uk-icon=icon:star></i> Recent Communities <i uk-icon=icon:star></i></span>
+                </h2>
+                <p class=uk-text-center>
+                    Here is a list of our newest social communities don't hesitate to join our full of fun community and start chating with your friends
+                </p>
+
+            </div>
+
+            <div class="uk-grid-auto-flow-row">
+                <div id="top-groups"></div>
+            </div>
+
+
         </div>
+
+
+
     </div>
 
 
@@ -214,63 +202,41 @@ redirect = "home"
   02. Counter Element
 ----------------------------------------*/
 !-->
-<section class="counter">
+<section class="counter uk-background-primary">
     <div class="uk-container uk-container-center">
-        <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+        <div class="uk-child-width-expand@ uk-child-width-1-3@m uk-grid-match" uk-grid>
             <div>
-                <h6 class=" uk-text-center">
+                <h6 class=" uk-text-center uk-card-title uk-text-center">
                     500k+
                 </h6>
-                <p class="uk-text-meta uk-text-center">Members</p>
+                <p class="uk-text-meta uk-text-center">
+                    <span uk-icon="users"></span>
+                    Members
+                </p>
             </div>
             <div>
-                <h6 class=" uk-text-center">
+                <h6 class=" uk-text-center uk-card-title uk-text-center">
                     10k+
                 </h6>
-                <p class="uk-text-meta uk-text-center">Groups</p>
+                <p class="uk-text-meta uk-text-center">
+                    <span uk-icon="happy"></span>
+                    Communities
+                </p>
             </div>
             <div>
-                <h6 class=" uk-text-center">
+                <h6 class=" uk-text-center uk-card-title uk-text-center">
                     100k+
                 </h6>
-                <p class="uk-text-meta uk-text-center">Posts</p>
-            </div>
-            <div>
-                <h6 class=" uk-text-center">
-                    100k+
-                </h6>
-                <p class="uk-text-meta uk-text-center">Streams</p>
+                <p class="uk-text-meta uk-text-center">
+                    <span uk-icon="happy"></span>
+                    Stories
+                </p>
             </div>
         </div>
     </div>
 </section>
 
-<section>
 
-    <div class="uk-section uk-section-primary uk-preserve-color">
-        <div class="uk-container">
-
-            <div class="uk-panel uk-light uk-margin-medium">
-                <h3>Section Primary with cards</h3>
-            </div>
-
-            <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</section>
 
 
 <section class="pricing uk-section-default">
@@ -310,29 +276,4 @@ redirect = "home"
             </div>
         </div>
     </div>
-</section>
-
-
-<!-- section subscribe !-->
-<section class="subscribe uk-section-default uk-card-primary">
-
-    <div class="uk-container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2 class="uk-heading-line">Sign up for our Newsletter</h2>
-                <span>Join our newsletter to get the new updates regarding the futures that we are releasing everyday</span>
-            </div>
-            <div class="col-md-6">
-                <div class="subscribe-form">
-                    <div class=uk-margin>
-                        <div class=uk-inline>
-                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
-                            <input placeholder=Subscribe class=uk-input type=text>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </section>";s:4:"code";N;s:5:"title";s:78:"Socialisy the best social network community to join and chat with your friends";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:78:"Socialisy the best social network community to join and chat with your friends";s:16:"meta_description";s:130:"Join the best community where you can chat with friends and family in your own private groups without the fear of beeing tracked .";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:4:"home";}s:6:"Groups";a:0:{}}}

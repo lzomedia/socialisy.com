@@ -1,5 +1,5 @@
 title = "Socialisy the best social network community to join and chat with your friends"
-url = "/groups"
+url = "/communities"
 layout = "default"
 meta_title = "Socialisy the best social network community to join and chat with your friends"
 is_hidden = 0
@@ -22,10 +22,10 @@ redirect = "home"
                     <p>Here is a list of our newest social communities don't hesitate to join our full of fun community and start chatting with your friends.
                     </p>
                     <a href="#" uk-toggle="target: #createGroup" class="uk-button uk-button-default uk-margin-top">
-                        Create Group
+                        Create
                     </a>
 
-                    {% partial 'modals/create-group' %}
+                    {% partial 'modals/create-community' %}
                 </div>
             </div>
 
@@ -34,19 +34,10 @@ redirect = "home"
 
 <section class="uk-section-default top-streamers">
     <div class="uk-section uk-section-small uk-background-cover">
-        <div class=uk-container>
-            <!-- Start the listing of the groups !-->
-            <div class="uk-child-width-1-3@m uk-grid-match uk-grid" uk-grid-parallax>
+        <div class=uk-container-expand>
 
-                {% component 'Groups' %}
+            <div id="top-groups"></div>
 
-
-            </div>
-            <div class="uk-align-center uk-animation-toggle">
-                <button class="btn-load-more uk-button uk-button-primary uk-animation-shake">
-                    Load More <span class="uk-margin-small-left uk-icon" uk-icon="icon: more"></span>
-                </button>
-            </div>
         </div>
     </div>
 </section>

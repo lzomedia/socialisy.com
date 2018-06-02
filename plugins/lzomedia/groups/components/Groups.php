@@ -6,11 +6,14 @@ use LzoMedia\Groups\Models\Group;
 
 class Groups extends ComponentBase
 {
+
+    private $repository;
+
     public function componentDetails()
     {
         return [
             'name'        => 'Groups Component',
-            'description' => 'No description provided yet...'
+            'description' => 'Provides an way to access to the groups'
         ];
     }
 
@@ -21,17 +24,43 @@ class Groups extends ComponentBase
 
 
     /**
+     * @method initRepository
+     * @description Boots up the models
+     * @return Group
+     */
+    public function initRepository()
+    {
+        $this->repository = new Group();
+    }
+
+
+    /**
      * @method onRun
      * @description This is the loading of the groups css file
      */
     public function onRun(){
 
-        $this->page['groups'] = Group::orderBy('created_at', 'ASC')->paginate(63);
+        $this->initRepository();
+
+        $this->page['groups'] = $this->repository->all();
 
 
     }
 
+    /**
+     * @method onGetGroups
+     * @description return an
+     * @return mixed
+     */
+    public function onGetGroups()
+    {
+        $this->initRepository();
 
+        $data = $this->repository->paginate(9);
+
+        return $data;
+
+    }
 
 
 

@@ -51,11 +51,11 @@ class CreateGroupsTable extends Migration
                 ->onDelete('cascade');
         });
 
-        Schema::create('group_posts', function (Blueprint $table) {
+        Schema::create('group_stories', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('group_id')->unsigned();
             $table->string('title');
-            $table->text('body');
+            $table->text('story');
             $table->string('type');
             $table->integer('user_id')->unsigned();
             $table->text('extra_info')->nullable();

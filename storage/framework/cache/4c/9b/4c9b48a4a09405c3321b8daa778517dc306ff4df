@@ -1,25 +1,25 @@
-1527801681a:1:{s:16:"site/_header.htm";a:5:{s:8:"fileName";s:16:"site/_header.htm";s:7:"content";s:4057:"<header>
+1527900850a:1:{s:16:"site/_header.htm";a:5:{s:8:"fileName";s:16:"site/_header.htm";s:7:"content";s:4079:"<header>
     <div class="uk-position-top">
         <div class="uk-overlay uk-position-top">
             <nav class="uk-navbar-container uk-margin" style="z-index:980" uk-sticky="bottom: #offset" uk-navbar>
                 <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/">Social Twizy</a>
                     <ul class="uk-navbar-nav uk-visible@m">
                         <li>
-                            <a href="{{ url('groups') }}" title="recent groups">
+                            <a href="{{ url('communities') }}" title="recent groups">
                                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span>
-                                Groups
+                                Communities
                             </a>
                         </li>
                         <li>
-                            <a href="{{ url('feeds') }}" title="recent posts">
+                            <a href="{{ url('stories') }}" title="recent posts">
                                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: rss"></span>
-                                Feeds
+                                Stories
                             </a>
                         </li>
                         <li>
                             <a href="{{ url('members') }}" title="recent members">
-                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
-                                Our Stars
+                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span>
+                                Members
                             </a>
                         </li>
                     </ul>
@@ -30,11 +30,16 @@
 
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav">
+
+
                         <li>
+
                             {% if not user %}
-                            <a href="{{ url('account') }}" data-uk-icon="icon:user"></a>
+                                <a href="{{ url('account') }}" data-uk-icon="icon:user"></a>
                             {% else %}
+
                             <a href="#" data-uk-icon="icon:user"></a>
+
                             <div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li class="uk-nav-header uk-text-small uk-text-primary">Your Account</li>
@@ -52,9 +57,9 @@
 
                                 </ul>
                             </div>
+
                             {% endif %}
                         </li>
-
 
                     </ul>
 
@@ -83,28 +88,28 @@
             </nav>
         </div>
     </div>
-</header>";s:5:"mtime";i:1527023951;s:6:"markup";s:4057:"<header>
+</header>";s:5:"mtime";i:1527896209;s:6:"markup";s:4079:"<header>
     <div class="uk-position-top">
         <div class="uk-overlay uk-position-top">
             <nav class="uk-navbar-container uk-margin" style="z-index:980" uk-sticky="bottom: #offset" uk-navbar>
                 <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/">Social Twizy</a>
                     <ul class="uk-navbar-nav uk-visible@m">
                         <li>
-                            <a href="{{ url('groups') }}" title="recent groups">
+                            <a href="{{ url('communities') }}" title="recent groups">
                                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span>
-                                Groups
+                                Communities
                             </a>
                         </li>
                         <li>
-                            <a href="{{ url('feeds') }}" title="recent posts">
+                            <a href="{{ url('stories') }}" title="recent posts">
                                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: rss"></span>
-                                Feeds
+                                Stories
                             </a>
                         </li>
                         <li>
                             <a href="{{ url('members') }}" title="recent members">
-                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
-                                Our Stars
+                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span>
+                                Members
                             </a>
                         </li>
                     </ul>
@@ -115,11 +120,16 @@
 
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav">
+
+
                         <li>
+
                             {% if not user %}
-                            <a href="{{ url('account') }}" data-uk-icon="icon:user"></a>
+                                <a href="{{ url('account') }}" data-uk-icon="icon:user"></a>
                             {% else %}
+
                             <a href="#" data-uk-icon="icon:user"></a>
+
                             <div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li class="uk-nav-header uk-text-small uk-text-primary">Your Account</li>
@@ -137,9 +147,9 @@
 
                                 </ul>
                             </div>
+
                             {% endif %}
                         </li>
-
 
                     </ul>
 

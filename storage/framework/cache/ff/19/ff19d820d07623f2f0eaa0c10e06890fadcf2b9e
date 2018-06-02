@@ -1,0 +1,80 @@
+1527900850a:1:{s:11:"stories.htm";a:12:{s:8:"fileName";s:11:"stories.htm";s:7:"content";s:1791:"title = "Socialisy the best social network community to join and chat with your friends"
+url = "/stories"
+layout = "default"
+meta_title = "Socialisy the best social network community to join and chat with your friends"
+is_hidden = 0
+
+[session]
+security = "all"
+redirect = "home"
+
+[DisplayStories]
+
+==
+<section class="uk-section uk-section-small uk-padding-remove">
+
+        <div class="uk-height-large uk-cover-container uk-border-rounded">
+            <div id="particles-js" data-uk-cover="" class="uk-cover" ></div>
+            <div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-light uk-text-center">
+                <div data-uk-scrollspy="cls: uk-animation-slide-bottom-small" class="uk-scrollspy-inview uk-animation-slide-bottom-small" style="">
+
+                    <h1 class="uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent uk-heading-line uk-text-center">
+                        <span><i uk-icon=icon:star></i> Recent Stories <i uk-icon=icon:star></i></span>
+                    </h1>
+                    <p>Here is a list of our recent stories join an story start chatting with friends.
+                    </p>
+                    <a href="#" uk-toggle="target: #createGroup" class="uk-button uk-button-default uk-margin-top">
+                        Create your own story
+                    </a>
+
+                    {% partial 'modals/create-story' %}
+                </div>
+            </div>
+
+        </div>
+</section>
+
+<section class="uk-section-default top-streamers">
+    <div class="uk-section uk-section-small uk-background-cover">
+        <div class=uk-container>
+            <!-- Start the listing of the groups !-->
+
+            {% component "DisplayStories" %}
+
+        </div>
+    </div>
+</section>
+
+";s:5:"mtime";i:1527892031;s:6:"markup";s:1488:"<section class="uk-section uk-section-small uk-padding-remove">
+
+        <div class="uk-height-large uk-cover-container uk-border-rounded">
+            <div id="particles-js" data-uk-cover="" class="uk-cover" ></div>
+            <div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-light uk-text-center">
+                <div data-uk-scrollspy="cls: uk-animation-slide-bottom-small" class="uk-scrollspy-inview uk-animation-slide-bottom-small" style="">
+
+                    <h1 class="uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent uk-heading-line uk-text-center">
+                        <span><i uk-icon=icon:star></i> Recent Stories <i uk-icon=icon:star></i></span>
+                    </h1>
+                    <p>Here is a list of our recent stories join an story start chatting with friends.
+                    </p>
+                    <a href="#" uk-toggle="target: #createGroup" class="uk-button uk-button-default uk-margin-top">
+                        Create your own story
+                    </a>
+
+                    {% partial 'modals/create-story' %}
+                </div>
+            </div>
+
+        </div>
+</section>
+
+<section class="uk-section-default top-streamers">
+    <div class="uk-section uk-section-small uk-background-cover">
+        <div class=uk-container>
+            <!-- Start the listing of the groups !-->
+
+            {% component "DisplayStories" %}
+
+        </div>
+    </div>
+</section>";s:4:"code";N;s:5:"title";s:78:"Socialisy the best social network community to join and chat with your friends";s:3:"url";s:8:"/stories";s:6:"layout";s:7:"default";s:10:"meta_title";s:78:"Socialisy the best social network community to join and chat with your friends";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:4:"home";}s:14:"DisplayStories";a:0:{}}}
