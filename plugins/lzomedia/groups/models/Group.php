@@ -5,12 +5,15 @@ namespace LzoMedia\Groups\Models;
 use Model;
 
 use RainLab\User\Models\User;
+
 use System\Models\File;
 use Intervention\Image\ImageManagerStatic as Image;
 
 
 class Group extends Model
 {
+
+
     protected $fillable = [
         'name',
         'url',
@@ -32,7 +35,11 @@ class Group extends Model
     public function scopeAdmin(){
 
 	    return User::find($this->user_id);
+    }
 
+    public function user()
+    {
+        return $this->belongsTo('RainLab\User\Models\User');
     }
 
     /**

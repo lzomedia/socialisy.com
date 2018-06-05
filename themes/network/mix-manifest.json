@@ -1,6 +1,13 @@
 {
     "/production/home.js": "/production/home.js",
     "/production/home.css": "/production/home.css",
+    "/production/stories.css": "/production/stories.css",
+    "/production/dashboard.css": "/production/dashboard.css",
+    "/production/stories.js": "/production/stories.js",
+    "/production/dashboard.js": "/production/dashboard.js",
     "/production/home.min.js": "/production/home.min.js",
-    "/production/home.min.css": "/production/home.min.css"
+    "/production/stories.min.js": "/production/stories.min.js",
+    "/production/stories.min.css": "/production/stories.min.css",
+    "/production/dashboard.min.js": "/production/dashboard.min.js",
+    "/production/dashboard.min.css": "/production/dashboard.min.css"
 }

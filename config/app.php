@@ -114,7 +114,7 @@ return [
     'providers' => array_merge(include(base_path('modules/system/providers.php')), [
 
         // 'Illuminate\Html\HtmlServiceProvider', // Example
-//        'LzoMedia\GroupsExtractor\GroupsExtractorServiceProvider',
+        'LzoMedia\GroupsExtractor\GroupsExtractorServiceProvider',
         'System\ServiceProvider',
     ]),
 

@@ -18,14 +18,19 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "bricks.js": "^1.8.0",
     "cross-env": "^5.1.4",
     "giphy-js-sdk-core": "^1.0.3",
     "jquery": "^3.3.1",
     "laravel-mix": "^2.1.11",
     "laravel-vue-pagination": "^1.2.0",
+    "moment": "^2.22.2",
     "node-sass": "^4.9.0",
     "readmore-js": "^2.1.0",
+    "shufflejs": "^5.1.2",
     "uikit": "^3.0.0-beta.42",
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "vue-masonry": "^0.11.1",
+    "vue-masonry-css": "^1.0.1"
   }
 }

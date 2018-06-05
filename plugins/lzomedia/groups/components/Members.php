@@ -1,6 +1,7 @@
 <?php namespace LzoMedia\Groups\Components;
 
 use Cms\Classes\ComponentBase;
+use LzoMedia\Groups\Models\Member;
 
 class Members extends ComponentBase
 {
@@ -16,4 +17,16 @@ class Members extends ComponentBase
     {
         return [];
     }
+
+
+    public function onGetMembers()
+    {
+
+
+        return Member::paginate(10);
+
+
+    }
+
+
 }

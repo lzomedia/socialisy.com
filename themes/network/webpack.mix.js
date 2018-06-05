@@ -14,9 +14,30 @@ let mix = require('laravel-mix');
 mix.js('assets/js/home.js', 'production/')
     .sass('assets/sass/home.scss','production')
     .minify('production/home.js')
-    .minify('production/home.css')
     .disableNotifications()
     .options({
         purifyCss: false,
         processCssUrls: false
 });
+
+
+
+mix.js('assets/js/stories.js', 'production/')
+    .sass('assets/sass/stories.scss','production')
+    .minify('production/stories.js')
+    .minify('production/stories.css')
+    .options({
+        purifyCss: false,
+        processCssUrls: false
+    });
+
+
+
+mix.js('assets/js/dashboard.js', 'production/')
+    .sass('assets/sass/dashboard.scss','production')
+    .minify('production/dashboard.js')
+    .minify('production/dashboard.css')
+    .options({
+        purifyCss: false,
+        processCssUrls: false
+    });

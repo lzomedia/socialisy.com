@@ -1,4 +1,4 @@
-<div id="registerUser" class="uk-modal-full" uk-modal>
+<div id="registerUser" class="uk-modal-container" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
@@ -47,13 +47,15 @@
 
 
                 <div class="uk-margin">
-                    <button type="submit" class="uk-button uk-button-primary uk-button-large uk-width-1-1 uk-margin">
-                        FACEBOOK <span uk-icon="icon: facebook; ratio: 1"></span>
-                    </button>
 
-                    <button type="submit" class="uk-button uk-button-danger uk-button-large uk-width-1-1">
-                        FACEBOOK <span uk-icon="icon: google; ratio: 1"></span>
-                    </button>
+                    {% for name, link in social_login_links %}
+
+                    <a class="uk-button uk-button-primary uk-button-large uk-width-1-1 uk-margin" href="{{ link }}">
+                        <span uk-icon="icon: facebook; ratio: 2"></span>
+                        {{ name }}
+                    </a>
+
+                    {% endfor %}
                 </div>
 
                 {% else %}

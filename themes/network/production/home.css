@@ -50,7 +50,7 @@ a:hover {
  */
 a,
 .uk-link {
-  color: #f0506e;
+  color: #1e87f0;
   text-decoration: none;
   cursor: pointer;
 }
@@ -2321,7 +2321,7 @@ select.uk-form-width-xsmall {
   line-height: 1.5;
   background: none;
   /* 2 */
-  color: #f0506e;
+  color: #1e87f0;
 }
 
 /* Hover + Focus */
@@ -12410,18 +12410,11 @@ ul.pagination li {
 
 .top-streamers .uk-card-body p {
   margin: 1vh 0;
+  font-style: italic;
 }
 
 .top-streamers button {
-  border-radius: 1vw;
   width: 2vw;
-}
-
-.top-commenters {
-  padding: 10vh 0;
-  border-bottom: 1px solid #e8e8e8;
-  border-top: 1px solid #e8e8e8;
-  background: #f8f8f8;
 }
 
 section.subscribe {
@@ -12471,6 +12464,13 @@ section.pricing p.uk-text-center {
   padding: 2vh 0;
 }
 
+.filter-bar {
+  background-color: #333 !important;
+  padding-bottom: 5vh !important;
+  padding-right: 3vw !important;
+  padding-left: 3vw !important;
+}
+
 .uk-card-body {
-  word-break: break-all;
+  word-break: normal !important;
 }

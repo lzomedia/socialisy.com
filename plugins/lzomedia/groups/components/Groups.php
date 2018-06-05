@@ -1,8 +1,12 @@
 <?php namespace LzoMedia\Groups\Components;
 
 use Cms\Classes\ComponentBase;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
+use October\Rain\Support\Facades\Flash;
+
 use LzoMedia\Groups\Models\Group;
+
 
 class Groups extends ComponentBase
 {
@@ -30,7 +34,10 @@ class Groups extends ComponentBase
      */
     public function initRepository()
     {
-        $this->repository = new Group();
+        $group = new Group();
+
+        $this->repository = $group->with('User')->get();
+
     }
 
 
@@ -50,18 +57,37 @@ class Groups extends ComponentBase
     /**
      * @method onGetGroups
      * @description return an
+     * @param integer $limit
      * @return mixed
      */
-    public function onGetGroups()
+    public function onGetGroups(int $limit = 24)
     {
+
         $this->initRepository();
 
-        $data = $this->repository->paginate(9);
+        $group = new Group();
+
+        $data = $group->with('User')->paginate($limit);
 
         return $data;
 
     }
 
+    /**
+     * @method onGetGroups
+     * @description return an
+     * @param integer $limit
+     * @return mixed
+     */
+    public function onCreateGroup()
+    {
 
+        $this->initRepository();
+
+        Flash::success('The group has been reported');
+
+        return redirect('communities');
+
+    }
 
 }

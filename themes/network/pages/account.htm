@@ -1,32 +1,18 @@
 title = "Account"
-description = "Create an account on your favorite groups network"
 url = "/account/:code?"
-layout = "default"
+layout = "account"
+description = "Create an account on your favorite groups network"
 is_hidden = 0
 
 [account]
 redirect = "account"
 paramCode = "code"
+forceSecure = 0
+
+[sociallogin]
 ==
-<body class="uk-height-1-1">
-    <div class="uk-flex uk-flex-center uk-flex-middle uk-background-primary uk-height-viewport uk-light">
-
-
-
-
-
-        <div class="uk-width-large uk-padding-small">
-
-
-            {% component 'account' %}
-
-
-
-        </div>
-
-
-
+<section class="uk-section uk-section-large">
+    <div class="uk-container uk-container-small uk-text-center">
+        {% component 'account' %}
     </div>
-
-
-</body>
+</section>

@@ -2,33 +2,7 @@
 
 
 
-use LzoMedia\GroupsExtractor\Social\Yahoo\YahooApp;
-use LzoMedia\GroupsExtractor\Social\Yahoo\Extractors\YahooGroupExtractor;
 
-
-Route::get('/yahoo/', function (){
-
-    //client
-    $client = new Managers\ClientManager();
-
-    //start the Yahoo
-    $socialType = new YahooApp();
-
-    //Type of extractor
-    $typeOfDataToExtract = new YahooGroupExtractor();
-
-    //extractor type should be a interface up
-    $socialType->setExtractorType($typeOfDataToExtract);
-
-    // set socialType
-    $client->setSocialType($socialType);
-
-    $groups  = ($client->process());
-
-    return $groups;
-
-
-});
 
 
 
@@ -99,15 +73,89 @@ Route::get('/yahoo/', function (){
 });
 
 
-
-
-
 \Route::get('/api/onGetGroups', function () {
 
 
     $groups = new \LzoMedia\Groups\Components\Groups();
 
     return $groups->onGetGroups();
+
+
+});
+
+
+
+
+\Route::get('/api/onGetJsonMembers', function () {
+
+
+    $groups = new \LzoMedia\Groups\Components\Members();
+
+    return $groups->onGetMembers();
+
+
+});
+
+
+
+\Route::get('invite', function (){
+
+    $data = [
+        'random_name' => 'Random Name',
+        'random_group' => 'Random Group',
+        'user' => 'Stefan',
+        'link' => 'link',
+        'email' => str_random(10).'-stefan@lzo.ro',
+        'code' => 'code'
+    ];
+
+
+    Mail::queue('lzomedia.groups::mail.added_you_to_the_group', $data, function ($message) {
+
+        //
+        $message->to('cmsbogdan@gmail.com')->cc('silvia_p28@yahoo.it');
+
+
+    });
+
+});
+
+
+\Route::get('accept', function (){
+
+    $request = \Illuminate\Http\Request::capture();
+
+
+    if($request->get('email')){
+
+        $data = [];
+
+        $data['email'] = $request->get('email');
+
+        $data['password'] = str_random(8);
+
+        $data['password_confirmation'] = $data['password'];
+
+        $user = Auth::register($data, true);
+
+        Event::fire('rainlab.user.register', [$user, $data]);
+
+        if(!is_null($user)){
+
+            Flash::success('Invitation accepted');
+
+            Auth::login($user);
+
+            return redirect('account');
+        }
+
+    }
+
+
+});
+
+
+\Route::get('test-me', function (){
 
 
 });

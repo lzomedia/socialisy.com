@@ -1,103 +1,225 @@
 <template>
 
+    <!-- start the filter !-->
+    <div id="test" data-uk-filter="target: .js-filter">
 
 
-    <div class="uk-grid uk-grid-medium uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l  uk-child-width-1-6@xl uk-grid-match js-filter" data-uk-grid="masonry: true" data-uk-sortable="handle: .drag-icon">
+        <div class="uk-container uk-align-center filter-bar">
 
+            <div class="uk-grid-small uk-flex-middle " uk-grid>
+                <div class="uk-width-expand">
 
-        <div v-for="group in groups" class=" music-card">
-            <div class="uk-card uk-card-small uk-card-default">
-                <div class="uk-card-header">
-                    <div class="uk-grid uk-grid-small uk-text-small" data-uk-grid="">
-                        <div class="uk-width-expand uk-first-column">
-                            <span class="cat-txt">MUSIC / BANDS</span>
+                    <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
+                        <div>
+                            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+                            </ul>
                         </div>
-                        <div class="uk-width-auto uk-text-right uk-text-muted">
-                            <span data-uk-icon="icon:clock; ratio: 0.8" class="uk-icon">
-                                12 min.
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-card-media">
-                    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                        <img :src="group.image" data-width="400" data-height="470" data-uk-img :alt="group.name">
-                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary">
-                            <span data-uk-icon="icon:heart; ratio: 0.8"></span> 12.345
-                            <span data-uk-icon="icon:comment; ratio: 0.8"></span> 12.345
+                        <div>
+                            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                <li uk-filter-control="[data-category='yahoo']"><a href="#">Yahoo</a></li>
+                                <li uk-filter-control="[data-category='facebook']"><a href="#">Facebook</a></li>
+                            </ul>
                         </div>
                     </div>
-                </div>
 
-                <div class="uk-card-body">
-                    <h6 class="uk-margin-small-bottom uk-margin-remove-adjacent uk-text-bold">
-                        {{group.name}}
-                    </h6>
-                    <p class="uk-text-small uk-text-muted">
-                        {{group.description}}
-                    </p>
                 </div>
-                <div class="uk-card-footer">
-                    <div class="uk-grid uk-grid-small uk-grid-divider uk-flex uk-flex-middle" data-uk-grid="">
-                        <div class="uk-width-expand uk-text-small uk-first-column">
-                            John Doe
-                        </div>
-                        <div class="uk-width-auto uk-text-right">
-                            <a data-uk-tooltip="title: Drag this card" href="#" class="uk-icon-link drag-icon uk-icon" data-uk-icon="icon:move; ratio: 1" title="" aria-expanded="false">
+                <div class="uk-text-nowrap">
 
-                            </a>
-                        </div>
-                    </div>
+                    <span class="uk-active" uk-filter-control="sort: data-name">
+                        <a class="uk-icon-link" href="#" uk-icon="icon: arrow-down"></a>
+                    </span>
+                    <span uk-filter-control="sort: data-name; order: desc">
+                        <a class="uk-icon-link" href="#" uk-icon="icon: arrow-up"></a>
+                    </span>
+
+
                 </div>
             </div>
-        </div>
 
         </div>
+
+
+        <div class=" uk-container">
+
+
+            
+            <div class="selector uk-grid uk-child-width-1-3@m js-filter">
+                <div  packed v-for="group in groups" :class="group.type" :data-category="group.type" :data-name="group.name.slice(0,1)  ">
+                    <!-- card !-->
+                    <div class="uk-card uk-card-small uk-card-default uk-box-shadow-large picture-item">
+                        <div class="uk-card-header">
+                            <div class="uk-grid uk-grid-small uk-text-small" data-uk-grid="">
+                                <div class="uk-width-expand uk-first-column">
+                                    <span class="cat-txt">
+                                      <a :href="'/dicover/' + group.url" class="">
+                                            {{ group.name| capitalize }}
+                                      </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-card-media uk-inline" v-if="group.image != 0">
+
+                            <div class="uk-inline">
+                                <img :src="group.image | defaultImage" width="400" data-uk-img :alt="group.name">
+                                <div class="uk-overlay uk-transition-toggle uk-position-bottom">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="uk-card-body">
+                            <p class="uk-text-small uk-text-muted">
+                                {{group.description}}
+                            </p>
+                        </div>
+                        <div class="uk-card-footer">
+                            <div class="uk-grid uk-grid-small uk-grid-divider uk-flex uk-flex-middle" data-uk-grid="">
+                                <div class="uk-width-expand uk-text-small uk-first-column">
+                                    <span class="uk-icon" data-uk-icon="icon:user;"></span> {{ group.user.name }}
+                                </div>
+
+                                <div class="uk-width-auto uk-text-right">
+                                    <a href="#" class="">
+                                        <span class="uk-icon" data-uk-icon="icon:plus;"></span>
+
+                                    </a>
+                                    <span class="uk-icon" data-uk-icon="icon:check;"></span>
+                                    <span class="uk-icon" data-uk-icon="icon:clock;"></span>
+                                    <span class="uk-icon" data-uk-icon="icon:lock;"></span>
+                                    <span class="uk-icon" data-uk-icon="icon:unlock;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="uk-align-center uk-animation-toggle">
+
+                <a id="load-more-action" v-on:click="viewMoreGroups()" class="uk-align-center uk-animation-fade">
+                    View More <span class="uk-margin-small-left uk-icon" uk-icon="icon: more"></span>
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
 </template>
 
 
-<div class="uk-align-center uk-animation-toggle">
-
-    <a v-on:click="viewMoreGroups(1)" class="btn-load-more uk-button uk-button-primary uk-animation-fade">
-        View More <span class="uk-margin-small-left uk-icon" uk-icon="icon: more"></span>
-    </a>
-
-</div>
-
 <script>
     import axios from 'axios';
+    import Bricks from 'bricks.js';
+    window.$ = window.jQuery = require('jquery');
 
 
     export default {
+
+        /**
+         *
+         * @returns {{groups: Array, page: string, defaultImage: string, instance: string}}
+         */
         data() {
             return {
                 groups: [],
-                errors: []
+                page: 'api/onGetGroups',
+                defaultImage: '../assets/icon-disabled.svg',
+                instance: ''
+
             }
         },
-        created() {
 
-            this.groups = this.viewMoreGroups();
+        /**
+         *
+         */
+        beforeMount() {
+
+
+            this.scroll();
+
+            this.viewMoreGroups();
+
+
+
 
         },
+        /**
+         * @method
+         */
+        mounted() {
+
+            $(function() {
+                $('[data-uk-grid]').on('beforeupdate.uk.grid', function(e, children) {
+                    // your event-handling goes here
+                });
+            });
+        },
+
+        /**
+         *
+         */
         methods: {
 
-            viewMoreGroups(page){
+            viewMoreGroups() {
 
-                getGroups(page).then((data) => {
+                let page = this.page;
 
-                    this.groups = data.data;
+                getGroups(page).then((response) => {
+
+                    this.groups = this.groups.concat(response.data.data);
+
+                    this.page = response.data.next_page_url;
+
+
 
                 });
 
 
+            },
+
+            scroll() {
+
+            },
+
+        },
+        filters: {
+
+            capitalize: function (value) {
+
+                if (!value) return ''
+                value = value.toString()
+                return value.charAt(0).toUpperCase() + value.slice(1)
+            },
+            formatTime: function (value) {
+
+                if (value) {
+                    return moment(value).format('gggg');
+                }
+
+            },
+            defaultImage: function (value) {
+
+
+                if (value == 0) {
+
+                    return false;
+                }
+
+                return value;
+
             }
-        }
+        },
 
-
-    };
-
-
+    }
 
 
     /**
@@ -106,33 +228,18 @@
      */
     async function getGroups(page) {
 
-        console.log(page);
-
         try {
 
-            if(page){
-
-                page = '?page=' + page;
-
-            }else{
-
-                page = '?page=' + 1;
-            }
-
-            const response = await axios.get('/api/onGetGroups' + page);
-
-
-            return response.data;
+            return await axios.get(page);
 
         } catch (error) {
 
             console.error(error);
 
         }
+
     }
 
 
 </script>
-
-
 

@@ -86,24 +86,6 @@ class CreateGroupsTable extends Migration
 
         });
 
-//        Schema::create('user_profile', function (Blueprint $table) {
-//            $table->increments('id');
-//            $table->integer('user_id')->index();
-//            $table->string('username')->nullable();
-//            $table->text('about')->nullable();
-//            $table->string('city')->nullable();
-//            $table->string('state')->nullable();
-//            $table->string('country')->nullable();
-//            $table->string('zip')->nullable();
-//            $table->string('phone')->nullable();
-//            $table->string('gender')->nullable();
-//            $table->string('avatar')->nullable();
-//            $table->timestamps();
-//
-//
-//        });
-
-        ///start the foreign keys
 
 
 

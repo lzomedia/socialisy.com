@@ -40,7 +40,7 @@ class Group extends ComponentBase
 
             Flash::success('Group could not be found');
 
-            return redirect('groups');
+            return redirect('communities');
         }
 
         // posts
