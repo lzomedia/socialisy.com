@@ -7,7 +7,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Queue;
 
-use LzoMedia\FacebookExtractor\FacebookExtractor;
+use LzoMedia\GroupsExtractor\Managers\ClientManager;
 
 
 class Extract extends Command

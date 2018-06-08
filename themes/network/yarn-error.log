@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/bin/yarn add vue --save-dev
+  /usr/bin/node /usr/bin/yarn add in-view
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
@@ -14,12 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/vue: ETIMEDOUT
-      at Timeout._onTimeout (/usr/lib/node_modules/yarn/lib/cli.js:133819:19)
-      at ontimeout (timers.js:427:11)
-      at tryOnTimeout (timers.js:289:5)
-      at listOnTimeout (timers.js:252:5)
-      at Timer.processTimers (timers.js:212:10)
+  Error: EACCES: permission denied, unlink '/home/lzomedia/PhpstormProjects/docker.dev/data/www/socialisy/htdocs/themes/network/node_modules/.bin/acorn'
 
 npm manifest: 
   {
@@ -41,13 +36,17 @@ npm manifest:
       "purifycss-webpack": "^0.7.0"
     },
     "dependencies": {
+      "axios": "^0.18.0",
+      "bricks.js": "^1.8.0",
       "cross-env": "^5.1.4",
-      "giphy-js-sdk-core": "^1.0.3",
       "jquery": "^3.3.1",
       "laravel-mix": "^2.1.11",
+      "laravel-vue-pagination": "^1.2.0",
+      "moment": "^2.22.2",
       "node-sass": "^4.9.0",
       "readmore-js": "^2.1.0",
-      "uikit": "^3.0.0-beta.42"
+      "uikit": "^3.0.0-beta.42",
+      "vue": "^2.5.16"
     }
   }
 
@@ -262,10 +261,6 @@ Lockfile:
     version "0.3.2"
     resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
   
-  asap@~2.0.3:
-    version "2.0.6"
-    resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
-  
   asn1.js@^4.0.0:
     version "4.10.1"
     resolved "https://registry.yarnpkg.com/asn1.js/-/asn1.js-4.10.1.tgz#b9c2bf5805f1e64aadeed6df3a2bfafb5a73f5a0"
@@ -363,6 +358,13 @@ Lockfile:
   aws4@^1.2.1, aws4@^1.6.0:
     version "1.7.0"
     resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.7.0.tgz#d4d0e9b9dbfca77bf08eeb0a8a471550fe39e289"
+  
+  axios@^0.18.0:
+    version "0.18.0"
+    resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
+    dependencies:
+      follow-redirects "^1.3.0"
+      is-buffer "^1.1.5"
   
   babel-code-frame@^6.26.0:
     version "6.26.0"
@@ -1037,6 +1039,12 @@ Lockfile:
       snapdragon-node "^2.0.1"
       split-string "^3.0.2"
       to-regex "^3.0.1"
+  
+  bricks.js@^1.8.0:
+    version "1.8.0"
+    resolved "https://registry.yarnpkg.com/bricks.js/-/bricks.js-1.8.0.tgz#8fdeb3c0226af251f4d5727a7df7f9ac0092b4b2"
+    dependencies:
+      knot.js "^1.1.5"
   
   brorand@^1.0.1:
     version "1.1.0"
@@ -2282,12 +2290,6 @@ Lockfile:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
   
-  encoding@^0.1.11:
-    version "0.1.12"
-    resolved "https://registry.yarnpkg.com/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
-    dependencies:
-      iconv-lite "~0.4.13"
-  
   end-of-stream@^1.0.0, end-of-stream@^1.1.0:
     version "1.4.1"
     resolved "https://registry.yarnpkg.com/end-of-stream/-/end-of-stream-1.4.1.tgz#ed29634d19baba463b6ce6b80a37213eab71ec43"
@@ -2369,10 +2371,6 @@ Lockfile:
       es6-set "~0.1.5"
       es6-symbol "~3.1.1"
       event-emitter "~0.3.5"
-  
-  es6-promise@^4.1.0:
-    version "4.2.4"
-    resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.4.tgz#dc4221c2b16518760bd8c39a52d8f356fc00ed29"
   
   es6-set@~0.1.5:
     version "0.1.5"
@@ -2841,7 +2839,7 @@ Lockfile:
       inherits "^2.0.1"
       readable-stream "^2.0.4"
   
-  follow-redirects@^1.0.0:
+  follow-redirects@^1.0.0, follow-redirects@^1.3.0:
     version "1.5.0"
     resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.0.tgz#234f49cf770b7f35b40e790f636ceba0c3a0ab77"
     dependencies:
@@ -3048,15 +3046,6 @@ Lockfile:
       bin-build "^2.0.0"
       bin-wrapper "^3.0.0"
       logalot "^2.0.0"
-  
-  giphy-js-sdk-core@^1.0.3:
-    version "1.0.3"
-    resolved "https://registry.yarnpkg.com/giphy-js-sdk-core/-/giphy-js-sdk-core-1.0.3.tgz#a3c85f3671963e9a8719f3784fc0cedbdf8964e8"
-    dependencies:
-      es6-promise "^4.1.0"
-      isomorphic-fetch "^2.2.1"
-      lodash "^4.17.4"
-      promise "^7.1.1"
   
   glob-base@^0.3.0:
     version "0.3.0"
@@ -3514,7 +3503,7 @@ Lockfile:
     version "0.4.19"
     resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.19.tgz#f7468f60135f5e5dad3399c0a81be9a1603a082b"
   
-  iconv-lite@^0.4.4, iconv-lite@~0.4.13:
+  iconv-lite@^0.4.4:
     version "0.4.23"
     resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.23.tgz#297871f63be507adcfbfca715d0cd0eed84e9a63"
     dependencies:
@@ -4028,13 +4017,6 @@ Lockfile:
     version "3.0.1"
     resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   
-  isomorphic-fetch@^2.2.1:
-    version "2.2.1"
-    resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
-    dependencies:
-      node-fetch "^1.0.1"
-      whatwg-fetch ">=0.10.0"
-  
   isstream@~0.1.2:
     version "0.1.2"
     resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
@@ -4172,6 +4154,10 @@ Lockfile:
     version "6.0.2"
     resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   
+  knot.js@^1.1.5:
+    version "1.1.5"
+    resolved "https://registry.yarnpkg.com/knot.js/-/knot.js-1.1.5.tgz#28e72522f703f50fe98812fde224dd72728fef5d"
+  
   laravel-mix@^2.1.11:
     version "2.1.11"
     resolved "https://registry.yarnpkg.com/laravel-mix/-/laravel-mix-2.1.11.tgz#3741bde214586f8c171641990c9a487eece5367d"
@@ -4212,6 +4198,10 @@ Lockfile:
       webpack-merge "^4.1.0"
       webpack-notifier "^1.5.1"
       yargs "^8.0.2"
+  
+  laravel-vue-pagination@^1.2.0:
+    version "1.2.0"
+    resolved "https://registry.yarnpkg.com/laravel-vue-pagination/-/laravel-vue-pagination-1.2.0.tgz#267d4bb352a70b95e702202c28f5e2f6fe99a464"
   
   lazy-cache@^1.0.3:
     version "1.0.4"
@@ -4712,6 +4702,10 @@ Lockfile:
     dependencies:
       minimist "0.0.8"
   
+  moment@^2.22.2:
+    version "2.22.2"
+    resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
+  
   move-concurrently@^1.0.1:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -4802,13 +4796,6 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/no-case/-/no-case-2.3.2.tgz#60b813396be39b3f1288a4c1ed5d1e7d28b464ac"
     dependencies:
       lower-case "^1.1.1"
-  
-  node-fetch@^1.0.1:
-    version "1.7.3"
-    resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
-    dependencies:
-      encoding "^0.1.11"
-      is-stream "^1.0.1"
   
   node-forge@0.7.5:
     version "0.7.5"
@@ -5679,12 +5666,6 @@ Lockfile:
   promise-inflight@^1.0.1:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
-  
-  promise@^7.1.1:
-    version "7.3.1"
-    resolved "https://registry.yarnpkg.com/promise/-/promise-7.3.1.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
-    dependencies:
-      asap "~2.0.3"
   
   proto-list@~1.2.1:
     version "1.2.4"
@@ -7352,6 +7333,10 @@ Lockfile:
     version "1.6.0"
     resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
   
+  vue@^2.5.16:
+    version "2.5.16"
+    resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.16.tgz#07edb75e8412aaeed871ebafa99f4672584a0085"
+  
   ware@^1.2.0:
     version "1.3.0"
     resolved "https://registry.yarnpkg.com/ware/-/ware-1.3.0.tgz#d1b14f39d2e2cb4ab8c4098f756fe4b164e473d4"
@@ -7483,10 +7468,6 @@ Lockfile:
   websocket-extensions@>=0.1.1:
     version "0.1.3"
     resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
-  
-  whatwg-fetch@>=0.10.0:
-    version "2.0.4"
-    resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz#dde6a5df315f9d39991aa17621853d720b85566f"
   
   whet.extend@~0.9.9:
     version "0.9.9"

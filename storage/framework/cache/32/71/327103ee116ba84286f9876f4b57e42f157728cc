@@ -1,0 +1,22 @@
+1528500175a:1:{s:11:"account.htm";a:12:{s:8:"fileName";s:11:"account.htm";s:7:"content";s:409:"title = "Account"
+url = "/account/:code?"
+layout = "account"
+description = "Create an account on your favorite groups network"
+is_hidden = 0
+
+[account]
+redirect = "account"
+paramCode = "code"
+forceSecure = 0
+
+[sociallogin]
+==
+<section class="uk-section uk-section-large">
+    <div class="uk-container uk-container-small uk-text-center">
+        {% component 'account' %}
+    </div>
+</section>";s:5:"mtime";i:1528019823;s:6:"markup";s:170:"<section class="uk-section uk-section-large">
+    <div class="uk-container uk-container-small uk-text-center">
+        {% component 'account' %}
+    </div>
+</section>";s:4:"code";N;s:5:"title";s:7:"Account";s:3:"url";s:15:"/account/:code?";s:6:"layout";s:7:"account";s:11:"description";s:49:"Create an account on your favorite groups network";s:9:"is_hidden";s:1:"0";s:7:"account";a:3:{s:8:"redirect";s:7:"account";s:9:"paramCode";s:4:"code";s:11:"forceSecure";s:1:"0";}s:11:"sociallogin";a:0:{}}}

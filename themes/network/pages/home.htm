@@ -11,6 +11,31 @@ redirect = "home"
 
 [Groups]
 ==
+
+<section class="uk-section uk-section-small uk-padding-remove">
+    <div class="uk-height-large uk-cover-container uk-border-rounded">
+        <img src="https://picsum.photos/1300/500/?random" alt="Alt img" data-uk-cover="" class="uk-cover" style="width: 1171px; height: 450px;">
+        <div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-light uk-text-center">
+            <div data-uk-scrollspy="cls: uk-animation-slide-bottom-small" class="uk-scrollspy-inview uk-animation-slide-bottom-small" style="">
+
+                <h1 class="uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent uk-heading-line uk-text-center">
+                    <span><i uk-icon=icon:star></i> Recent Communities <i uk-icon=icon:star></i></span>
+                </h1>
+                <p>Here is a list of our newest social communities don't hesitate to join our full of fun community and start chatting with your friends.
+                </p>
+                <a href="#" uk-toggle="target: #createGroup" class="uk-button uk-button-default uk-margin-top">
+                    Create
+                </a>
+
+                {% partial 'modals/create-community' %}
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
 <section class="uk-section uk-section-large uk-section-primary">
     <div class="uk-container uk-container-small uk-text-center">
         <h1>
@@ -30,6 +55,7 @@ redirect = "home"
 <section class="uk-section-default top-streamers">
 
 
+
     <div class="uk-section uk-section-small uk-background-cover">
 
         <div class="uk-container uk-container-expand uk-margin-large-bottom">
@@ -47,88 +73,16 @@ redirect = "home"
             </div>
         </div>
 
-        <div id="top-groups"></div>
-        <div class="uk-clearfix"></div>
-    </div>
 
+        <div class="uk-container-expand">
+            <grid-communities></grid-communities>
 
-</section>
-
-
-<!--
-/*--------------------------------------
-  02. Counter Element
-----------------------------------------*/
-!-->
-<section class="counter uk-background-primary">
-    <div class="uk-container uk-container-center">
-        <div class="uk-child-width-expand@ uk-child-width-1-3@m uk-grid-match" uk-grid>
-            <div class="uk-text-center ">
-
-                <span uk-icon="icon:users;ratio:5" class=""></span><br>
-                <h6 class="uk-card-title uk-text-center">
-                    500k+
-                    <small>Members</small>
-                </h6>
-
-            </div>
-            <div class="uk-text-center">
-                <span uk-icon="icon:happy; ratio:5"></span><br>
-                <h6 class=" uk-text-center uk-card-title uk-text-center">
-                    10k+
-                    <small>Communities</small>
-                </h6>
-            </div>
-            <div class="uk-text-center">
-                <span uk-icon="icon:star; ratio:5"></span><br>
-                <h6 class=" uk-text-center uk-card-title uk-text-center">
-                    100k+ <br>
-                    <small>Stories</small>
-                </h6>
-            </div>
         </div>
+
     </div>
+
+
+
+
 </section>
 
-
-<section class="pricing uk-section-default">
-    <div class="uk-section uk-section-small uk-background-cover">
-        <div class=uk-container>
-            <h2 class="uk-heading-line uk-text-center">
-                <span>Pricing</span>
-            </h2>
-
-            <p class="uk-text-center">
-                Our modest prices
-            </p>
-
-            <div class="uk-child-width-1-3@m uk-grid-match uk-grid" uk-grid>
-                <div class="uk-first-column">
-                    <div class="uk-card uk-card-secondary uk-card-hover uk-card-body">
-                        <h3 class="uk-card-title uk-text-center">Free</h3>
-                        <p>With our free package you can create your own <b title="create social network">social
-                            network</b> and start chatting on your favorites subjects</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-primary uk-card-hover uk-card-body">
-                        <h3 class="uk-card-title uk-text-center">Private</h3>
-                        <p>
-                            Build your private social group without the fear of being tracked . Your privacy is
-                            important for us .
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-secondary uk-card-hover uk-card-body">
-                        <h3 class="uk-card-title uk-text-center">Enterprise</h3>
-                        <p>
-                            Build your own enterprise groups and chat about the things you want to share with work
-                            colegues.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>

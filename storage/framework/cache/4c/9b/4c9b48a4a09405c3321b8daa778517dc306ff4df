@@ -1,0 +1,191 @@
+1528500175a:1:{s:16:"site/_header.htm";a:5:{s:8:"fileName";s:16:"site/_header.htm";s:7:"content";s:4185:"<header>
+    <div class="uk-position-top">
+        <div class="uk-overlay uk-position-top">
+            <nav class="uk-navbar-container uk-margin" style="z-index:980" uk-sticky="bottom: #offset" uk-navbar>
+                <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/">
+                   <a href="{{ url('/') }}" uk-icon="icon: happy;ratio:2">
+
+                   </a>
+
+                </a>
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        <li>
+                            <a href="{{ url('communities') }}" title="recent groups">
+                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span>
+                                Communities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url('stories') }}" title="recent posts">
+                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: rss"></span>
+                                Stories
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url('members') }}" title="recent members">
+                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span>
+                                Members
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+
+
+                        <li>
+
+                            {% if not user %}
+                                <a href="{{ url('account') }}" data-uk-icon="icon:user"></a>
+                            {% else %}
+
+                            <a href="#" data-uk-icon="icon:user"></a>
+
+                            <div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-nav-header uk-text-small uk-text-primary">Your Account</li>
+                                    <li><a href="{{ url('account') }}"><span data-uk-icon="icon: pencil"></span> Edit</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="{{ url('friends') }}"><span data-uk-icon="icon: user"></span> Your Friends</a></li>
+                                    <li><a href="{{ url('messages') }}"><span data-uk-icon="icon: mail"></span> Messages</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li>
+                                        <a data-request="onLogout" data-request-data="redirect: '/'">
+                                            <span data-uk-icon="icon: sign-out"></span>
+                                            Logout
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            {% endif %}
+                        </li>
+
+                    </ul>
+
+
+                    <!-- search modal !-->
+                    {% partial 'modals/search_modal' %}
+                    {% partial 'site/_side_menu' %}
+
+
+                    {% if user %}
+
+                    <div class="uk-inline uk-visible@l">
+                        <span uk-toggle="target: #offcanvas-flip" class="uk-margin-small-right uk-icon" uk-icon="icon: mail">
+                            <small class="uk-text-danger notification-circle"> 23 </small>
+                        </span>
+                    </div>
+
+                    {% endif %}
+
+                    <!-- to enable mobile only add uk-hidden@s !-->
+                    <a class="uk-navbar-toggle uk-hidden@s uk-hidden@m " uk-toggle="target: #offcanvas-usage">
+                        <span uk-navbar-toggle-icon></span>
+                        <span class="uk-margin-small-left">Menu</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>";s:5:"mtime";i:1528324480;s:6:"markup";s:4185:"<header>
+    <div class="uk-position-top">
+        <div class="uk-overlay uk-position-top">
+            <nav class="uk-navbar-container uk-margin" style="z-index:980" uk-sticky="bottom: #offset" uk-navbar>
+                <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/">
+                   <a href="{{ url('/') }}" uk-icon="icon: happy;ratio:2">
+
+                   </a>
+
+                </a>
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        <li>
+                            <a href="{{ url('communities') }}" title="recent groups">
+                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span>
+                                Communities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url('stories') }}" title="recent posts">
+                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: rss"></span>
+                                Stories
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url('members') }}" title="recent members">
+                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span>
+                                Members
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+
+
+                        <li>
+
+                            {% if not user %}
+                                <a href="{{ url('account') }}" data-uk-icon="icon:user"></a>
+                            {% else %}
+
+                            <a href="#" data-uk-icon="icon:user"></a>
+
+                            <div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-nav-header uk-text-small uk-text-primary">Your Account</li>
+                                    <li><a href="{{ url('account') }}"><span data-uk-icon="icon: pencil"></span> Edit</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="{{ url('friends') }}"><span data-uk-icon="icon: user"></span> Your Friends</a></li>
+                                    <li><a href="{{ url('messages') }}"><span data-uk-icon="icon: mail"></span> Messages</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li>
+                                        <a data-request="onLogout" data-request-data="redirect: '/'">
+                                            <span data-uk-icon="icon: sign-out"></span>
+                                            Logout
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            {% endif %}
+                        </li>
+
+                    </ul>
+
+
+                    <!-- search modal !-->
+                    {% partial 'modals/search_modal' %}
+                    {% partial 'site/_side_menu' %}
+
+
+                    {% if user %}
+
+                    <div class="uk-inline uk-visible@l">
+                        <span uk-toggle="target: #offcanvas-flip" class="uk-margin-small-right uk-icon" uk-icon="icon: mail">
+                            <small class="uk-text-danger notification-circle"> 23 </small>
+                        </span>
+                    </div>
+
+                    {% endif %}
+
+                    <!-- to enable mobile only add uk-hidden@s !-->
+                    <a class="uk-navbar-toggle uk-hidden@s uk-hidden@m " uk-toggle="target: #offcanvas-usage">
+                        <span uk-navbar-toggle-icon></span>
+                        <span class="uk-margin-small-left">Menu</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>";s:4:"code";N;}}

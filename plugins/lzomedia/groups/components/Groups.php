@@ -60,7 +60,7 @@ class Groups extends ComponentBase
      * @param integer $limit
      * @return mixed
      */
-    public function onGetGroups(int $limit = 24)
+    public function onGetGroups(int $limit = 10)
     {
 
         $this->initRepository();

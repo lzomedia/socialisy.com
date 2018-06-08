@@ -1,29 +1,14 @@
 <template>
 
     <!-- start the filter !-->
-    <div id="test" data-uk-filter="target: .js-filter">
+    <div id="filter" uk-filter="target: .js-filter">
 
 
-        <div class="uk-container uk-align-center filter-bar">
+
+        <div class="uk-container uk-container-expand uk-align-center filter-bar">
 
             <div class="uk-grid-small uk-flex-middle " uk-grid>
-                <div class="uk-width-expand">
 
-                    <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
-                        <div>
-                            <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li class="uk-active" uk-filter-control><a href="#">All</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li uk-filter-control="[data-category='yahoo']"><a href="#">Yahoo</a></li>
-                                <li uk-filter-control="[data-category='facebook']"><a href="#">Facebook</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
                 <div class="uk-text-nowrap">
 
                     <span class="uk-active" uk-filter-control="sort: data-name">
@@ -40,22 +25,23 @@
         </div>
 
 
-        <div class=" uk-container">
+        <div class="uk-container uk-container-expand">
+            <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-4@m uk-text-center uk-grid-small" uk-grid="masonry: true">
+                <li data-color="blue"
+                    data-size="small"
+                    data-name="B"
+                    v-for="group in groups" :class="group.type" :data-category="group.type" :data-name="group.name.slice(0,1)  ">
 
 
-            
-            <div class="selector uk-grid uk-child-width-1-3@m js-filter">
-                <div  packed v-for="group in groups" :class="group.type" :data-category="group.type" :data-name="group.name.slice(0,1)  ">
-                    <!-- card !-->
                     <div class="uk-card uk-card-small uk-card-default uk-box-shadow-large picture-item">
                         <div class="uk-card-header">
                             <div class="uk-grid uk-grid-small uk-text-small" data-uk-grid="">
                                 <div class="uk-width-expand uk-first-column">
-                                    <span class="cat-txt">
-                                      <a :href="'/dicover/' + group.url" class="">
-                                            {{ group.name| capitalize }}
-                                      </a>
-                                    </span>
+
+                                    <a :href="'/dicover/' + group.url" class="cat-txt">
+                                        {{ group.name| capitalize }}
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
@@ -95,9 +81,14 @@
                         </div>
                     </div>
 
-                </div>
-            </div>
+                </li>
 
+            </ul>
+
+        </div>
+
+
+        <div class="container">
 
             <div class="uk-align-center uk-animation-toggle">
 
@@ -106,7 +97,6 @@
                 </a>
 
             </div>
-
 
         </div>
 
@@ -121,6 +111,8 @@
     import Bricks from 'bricks.js';
     window.$ = window.jQuery = require('jquery');
 
+    import UIkit from 'uikit';
+    import * as uikit from 'uikit';
 
     export default {
 
@@ -132,12 +124,34 @@
             return {
                 groups: [],
                 page: 'api/onGetGroups',
-                defaultImage: '../assets/icon-disabled.svg',
-                instance: ''
+                instance: '',
+                filter:'',
+                grid:'',
 
             }
         },
 
+        /**
+         * @method
+         */
+        mounted() {
+
+            console.log('got mounted');
+
+            var sticky = UIkit.grid('#elements',{
+                masonry: true,
+                parallax:1,
+                margin:"uk-grid-margin"
+
+
+            });
+
+
+
+            console.log(sticky);
+
+
+        },
         /**
          *
          */
@@ -149,27 +163,21 @@
             this.viewMoreGroups();
 
 
-
-
         },
-        /**
-         * @method
-         */
-        mounted() {
 
-            $(function() {
-                $('[data-uk-grid]').on('beforeupdate.uk.grid', function(e, children) {
-                    // your event-handling goes here
-                });
-            });
+        activated(){
+
+            console.log('activated');
         },
 
         /**
-         *
+         * .$el.__uikit__.grid.masonry
          */
         methods: {
 
             viewMoreGroups() {
+
+                console.log(this);
 
                 let page = this.page;
 
@@ -182,7 +190,6 @@
 
 
                 });
-
 
             },
 
@@ -234,7 +241,7 @@
 
         } catch (error) {
 
-            console.error(error);
+
 
         }
 

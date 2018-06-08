@@ -58,9 +58,7 @@
   },
   "autoload": {
     "psr-4": {
-      "App\\": "app/",
-      "LzoMedia\\SocialExtractor\\": "packages/social-extractor/src/",
-      "LzoMedia\\GroupsExtractor\\": "packages/groups-extractor/src/"
+      "LzoMedia\\GroupsGenerator\\": "packages/groups-generator/src/"
     }
   },
   "scripts": {
