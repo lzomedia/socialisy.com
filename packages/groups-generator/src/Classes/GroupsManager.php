@@ -15,9 +15,15 @@ class GroupsManager extends Manager
     public $groups = [];
 
 
-    public function __construct()
+    private $extractor;
+
+
+
+    public function __construct(Extractor $extractor)
     {
         $this->groups = collect([]);
+
+        $this->extractor = $extractor;
     }
     
     /**
@@ -35,11 +41,10 @@ class GroupsManager extends Manager
         $this->groups = $groups;
     }
 
+
     public function start()
     {
-
-        return 'i should start the group manager';
-
+        return $this->extractor->get();
     }
 
 

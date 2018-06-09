@@ -11,7 +11,7 @@ const Communities = Vue.extend({
 
         <div>
             <div class="form-group">
-                <div data-uk-grid class=" uk-grid uk-grid-medium uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l  uk-child-width-1-4@xl uk-grid-match js-filter" data-uk-grid="masonry: true" data-uk-sortable="handle: .drag-icon">
+                <div data-uk-grid class=" uk-grid uk-grid-medium uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l  uk-child-width-1-4@xl uk-grid-match js-filter" data-uk-grid="masonry: true;paralax:true" data-uk-sortable="handle: .drag-icon">
                     <!--card !-->
                     <div  v-for="item in items" class="nature-card">
                         <div class="uk-card uk-card-small uk-card-default">
@@ -62,19 +62,19 @@ const Communities = Vue.extend({
                             <!-- /card -->
                         </div>
 
-
-
-
-
-
-                        <div class="uk-clearfix"></div>
+                        
 
 
                     </div>
                 </div>
             </div>
+            
+            <div class="uk-clearfix"></div>
 
             <div class="uk-container">
+
+                <div v-show="loading" uk-spinner></div>
+
 
                 <div class="uk-align-center uk-animation-toggle">
 
@@ -95,6 +95,7 @@ const Communities = Vue.extend({
             items: [],
             loadPage: '',
             page: '/api/onGetGroups',
+            loading: false
         }
     },
     /**
@@ -109,13 +110,17 @@ const Communities = Vue.extend({
 
         console.log('load-more-action');
 
+    },
 
 
+    ready: function() {
 
-
+        this.loading = true;
     },
 
     beforeMount() {
+
+        this.loading = true;
 
         this.viewMoreGroups();
 
@@ -123,29 +128,14 @@ const Communities = Vue.extend({
     },
     mounted(){
 
-        let _this= this;
 
-        $(window).scroll(
-            function (event) {
-                var test = inView.is(document.querySelector('#view-more'));
-                console.log(test);
+        this.viewMoreGroups();
 
-                if(test){
-
-                    _this.viewMoreGroups();
-
-                    stop();
-
-                }
-            }
-        );
 
     },
     methods: {
 
         viewMoreGroups() {
-
-            console.log(this);
 
             let page = this.page;
 
@@ -154,6 +144,8 @@ const Communities = Vue.extend({
                 this.items = this.items.concat(response.data.data);
 
                 this.page = response.data.next_page_url;
+
+                this.loading = false;
 
             });
 
@@ -180,7 +172,7 @@ const Communities = Vue.extend({
 
             if (value == 0) {
 
-                return 'https://picsum.photos/300/300/?random=5';
+                return 'https://picsum.photos/300/300/?random';
             }
 
             return value;

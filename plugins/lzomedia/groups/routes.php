@@ -73,16 +73,6 @@
 });
 
 
-\Route::get('/api/onGetGroups', function () {
-
-
-    $groups = new \LzoMedia\Groups\Components\Groups();
-
-    return $groups->onGetGroups();
-
-
-});
-
 
 
 

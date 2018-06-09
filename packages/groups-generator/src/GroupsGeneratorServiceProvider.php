@@ -20,33 +20,8 @@ class GroupsGeneratorServiceProvider extends ServiceProvider
     public function boot()
     {
 
-        Route::get('/testing/', function (){
 
 
-
-            $manager = new GroupsManager();
-
-            $processor = new Processor();
-
-            $processor->setManager($manager);
-
-            echo $processor->start();
-
-
-
-
-
-            // init the client
-
-            // start the extraction
-
-
-
-            //clean
-
-            //return
-
-        });
 
     }
 

@@ -134,4 +134,11 @@ return [
 
     ]),
 
+
+
+    'slack' => [
+
+        'generate' => 'TB444D6C9/BB5MLUVJB/QeDfCYE7nOIPgqHPnRpGNyNI'
+    ]
+
 ];

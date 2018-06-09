@@ -177,13 +177,14 @@
 
             viewMoreGroups() {
 
-                console.log(this);
 
                 let page = this.page;
 
                 getGroups(page).then((response) => {
 
-                    this.groups = this.groups.concat(response.data.data);
+                    console.log(response);
+
+                    this.groups = this.groups.concat(response.data);
 
                     this.page = response.data.next_page_url;
 
