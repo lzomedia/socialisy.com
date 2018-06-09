@@ -123,7 +123,7 @@
         data() {
             return {
                 groups: [],
-                page: 'api/onGetGroups',
+                page: '/api/onGetCommunities',
                 instance: '',
                 filter:'',
                 grid:'',
@@ -143,16 +143,16 @@
         beforeMount() {
 
 
-            this.scroll();
 
-            this.viewMoreGroups();
 
 
         },
 
         activated(){
 
-            console.log('activated');
+           // console.log('activated');
+
+            this.viewMoreGroups();
         },
 
         /**
@@ -167,11 +167,12 @@
 
                 getGroups(page).then((response) => {
 
-                    console.log(response);
 
-                    this.groups = this.groups.concat(response.data);
+                    this.groups = this.groups.concat(response);
 
-                    this.page = response.data.next_page_url;
+                    // console.log(this.groups);
+                  //
+                  //  this.page = response.data.next_page_url;
 
 
 
@@ -179,9 +180,6 @@
 
             },
 
-            scroll() {
-
-            },
 
         },
         filters: {

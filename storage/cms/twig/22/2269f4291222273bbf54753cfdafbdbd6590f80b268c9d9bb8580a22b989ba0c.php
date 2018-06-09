@@ -29,7 +29,7 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
 
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">
 
-    <title>Social Community - ";
+    <title>";
         // line 10
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "title", array()), "html", null, true);
         echo "</title>
@@ -230,7 +230,7 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
 
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no\">
 
-    <title>Social Community - {{ this.page.title }}</title>
+    <title>{{ this.page.title }}</title>
 
 
     <!-- SEO Meta !-->

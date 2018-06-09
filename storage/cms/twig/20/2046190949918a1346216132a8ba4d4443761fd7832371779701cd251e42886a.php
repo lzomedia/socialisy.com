@@ -37,25 +37,30 @@ class __TwigTemplate_c69c3e31f920ed8d3f8862f6733e8d954b8393b3150426b918641ba1bbd
             <li>
                 <a href=\"";
         // line 13
-        echo url("feeds");
-        echo "\"><span class=\"uk-margin-small-right\" uk-icon=\"icon: rss\"></span>
-                Feeds
+        echo url("stories");
+        echo "\">
+                 <span class=\"uk-margin-small-right\" uk-icon=\"icon: rss\"></span>
+                 Trending Stories
                 </a>
             </li>
             <li>
                 <a href=\"";
-        // line 18
-        echo url("members");
-        echo "\"><span class=\"uk-margin-small-right\" uk-icon=\"icon: star\"></span>
-                Members
+        // line 19
+        echo url("influencers");
+        echo "\">
+                    <span class=\"uk-margin-small-right\" uk-icon=\"icon: star\"></span>
+                    Influencers
                 </a>
             </li>
             <li class=\"uk-nav-divider\"></li>
-            <li><a href=\"";
-        // line 23
+            <li>
+                <a href=\"";
+        // line 26
         echo url("account");
-        echo "\"><span class=\"uk-margin-small-right\" uk-icon=\"icon: user\"></span> Account
-            </a></li>
+        echo "\"><span class=\"uk-margin-small-right\" uk-icon=\"icon: user\"></span>
+                    Account
+                </a>
+            </li>
         </ul>
     </div>
 </div>";
@@ -73,7 +78,7 @@ class __TwigTemplate_c69c3e31f920ed8d3f8862f6733e8d954b8393b3150426b918641ba1bbd
 
     public function getDebugInfo()
     {
-        return array (  56 => 23,  48 => 18,  40 => 13,  32 => 8,  23 => 1,);
+        return array (  59 => 26,  49 => 19,  40 => 13,  32 => 8,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -90,18 +95,23 @@ class __TwigTemplate_c69c3e31f920ed8d3f8862f6733e8d954b8393b3150426b918641ba1bbd
                 </a>
             </li>
             <li>
-                <a href=\"{{ url('feeds') }}\"><span class=\"uk-margin-small-right\" uk-icon=\"icon: rss\"></span>
-                Feeds
+                <a href=\"{{ url('stories') }}\">
+                 <span class=\"uk-margin-small-right\" uk-icon=\"icon: rss\"></span>
+                 Trending Stories
                 </a>
             </li>
             <li>
-                <a href=\"{{ url('members') }}\"><span class=\"uk-margin-small-right\" uk-icon=\"icon: star\"></span>
-                Members
+                <a href=\"{{ url('influencers') }}\">
+                    <span class=\"uk-margin-small-right\" uk-icon=\"icon: star\"></span>
+                    Influencers
                 </a>
             </li>
             <li class=\"uk-nav-divider\"></li>
-            <li><a href=\"{{ url('account') }}\"><span class=\"uk-margin-small-right\" uk-icon=\"icon: user\"></span> Account
-            </a></li>
+            <li>
+                <a href=\"{{ url('account') }}\"><span class=\"uk-margin-small-right\" uk-icon=\"icon: user\"></span>
+                    Account
+                </a>
+            </li>
         </ul>
     </div>
 </div>", "/shared/httpd/socialisy/htdocs/themes/network/partials/site/_side_menu.htm", "");

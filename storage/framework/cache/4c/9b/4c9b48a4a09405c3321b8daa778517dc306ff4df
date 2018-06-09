@@ -1,12 +1,11 @@
-1528558292a:1:{s:16:"site/_header.htm";a:5:{s:8:"fileName";s:16:"site/_header.htm";s:7:"content";s:4185:"<header>
+1528575649a:1:{s:16:"site/_header.htm";a:5:{s:8:"fileName";s:16:"site/_header.htm";s:7:"content";s:4223:"<header>
     <div class="uk-position-top">
         <div class="uk-overlay uk-position-top">
             <nav class="uk-navbar-container uk-margin" style="z-index:980" uk-sticky="bottom: #offset" uk-navbar>
                 <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/">
                    <a href="{{ url('/') }}" uk-icon="icon: happy;ratio:2">
-
+                       Social Trixy
                    </a>
-
                 </a>
                     <ul class="uk-navbar-nav uk-visible@m">
                         <li>
@@ -24,7 +23,7 @@
                         <li>
                             <a href="{{ url('members') }}" title="recent members">
                                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span>
-                                Members
+                                Influencers
                             </a>
                         </li>
                     </ul>
@@ -93,15 +92,14 @@
             </nav>
         </div>
     </div>
-</header>";s:5:"mtime";i:1528324480;s:6:"markup";s:4185:"<header>
+</header>";s:5:"mtime";i:1528573084;s:6:"markup";s:4223:"<header>
     <div class="uk-position-top">
         <div class="uk-overlay uk-position-top">
             <nav class="uk-navbar-container uk-margin" style="z-index:980" uk-sticky="bottom: #offset" uk-navbar>
                 <div class="uk-navbar-left"><a class="uk-navbar-item uk-logo" href="/">
                    <a href="{{ url('/') }}" uk-icon="icon: happy;ratio:2">
-
+                       Social Trixy
                    </a>
-
                 </a>
                     <ul class="uk-navbar-nav uk-visible@m">
                         <li>
@@ -119,7 +117,7 @@
                         <li>
                             <a href="{{ url('members') }}" title="recent members">
                                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: users"></span>
-                                Members
+                                Influencers
                             </a>
                         </li>
                     </ul>

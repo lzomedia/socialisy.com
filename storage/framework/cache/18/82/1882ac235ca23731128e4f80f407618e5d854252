@@ -1,63 +1,101 @@
-1528557969a:1:{s:19:"account/default.htm";a:5:{s:8:"fileName";s:19:"account/default.htm";s:7:"content";s:1949:"{% if not user %}
+1528576027a:1:{s:19:"account/default.htm";a:5:{s:8:"fileName";s:19:"account/default.htm";s:7:"content";s:3441:"{% if not user %}
 
-<div class="uk-container">
+<div class="uk-section uk-section-primary uk-light" style="height:100vh;padding-top:20vh">
 
-    <div class="uk-text-center" uk-grid>
-        <div class="uk-width-1-2">
-            <form data-request="onSignin">
+    <div class="uk-container">
+
+        <div class="uk-grid-match">
 
 
-                <fieldset class="uk-fieldset">
-                    <legend class="uk-legend uk-text-left">Login</legend>
-                    <div class="uk-margin">
-                        <div class="uk-inline uk-width-1-1">
-                            <span class="uk-form-icon uk-form-icon-flip" style="color:white" data-uk-icon="icon: user"></span>
-                            <input class="uk-input uk-form-large" name="login" required placeholder="Enter your {{ loginAttributeLabel|lower }}" type="text">
-                        </div>
-                    </div>
-                    <div class="uk-margin">
-                        <div class="uk-inline uk-width-1-1">
-                            <span class="uk-form-icon uk-form-icon-flip"  style="color:white" data-uk-icon="icon: lock"></span>
-                            <input class="uk-input uk-form-large" name="password" required placeholder="Password" type="password">
-                        </div>
-                    </div>
-                    <div class="uk-margin">
-                        <button type="submit" class="uk-button uk-button-primary uk-button-primary uk-button-large uk-width-1-1">LOG IN</button>
-                        <a uk-toggle="target: #register" class="uk-button uk-margin uk-button-danger uk-button-large uk-width-1-1">REGISTER</a>
-                    </div>
-                </fieldset>
-            </form>
+            <div uk-grid>
+
+
+                <div class="uk-width-1-2@l uk-align-center">
+
+                    <h1>
+                        Create an account
+                    </h1>
+
+                    <h4>It's free and always will be.</h4>
+                    <p>
+                        <small>We have even enterprise accounts</small>
+                    </p>
+                    <form data-request="onSignin">
+
+
+                        <fieldset class="uk-fieldset">
+
+                            <div class="uk-margin">
+                                <div class="uk-inline uk-width-1-1">
+                                    <span class="uk-form-icon uk-form-icon-flip" style="color:black"
+                                          data-uk-icon="icon: user"></span>
+                                    <input class="uk-input uk-form-large" name="login" required
+                                           placeholder="Enter your {{ loginAttributeLabel|lower }}" type="text">
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <div class="uk-inline uk-width-1-1">
+                                    <span class="uk-form-icon uk-form-icon-flip" style="color:black"
+                                          data-uk-icon="icon: lock"></span>
+                                    <input class="uk-input uk-form-large" name="password" required
+                                           placeholder="Password" type="password">
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <button type="submit"
+                                        class="uk-button uk-button-primary uk-button-primary uk-button-large uk-width-1-1">
+                                    LOG IN
+                                </button>
+                                <a uk-toggle="target: #register"
+                                   class="uk-button uk-margin uk-button-primary uk-button-secondary uk-button-large uk-width-1-1">REGISTER</a>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="uk-width-1-2@l uk-hidden@s uk-visible@l">
+
+                    <h2 class="_5iyx">Social Trixie</h2>
+
+                    <h4>
+                        It helps you connect and share with the people in your life.
+                    </h4>
+
+                    <img class="img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GwFs3_KxNjS.png" alt="" width="537" height="195">
+                </div>
+            </div>
         </div>
-        <div class="uk-width-1-2">
 
 
-        </div>
     </div>
-
-
-
 
     <!-- start the register modal !-->
     {% partial 'modals/register' %}
-
-
-
 </div>
-
+</div>
 {% else %}
 
 
-<div class="uk-container">
+<div class="uk-section uk-section-primary uk-light" style="height:100vh;padding-top:20vh">
+
+    <div class="uk-container">
+
+        <div class="uk-grid-match">
 
 
-    {% partial __SELF__ ~ '::activation_check' %}
+            <div uk-grid>
 
-    {% partial __SELF__ ~ '::update' %}
 
-    {% partial __SELF__ ~ '::deactivate_link' %}
+            {% partial __SELF__ ~ '::activation_check' %}
+
+            {% partial __SELF__ ~ '::update' %}
+
+            {% partial __SELF__ ~ '::deactivate_link' %}
+
+            </div>
+        </div>
+    </div>
 
 </div>
-
 
 
 {% endif %}
@@ -69,66 +107,104 @@
 
 
 
-";s:5:"mtime";i:1528557363;s:6:"markup";s:1940:"{% if not user %}
+";s:5:"mtime";i:1528575425;s:6:"markup";s:3432:"{% if not user %}
 
-<div class="uk-container">
+<div class="uk-section uk-section-primary uk-light" style="height:100vh;padding-top:20vh">
 
-    <div class="uk-text-center" uk-grid>
-        <div class="uk-width-1-2">
-            <form data-request="onSignin">
+    <div class="uk-container">
+
+        <div class="uk-grid-match">
 
 
-                <fieldset class="uk-fieldset">
-                    <legend class="uk-legend uk-text-left">Login</legend>
-                    <div class="uk-margin">
-                        <div class="uk-inline uk-width-1-1">
-                            <span class="uk-form-icon uk-form-icon-flip" style="color:white" data-uk-icon="icon: user"></span>
-                            <input class="uk-input uk-form-large" name="login" required placeholder="Enter your {{ loginAttributeLabel|lower }}" type="text">
-                        </div>
-                    </div>
-                    <div class="uk-margin">
-                        <div class="uk-inline uk-width-1-1">
-                            <span class="uk-form-icon uk-form-icon-flip"  style="color:white" data-uk-icon="icon: lock"></span>
-                            <input class="uk-input uk-form-large" name="password" required placeholder="Password" type="password">
-                        </div>
-                    </div>
-                    <div class="uk-margin">
-                        <button type="submit" class="uk-button uk-button-primary uk-button-primary uk-button-large uk-width-1-1">LOG IN</button>
-                        <a uk-toggle="target: #register" class="uk-button uk-margin uk-button-danger uk-button-large uk-width-1-1">REGISTER</a>
-                    </div>
-                </fieldset>
-            </form>
+            <div uk-grid>
+
+
+                <div class="uk-width-1-2@l uk-align-center">
+
+                    <h1>
+                        Create an account
+                    </h1>
+
+                    <h4>It's free and always will be.</h4>
+                    <p>
+                        <small>We have even enterprise accounts</small>
+                    </p>
+                    <form data-request="onSignin">
+
+
+                        <fieldset class="uk-fieldset">
+
+                            <div class="uk-margin">
+                                <div class="uk-inline uk-width-1-1">
+                                    <span class="uk-form-icon uk-form-icon-flip" style="color:black"
+                                          data-uk-icon="icon: user"></span>
+                                    <input class="uk-input uk-form-large" name="login" required
+                                           placeholder="Enter your {{ loginAttributeLabel|lower }}" type="text">
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <div class="uk-inline uk-width-1-1">
+                                    <span class="uk-form-icon uk-form-icon-flip" style="color:black"
+                                          data-uk-icon="icon: lock"></span>
+                                    <input class="uk-input uk-form-large" name="password" required
+                                           placeholder="Password" type="password">
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <button type="submit"
+                                        class="uk-button uk-button-primary uk-button-primary uk-button-large uk-width-1-1">
+                                    LOG IN
+                                </button>
+                                <a uk-toggle="target: #register"
+                                   class="uk-button uk-margin uk-button-primary uk-button-secondary uk-button-large uk-width-1-1">REGISTER</a>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="uk-width-1-2@l uk-hidden@s uk-visible@l">
+
+                    <h2 class="_5iyx">Social Trixie</h2>
+
+                    <h4>
+                        It helps you connect and share with the people in your life.
+                    </h4>
+
+                    <img class="img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GwFs3_KxNjS.png" alt="" width="537" height="195">
+                </div>
+            </div>
         </div>
-        <div class="uk-width-1-2">
 
 
-        </div>
     </div>
-
-
-
 
     <!-- start the register modal !-->
     {% partial 'modals/register' %}
-
-
-
 </div>
-
+</div>
 {% else %}
 
 
-<div class="uk-container">
+<div class="uk-section uk-section-primary uk-light" style="height:100vh;padding-top:20vh">
+
+    <div class="uk-container">
+
+        <div class="uk-grid-match">
 
 
-    {% partial __SELF__ ~ '::activation_check' %}
+            <div uk-grid>
 
-    {% partial __SELF__ ~ '::update' %}
 
-    {% partial __SELF__ ~ '::deactivate_link' %}
+            {% partial __SELF__ ~ '::activation_check' %}
+
+            {% partial __SELF__ ~ '::update' %}
+
+            {% partial __SELF__ ~ '::deactivate_link' %}
+
+            </div>
+        </div>
+    </div>
 
 </div>
-
 
 
 {% endif %}";s:4:"code";N;}}

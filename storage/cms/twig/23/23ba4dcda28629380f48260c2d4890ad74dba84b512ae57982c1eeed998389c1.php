@@ -20,16 +20,9 @@ class __TwigTemplate_3807de567281e3b869da7e216d61997bc73f9fb8880f92b8a79f7317529
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<section class=\"uk-section uk-section-large\">
-    <div class=\"uk-container uk-container-small uk-text-center\">
-        ";
-        // line 3
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("account"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 4
-        echo "    </div>
-</section>";
     }
 
     public function getTemplateName()
@@ -44,15 +37,11 @@ class __TwigTemplate_3807de567281e3b869da7e216d61997bc73f9fb8880f92b8a79f7317529
 
     public function getDebugInfo()
     {
-        return array (  31 => 4,  27 => 3,  23 => 1,);
+        return array (  23 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("<section class=\"uk-section uk-section-large\">
-    <div class=\"uk-container uk-container-small uk-text-center\">
-        {% component 'account' %}
-    </div>
-</section>", "/shared/httpd/socialisy/htdocs/themes/network/pages/account.htm", "");
+        return new Twig_Source("{% component 'account' %}", "/shared/httpd/socialisy/htdocs/themes/network/pages/account.htm", "");
     }
 }

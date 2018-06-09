@@ -10,7 +10,7 @@ Route::get('/robot/{key?}',  array('as' => 'robot.start', function($key = null)
 {
 
     switch ($key){
-        case 'update':
+        case 'start':
             Artisan::call('communities:generate');
         break;
         case 'revert':
@@ -31,8 +31,8 @@ Route::get('/api/onGetGroups', function () {
 
     $communities =  new \LzoMedia\Communities\Components\Communities();
 
-    $data = $communities->initRepository(24);
+    $data['groups'] = $communities->initRepository(24);
 
-    return $data;
+    return $data['groups'];
 
 });

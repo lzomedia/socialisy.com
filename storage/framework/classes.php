@@ -292,4 +292,6 @@
   'LzoMedia\\Communities\\Models\\Community' => 'plugins/lzomedia/communities/models/Community.php',
   'LzoMedia\\Communities\\Components\\Communities' => 'plugins/lzomedia/communities/components/Communities.php',
   'LzoMedia\\Communities\\Components\\Community' => 'plugins/lzomedia/communities/components/Community.php',
+  'keios\\multisite\\Plugin' => 'plugins/keios/multisite/Plugin.php',
+  'Keios\\Multisite\\Models\\Setting' => 'plugins/keios/multisite/models/Setting.php',
 );

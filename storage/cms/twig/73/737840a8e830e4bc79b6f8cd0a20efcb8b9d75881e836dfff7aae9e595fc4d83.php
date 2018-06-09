@@ -23,16 +23,14 @@ class __TwigTemplate_e490fb2865d10eac21257b7b0aa1592dae6e28c4e62778692c47ff4bbbc
         echo "<div id=\"register\" class=\"uk-modal-container\" uk-modal>
     <div class=\"uk-modal-dialog\">
         <button class=\"uk-modal-close-full uk-close-large\" type=\"button\" uk-close></button>
-        <div class=\"uk-grid-collapse uk-child-width-1-2@s uk-flex-middle\" uk-grid>
-
             <div class=\"uk-padding\">
 
 
 
                 ";
-        // line 10
+        // line 8
         if (($context["canRegister"] ?? null)) {
-            // line 11
+            // line 9
             echo "
 
 
@@ -43,23 +41,23 @@ class __TwigTemplate_e490fb2865d10eac21257b7b0aa1592dae6e28c4e62778692c47ff4bbbc
                         <legend class=\"uk-legend\">Register new user</legend>
                         <div class=\"uk-margin\">
                             <div class=\"uk-inline uk-width-1-1\">
-                                <span class=\"uk-form-icon uk-form-icon-flip\" style=\"color:white\" data-uk-icon=\"icon: user\"></span>
-                                <input class=\"uk-input uk-form-large\" name=\"name\"  placeholder=\"Enter your name\" type=\"text\">
+                                <span class=\"uk-form-icon uk-form-icon-flip\" style=\"color:black\" data-uk-icon=\"icon: user\"></span>
+                                <input class=\"uk-input uk-form-large\" name=\"name\"  placeholder=\"@username\" type=\"text\">
                             </div>
                         </div>
                         <div class=\"uk-margin\">
                             <div class=\"uk-inline uk-width-1-1\">
-                                <span class=\"uk-form-icon uk-form-icon-flip\" style=\"color:white\" data-uk-icon=\"icon: user\"></span>
-                                <input class=\"uk-input uk-form-large\" name=\"email\" required placeholder=\"Enter your ";
-            // line 28
+                                <span class=\"uk-form-icon uk-form-icon-flip\" style=\"color:black\" data-uk-icon=\"icon: mail\"></span>
+                                <input class=\"uk-input uk-form-large\" name=\"email\" required placeholder=\"@ ";
+            // line 26
             echo twig_escape_filter($this->env, twig_lower_filter($this->env, ($context["loginAttributeLabel"] ?? null)), "html", null, true);
             echo "\" type=\"email\">
                             </div>
                         </div>
                         <div class=\"uk-margin\">
                             <div class=\"uk-inline uk-width-1-1\">
-                                <span class=\"uk-form-icon uk-form-icon-flip\"  style=\"color:white\" data-uk-icon=\"icon: lock\"></span>
-                                <input class=\"uk-input uk-form-large\" name=\"password\" required placeholder=\"Password\" type=\"password\">
+                                <span class=\"uk-form-icon uk-form-icon-flip\"  style=\"color:black\" data-uk-icon=\"icon: lock\"></span>
+                                <input class=\"uk-input uk-form-large\" name=\"password\" required placeholder=\"password\" type=\"password\">
                             </div>
                         </div>
                         <div class=\"uk-margin\">
@@ -77,19 +75,19 @@ class __TwigTemplate_e490fb2865d10eac21257b7b0aa1592dae6e28c4e62778692c47ff4bbbc
                 <div class=\"uk-margin\">
 
                     ";
-            // line 51
+            // line 49
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(($context["social_login_links"] ?? null));
             foreach ($context['_seq'] as $context["name"] => $context["link"]) {
-                // line 52
+                // line 50
                 echo "
                     <a class=\"uk-button uk-button-primary uk-button-large uk-width-1-1 uk-margin\" href=\"";
-                // line 53
+                // line 51
                 echo twig_escape_filter($this->env, $context["link"], "html", null, true);
                 echo "\">
                         <span uk-icon=\"icon: facebook; ratio: 2\"></span>
                         ";
-                // line 55
+                // line 53
                 echo twig_escape_filter($this->env, $context["name"], "html", null, true);
                 echo "
                     </a>
@@ -99,22 +97,19 @@ class __TwigTemplate_e490fb2865d10eac21257b7b0aa1592dae6e28c4e62778692c47ff4bbbc
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['name'], $context['link'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 59
+            // line 57
             echo "                </div>
 
                 ";
         } else {
-            // line 62
+            // line 60
             echo "                <!-- Registration is disabled. -->
                 ";
         }
-        // line 64
+        // line 62
         echo "
 
             </div>
-
-           <div>
-               content like reademe
            </div>
         </div>
     </div>
@@ -133,7 +128,7 @@ class __TwigTemplate_e490fb2865d10eac21257b7b0aa1592dae6e28c4e62778692c47ff4bbbc
 
     public function getDebugInfo()
     {
-        return array (  112 => 64,  108 => 62,  103 => 59,  93 => 55,  88 => 53,  85 => 52,  81 => 51,  55 => 28,  36 => 11,  34 => 10,  23 => 1,);
+        return array (  110 => 62,  106 => 60,  101 => 57,  91 => 53,  86 => 51,  83 => 50,  79 => 49,  53 => 26,  34 => 9,  32 => 8,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -141,8 +136,6 @@ class __TwigTemplate_e490fb2865d10eac21257b7b0aa1592dae6e28c4e62778692c47ff4bbbc
         return new Twig_Source("<div id=\"register\" class=\"uk-modal-container\" uk-modal>
     <div class=\"uk-modal-dialog\">
         <button class=\"uk-modal-close-full uk-close-large\" type=\"button\" uk-close></button>
-        <div class=\"uk-grid-collapse uk-child-width-1-2@s uk-flex-middle\" uk-grid>
-
             <div class=\"uk-padding\">
 
 
@@ -158,20 +151,20 @@ class __TwigTemplate_e490fb2865d10eac21257b7b0aa1592dae6e28c4e62778692c47ff4bbbc
                         <legend class=\"uk-legend\">Register new user</legend>
                         <div class=\"uk-margin\">
                             <div class=\"uk-inline uk-width-1-1\">
-                                <span class=\"uk-form-icon uk-form-icon-flip\" style=\"color:white\" data-uk-icon=\"icon: user\"></span>
-                                <input class=\"uk-input uk-form-large\" name=\"name\"  placeholder=\"Enter your name\" type=\"text\">
+                                <span class=\"uk-form-icon uk-form-icon-flip\" style=\"color:black\" data-uk-icon=\"icon: user\"></span>
+                                <input class=\"uk-input uk-form-large\" name=\"name\"  placeholder=\"@username\" type=\"text\">
                             </div>
                         </div>
                         <div class=\"uk-margin\">
                             <div class=\"uk-inline uk-width-1-1\">
-                                <span class=\"uk-form-icon uk-form-icon-flip\" style=\"color:white\" data-uk-icon=\"icon: user\"></span>
-                                <input class=\"uk-input uk-form-large\" name=\"email\" required placeholder=\"Enter your {{ loginAttributeLabel|lower }}\" type=\"email\">
+                                <span class=\"uk-form-icon uk-form-icon-flip\" style=\"color:black\" data-uk-icon=\"icon: mail\"></span>
+                                <input class=\"uk-input uk-form-large\" name=\"email\" required placeholder=\"@ {{ loginAttributeLabel|lower }}\" type=\"email\">
                             </div>
                         </div>
                         <div class=\"uk-margin\">
                             <div class=\"uk-inline uk-width-1-1\">
-                                <span class=\"uk-form-icon uk-form-icon-flip\"  style=\"color:white\" data-uk-icon=\"icon: lock\"></span>
-                                <input class=\"uk-input uk-form-large\" name=\"password\" required placeholder=\"Password\" type=\"password\">
+                                <span class=\"uk-form-icon uk-form-icon-flip\"  style=\"color:black\" data-uk-icon=\"icon: lock\"></span>
+                                <input class=\"uk-input uk-form-large\" name=\"password\" required placeholder=\"password\" type=\"password\">
                             </div>
                         </div>
                         <div class=\"uk-margin\">
@@ -204,9 +197,6 @@ class __TwigTemplate_e490fb2865d10eac21257b7b0aa1592dae6e28c4e62778692c47ff4bbbc
 
 
             </div>
-
-           <div>
-               content like reademe
            </div>
         </div>
     </div>

@@ -47,8 +47,8 @@ class __TwigTemplate_2046252b28454ad5607148c39d508f0bcb2b9cb0e5253bccbfb94ef024a
                         <div class=\"uk-form-controls\">
                             <div class=\"uk-margin uk-grid-small uk-child-width-auto uk-grid\">
 
-                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"public\"> Public</label><br>
-                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"private\"> Private</label><br>
+                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"personal\"> Personal</label><br>
+                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"profesional\"> Professional</label><br>
                             <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"enterprise\"> Enterprise</label>
                             </div>
                         </div>
@@ -121,8 +121,8 @@ class __TwigTemplate_2046252b28454ad5607148c39d508f0bcb2b9cb0e5253bccbfb94ef024a
                         <div class=\"uk-form-controls\">
                             <div class=\"uk-margin uk-grid-small uk-child-width-auto uk-grid\">
 
-                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"public\"> Public</label><br>
-                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"private\"> Private</label><br>
+                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"personal\"> Personal</label><br>
+                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"profesional\"> Professional</label><br>
                             <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"enterprise\"> Enterprise</label>
                             </div>
                         </div>

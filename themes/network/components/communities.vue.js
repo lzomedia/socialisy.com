@@ -15,6 +15,9 @@ const Communities = Vue.extend({
                     <!--card !-->
                     <div  v-for="item in items" class="nature-card">
                         <div class="uk-card uk-card-small uk-card-default">
+                            
+                            {{ item }}
+                            
                             <div class="uk-card-header">
 
                                 <div class="uk-grid uk-grid-small uk-text-small" data-uk-grid>
@@ -115,15 +118,12 @@ const Communities = Vue.extend({
 
     ready: function() {
 
-        this.loading = true;
+        this.loading = false;
     },
 
     beforeMount() {
 
         this.loading = true;
-
-        this.viewMoreGroups();
-
 
     },
     mounted(){
@@ -140,6 +140,11 @@ const Communities = Vue.extend({
             let page = this.page;
 
             getGroups(page).then((response) => {
+
+
+                console.log(response.data.data);
+
+                stop();
 
                 this.items = this.items.concat(response.data.data);
 

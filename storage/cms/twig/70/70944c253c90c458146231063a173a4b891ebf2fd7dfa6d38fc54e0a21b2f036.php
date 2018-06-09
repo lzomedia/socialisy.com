@@ -29,14 +29,13 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
         // line 6
         echo url("/");
         echo "\" uk-icon=\"icon: happy;ratio:2\">
-
+                       Social Trixy
                    </a>
-
                 </a>
                     <ul class=\"uk-navbar-nav uk-visible@m\">
                         <li>
                             <a href=\"";
-        // line 13
+        // line 12
         echo url("communities");
         echo "\" title=\"recent groups\">
                                 <span class=\"uk-icon uk-margin-small-right\" uk-icon=\"icon: users\"></span>
@@ -45,7 +44,7 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                         </li>
                         <li>
                             <a href=\"";
-        // line 19
+        // line 18
         echo url("stories");
         echo "\" title=\"recent posts\">
                                 <span class=\"uk-icon uk-margin-small-right\" uk-icon=\"icon: rss\"></span>
@@ -54,11 +53,11 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                         </li>
                         <li>
                             <a href=\"";
-        // line 25
+        // line 24
         echo url("members");
         echo "\" title=\"recent members\">
                                 <span class=\"uk-icon uk-margin-small-right\" uk-icon=\"icon: users\"></span>
-                                Members
+                                Influencers
                             </a>
                         </li>
                     </ul>
@@ -74,15 +73,15 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                         <li>
 
                             ";
-        // line 42
+        // line 41
         if ( !($context["user"] ?? null)) {
-            // line 43
+            // line 42
             echo "                                <a href=\"";
             echo url("account");
             echo "\" data-uk-icon=\"icon:user\"></a>
                             ";
         } else {
-            // line 45
+            // line 44
             echo "
                             <a href=\"#\" data-uk-icon=\"icon:user\"></a>
 
@@ -90,16 +89,16 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                                 <ul class=\"uk-nav uk-navbar-dropdown-nav\">
                                     <li class=\"uk-nav-header uk-text-small uk-text-primary\">Your Account</li>
                                     <li><a href=\"";
-            // line 51
+            // line 50
             echo url("account");
             echo "\"><span data-uk-icon=\"icon: pencil\"></span> Edit</a></li>
                                     <li class=\"uk-nav-divider\"></li>
                                     <li><a href=\"";
-            // line 53
+            // line 52
             echo url("friends");
             echo "\"><span data-uk-icon=\"icon: user\"></span> Your Friends</a></li>
                                     <li><a href=\"";
-            // line 54
+            // line 53
             echo url("messages");
             echo "\"><span data-uk-icon=\"icon: mail\"></span> Messages</a></li>
                                     <li class=\"uk-nav-divider\"></li>
@@ -115,7 +114,7 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
 
                             ";
         }
-        // line 67
+        // line 66
         echo "                        </li>
 
                     </ul>
@@ -123,22 +122,22 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
 
                     <!-- search modal !-->
                     ";
-        // line 73
+        // line 72
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("modals/search_modal"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 74
+        // line 73
         echo "                    ";
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/_side_menu"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 75
+        // line 74
         echo "
 
                     ";
-        // line 77
+        // line 76
         if (($context["user"] ?? null)) {
-            // line 78
+            // line 77
             echo "
                     <div class=\"uk-inline uk-visible@l\">
                         <span uk-toggle=\"target: #offcanvas-flip\" class=\"uk-margin-small-right uk-icon\" uk-icon=\"icon: mail\">
@@ -148,7 +147,7 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
 
                     ";
         }
-        // line 86
+        // line 85
         echo "
                     <!-- to enable mobile only add uk-hidden@s !-->
                     <a class=\"uk-navbar-toggle uk-hidden@s uk-hidden@m \" uk-toggle=\"target: #offcanvas-usage\">
@@ -174,7 +173,7 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
 
     public function getDebugInfo()
     {
-        return array (  152 => 86,  142 => 78,  140 => 77,  136 => 75,  131 => 74,  127 => 73,  119 => 67,  103 => 54,  99 => 53,  94 => 51,  86 => 45,  80 => 43,  78 => 42,  58 => 25,  49 => 19,  40 => 13,  30 => 6,  23 => 1,);
+        return array (  151 => 85,  141 => 77,  139 => 76,  135 => 74,  130 => 73,  126 => 72,  118 => 66,  102 => 53,  98 => 52,  93 => 50,  85 => 44,  79 => 42,  77 => 41,  57 => 24,  48 => 18,  39 => 12,  30 => 6,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -185,9 +184,8 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
             <nav class=\"uk-navbar-container uk-margin\" style=\"z-index:980\" uk-sticky=\"bottom: #offset\" uk-navbar>
                 <div class=\"uk-navbar-left\"><a class=\"uk-navbar-item uk-logo\" href=\"/\">
                    <a href=\"{{ url('/') }}\" uk-icon=\"icon: happy;ratio:2\">
-
+                       Social Trixy
                    </a>
-
                 </a>
                     <ul class=\"uk-navbar-nav uk-visible@m\">
                         <li>
@@ -205,7 +203,7 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                         <li>
                             <a href=\"{{ url('members') }}\" title=\"recent members\">
                                 <span class=\"uk-icon uk-margin-small-right\" uk-icon=\"icon: users\"></span>
-                                Members
+                                Influencers
                             </a>
                         </li>
                     </ul>

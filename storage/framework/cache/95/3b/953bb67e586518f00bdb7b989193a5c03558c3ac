@@ -1,4 +1,4 @@
-1528558292a:1:{s:19:"site/_side_menu.htm";a:5:{s:8:"fileName";s:19:"site/_side_menu.htm";s:7:"content";s:1136:"<div id="offcanvas-usage" uk-offcanvas="mode: slide; overlay: true;flip: true">
+1528575649a:1:{s:19:"site/_side_menu.htm";a:5:{s:8:"fileName";s:19:"site/_side_menu.htm";s:7:"content";s:1255:"<div id="offcanvas-usage" uk-offcanvas="mode: slide; overlay: true;flip: true">
     <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type=button uk-close></button>
         <ul class="uk-nav uk-nav-default">
@@ -10,22 +10,27 @@
                 </a>
             </li>
             <li>
-                <a href="{{ url('feeds') }}"><span class="uk-margin-small-right" uk-icon="icon: rss"></span>
-                Feeds
+                <a href="{{ url('stories') }}">
+                 <span class="uk-margin-small-right" uk-icon="icon: rss"></span>
+                 Trending Stories
                 </a>
             </li>
             <li>
-                <a href="{{ url('members') }}"><span class="uk-margin-small-right" uk-icon="icon: star"></span>
-                Members
+                <a href="{{ url('influencers') }}">
+                    <span class="uk-margin-small-right" uk-icon="icon: star"></span>
+                    Influencers
                 </a>
             </li>
             <li class="uk-nav-divider"></li>
-            <li><a href="{{ url('account') }}"><span class="uk-margin-small-right" uk-icon="icon: user"></span> Account
-            </a></li>
+            <li>
+                <a href="{{ url('account') }}"><span class="uk-margin-small-right" uk-icon="icon: user"></span>
+                    Account
+                </a>
+            </li>
         </ul>
     </div>
 </div>
-";s:5:"mtime";i:1528557558;s:6:"markup";s:1135:"<div id="offcanvas-usage" uk-offcanvas="mode: slide; overlay: true;flip: true">
+";s:5:"mtime";i:1528572404;s:6:"markup";s:1254:"<div id="offcanvas-usage" uk-offcanvas="mode: slide; overlay: true;flip: true">
     <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type=button uk-close></button>
         <ul class="uk-nav uk-nav-default">
@@ -37,18 +42,23 @@
                 </a>
             </li>
             <li>
-                <a href="{{ url('feeds') }}"><span class="uk-margin-small-right" uk-icon="icon: rss"></span>
-                Feeds
+                <a href="{{ url('stories') }}">
+                 <span class="uk-margin-small-right" uk-icon="icon: rss"></span>
+                 Trending Stories
                 </a>
             </li>
             <li>
-                <a href="{{ url('members') }}"><span class="uk-margin-small-right" uk-icon="icon: star"></span>
-                Members
+                <a href="{{ url('influencers') }}">
+                    <span class="uk-margin-small-right" uk-icon="icon: star"></span>
+                    Influencers
                 </a>
             </li>
             <li class="uk-nav-divider"></li>
-            <li><a href="{{ url('account') }}"><span class="uk-margin-small-right" uk-icon="icon: user"></span> Account
-            </a></li>
+            <li>
+                <a href="{{ url('account') }}"><span class="uk-margin-small-right" uk-icon="icon: user"></span>
+                    Account
+                </a>
+            </li>
         </ul>
     </div>
 </div>";s:4:"code";N;}}

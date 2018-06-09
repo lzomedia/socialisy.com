@@ -1,7 +1,7 @@
-1528558292a:1:{s:8:"home.htm";a:14:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:7277:"title = "Socialisy the best social network community to join and chat with your friends"
+1528576132a:1:{s:8:"home.htm";a:15:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:6880:"title = "Laravel Community Cms - the best social network community to join and chat with your friends"
 url = "/"
 layout = "default"
-meta_title = "Socialisy the best social network community to join and chat with your friends"
+meta_title = "Laravel Community the best social network community build with laravel and october cms to join and chat with your friends"
 meta_description = "Join the best community where you can chat with friends and family in your own private groups without the fear of beeing tracked ."
 is_hidden = 0
 [account]
@@ -9,7 +9,7 @@ is_hidden = 0
 [session]
 security = "all"
 redirect = "home"
-
+[Communities]
 ==
 
 <section class="uk-section uk-section-small uk-padding-remove">
@@ -17,13 +17,19 @@ redirect = "home"
         <img src="https://picsum.photos/1300/500/?random" alt="Alt img" data-uk-cover="" class="uk-cover" style="width: 1171px; height: 450px;">
         <div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-light uk-text-center">
             <div data-uk-scrollspy="cls: uk-animation-slide-bottom-small" class="uk-scrollspy-inview uk-animation-slide-bottom-small" style="">
-                <i uk-icon=icon:star;ratio:10></i>
+                <i style="color:#0f6ecd" uk-icon=icon:star;ratio:10></i>
+
+
                 <h1 class="uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent uk-heading-line uk-text-center">
                     <span>Laravel Community CMS</span>
                 </h1>
+
                 <p>
-                    Build with UiKit, Laravel, Python, Npl ...
+                    Build with UiKit, Laravel, Python, NPL ...
                 </p>
+
+
+
                 <a href="#" uk-toggle="target: #register" class="uk-button uk-button-default uk-margin-top">
                     Register
                 </a>
@@ -39,7 +45,7 @@ redirect = "home"
         <header class="uk-text-center">
             <h1 class="uk-heading-primary">Price</h1>
             <p class="uk-width-3-5 uk-margin-auto">
-                Our Product is the easiest way for teams to track their works progress. Our advance plans give you more tools to get the job done.
+                Our Product is the easiest way for creating and managing communities. Our advance plans give you more tools to get the job \done.
             </p>
         </header>
         <div class="uk-grid uk-grid-small uk-child-width-1-3@m uk-margin-medium-top uk-grid-match" data-uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > .uk-card; delay: 200" data-uk-grid="">
@@ -53,19 +59,20 @@ redirect = "home"
                     <div class="uk-card-body uk-flex-1">
                         <div class="uk-flex uk-flex-middle uk-flex-center">
 										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
-											<span style="font-size: 0.5em">$</span>9<small>.99</small>
+											<span style="font-size: 0.5em">$</span>0
 										</span>
                         </div>
-                        <div class="uk-text-small uk-text-center uk-text-muted">Per member billed annually</div>
+                        <div class="uk-text-small uk-text-center uk-text-muted">Per community billed annually</div>
                         <ul>
-                            <li>2 users included</li>
+                            <li>1 community included</li>
                             <li>1 GB of storage</li>
-                            <li>A beer jar</li>
+                            <li>Email support</li>
+                            <li>10 tokens</li>
 
                         </ul>
                     </div>
                     <div class="uk-card-footer">
-                        <a href="#" class="uk-button uk-button-primary uk-width-1-1">BUY NOW</a>
+                        <a href="{{     url('account') }}" class="uk-button uk-button-primary uk-width-1-1">FREE</a>
                     </div>
                 </div>
             </div>
@@ -80,19 +87,19 @@ redirect = "home"
                     <div class="uk-card-body uk-flex-1">
                         <div class="uk-flex uk-flex-middle uk-flex-center">
 										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
-											<span style="font-size: 0.5em">$</span>89<small>.99</small>
+											<span style="font-size: 0.5em">$</span> 0. <small>99</small>
 										</span>
                         </div>
-                        <div class="uk-text-small uk-text-center uk-text-muted">Per member billed annually</div>
+                        <div class="uk-text-small uk-text-center uk-text-muted">Per community billed annually</div>
                         <ul>
-                            <li>10 users included</li>
+                            <li>10 communities included</li>
                             <li>5 GB of storage</li>
                             <li>Email support</li>
-                            <li>A beer jar with beer inside!</li>
+                            <li>100 tokens</li>
                         </ul>
                     </div>
                     <div class="uk-card-footer">
-                        <a href="" class="uk-button uk-button-primary uk-width-1-1">BUY NOW</a>
+                        <a href="#" class="uk-button uk-button-primary uk-width-1-1">Free first year</a>
                     </div>
                 </div>
             </div>
@@ -106,42 +113,48 @@ redirect = "home"
                     <div class="uk-card-body uk-flex-1">
                         <div class="uk-flex uk-flex-middle uk-flex-center">
 										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
-											<span style="font-size: 0.5em">$</span>299
+											<span style="font-size: 0.5em">$</span>3. <small>99</small>
 										</span>
                         </div>
-                        <div class="uk-text-small uk-text-center uk-text-muted">Per member billed annually</div>
+                        <div class="uk-text-small uk-text-center uk-text-muted">Per community billed annually</div>
                         <ul>
                             <li>Unlimited users</li>
                             <li>Unlimited storage</li>
                             <li>Email support</li>
-                            <li>Help center access</li>
+                            <li>1000 tokens</li>
                         </ul>
                     </div>
                     <div class="uk-card-footer">
-                        <a href="" class="uk-button uk-button-primary uk-width-1-1">BUY NOW</a>
+                        <a href="" class="uk-button uk-button-primary uk-width-1-1">Free first year</a>
                     </div>
                 </div>
             </div>
             <!-- /price -->
 
         </div>
-        <div class="uk-text-center uk-text-small uk-text-muted uk-section uk-section-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-            <a href="#more" title="More about Plans" data-uk-icon="arrow-down" data-uk-scroll="duration: 400" class="uk-button uk-button-secondary uk-margin-medium-top uk-button-large uk-icon">MORE ABOUT PLANS<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <polygon points="10.5,16.08 5.63,10.66 6.37,10 10.5,14.58 14.63,10 15.37,10.66"></polygon> <line fill="none" stroke="#000" x1="10.5" y1="4" x2="10.5" y2="15"></line></svg></a>
+        <div class="uk-text-left uk-section-small">
+            *<small>With tokens you can buy stuff ... </small>
+
         </div>
     </div>
-</section>";s:5:"mtime";i:1528557558;s:6:"markup";s:6811:"<section class="uk-section uk-section-small uk-padding-remove">
+</section>";s:5:"mtime";i:1528575529;s:6:"markup";s:6344:"<section class="uk-section uk-section-small uk-padding-remove">
     <div class="uk-height-large uk-cover-container" style="height:100vh">
         <img src="https://picsum.photos/1300/500/?random" alt="Alt img" data-uk-cover="" class="uk-cover" style="width: 1171px; height: 450px;">
         <div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-light uk-text-center">
             <div data-uk-scrollspy="cls: uk-animation-slide-bottom-small" class="uk-scrollspy-inview uk-animation-slide-bottom-small" style="">
-                <i uk-icon=icon:star;ratio:10></i>
+                <i style="color:#0f6ecd" uk-icon=icon:star;ratio:10></i>
+
+
                 <h1 class="uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent uk-heading-line uk-text-center">
                     <span>Laravel Community CMS</span>
                 </h1>
+
                 <p>
-                    Build with UiKit, Laravel, Python, Npl ...
+                    Build with UiKit, Laravel, Python, NPL ...
                 </p>
+
+
+
                 <a href="#" uk-toggle="target: #register" class="uk-button uk-button-default uk-margin-top">
                     Register
                 </a>
@@ -157,7 +170,7 @@ redirect = "home"
         <header class="uk-text-center">
             <h1 class="uk-heading-primary">Price</h1>
             <p class="uk-width-3-5 uk-margin-auto">
-                Our Product is the easiest way for teams to track their works progress. Our advance plans give you more tools to get the job done.
+                Our Product is the easiest way for creating and managing communities. Our advance plans give you more tools to get the job \done.
             </p>
         </header>
         <div class="uk-grid uk-grid-small uk-child-width-1-3@m uk-margin-medium-top uk-grid-match" data-uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > .uk-card; delay: 200" data-uk-grid="">
@@ -171,19 +184,20 @@ redirect = "home"
                     <div class="uk-card-body uk-flex-1">
                         <div class="uk-flex uk-flex-middle uk-flex-center">
 										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
-											<span style="font-size: 0.5em">$</span>9<small>.99</small>
+											<span style="font-size: 0.5em">$</span>0
 										</span>
                         </div>
-                        <div class="uk-text-small uk-text-center uk-text-muted">Per member billed annually</div>
+                        <div class="uk-text-small uk-text-center uk-text-muted">Per community billed annually</div>
                         <ul>
-                            <li>2 users included</li>
+                            <li>1 community included</li>
                             <li>1 GB of storage</li>
-                            <li>A beer jar</li>
+                            <li>Email support</li>
+                            <li>10 tokens</li>
 
                         </ul>
                     </div>
                     <div class="uk-card-footer">
-                        <a href="#" class="uk-button uk-button-primary uk-width-1-1">BUY NOW</a>
+                        <a href="{{     url('account') }}" class="uk-button uk-button-primary uk-width-1-1">FREE</a>
                     </div>
                 </div>
             </div>
@@ -198,19 +212,19 @@ redirect = "home"
                     <div class="uk-card-body uk-flex-1">
                         <div class="uk-flex uk-flex-middle uk-flex-center">
 										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
-											<span style="font-size: 0.5em">$</span>89<small>.99</small>
+											<span style="font-size: 0.5em">$</span> 0. <small>99</small>
 										</span>
                         </div>
-                        <div class="uk-text-small uk-text-center uk-text-muted">Per member billed annually</div>
+                        <div class="uk-text-small uk-text-center uk-text-muted">Per community billed annually</div>
                         <ul>
-                            <li>10 users included</li>
+                            <li>10 communities included</li>
                             <li>5 GB of storage</li>
                             <li>Email support</li>
-                            <li>A beer jar with beer inside!</li>
+                            <li>100 tokens</li>
                         </ul>
                     </div>
                     <div class="uk-card-footer">
-                        <a href="" class="uk-button uk-button-primary uk-width-1-1">BUY NOW</a>
+                        <a href="#" class="uk-button uk-button-primary uk-width-1-1">Free first year</a>
                     </div>
                 </div>
             </div>
@@ -224,28 +238,28 @@ redirect = "home"
                     <div class="uk-card-body uk-flex-1">
                         <div class="uk-flex uk-flex-middle uk-flex-center">
 										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
-											<span style="font-size: 0.5em">$</span>299
+											<span style="font-size: 0.5em">$</span>3. <small>99</small>
 										</span>
                         </div>
-                        <div class="uk-text-small uk-text-center uk-text-muted">Per member billed annually</div>
+                        <div class="uk-text-small uk-text-center uk-text-muted">Per community billed annually</div>
                         <ul>
                             <li>Unlimited users</li>
                             <li>Unlimited storage</li>
                             <li>Email support</li>
-                            <li>Help center access</li>
+                            <li>1000 tokens</li>
                         </ul>
                     </div>
                     <div class="uk-card-footer">
-                        <a href="" class="uk-button uk-button-primary uk-width-1-1">BUY NOW</a>
+                        <a href="" class="uk-button uk-button-primary uk-width-1-1">Free first year</a>
                     </div>
                 </div>
             </div>
             <!-- /price -->
 
         </div>
-        <div class="uk-text-center uk-text-small uk-text-muted uk-section uk-section-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-            <a href="#more" title="More about Plans" data-uk-icon="arrow-down" data-uk-scroll="duration: 400" class="uk-button uk-button-secondary uk-margin-medium-top uk-button-large uk-icon">MORE ABOUT PLANS<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <polygon points="10.5,16.08 5.63,10.66 6.37,10 10.5,14.58 14.63,10 15.37,10.66"></polygon> <line fill="none" stroke="#000" x1="10.5" y1="4" x2="10.5" y2="15"></line></svg></a>
+        <div class="uk-text-left uk-section-small">
+            *<small>With tokens you can buy stuff ... </small>
+
         </div>
     </div>
-</section>";s:4:"code";N;s:5:"title";s:78:"Socialisy the best social network community to join and chat with your friends";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:78:"Socialisy the best social network community to join and chat with your friends";s:16:"meta_description";s:130:"Join the best community where you can chat with friends and family in your own private groups without the fear of beeing tracked .";s:9:"is_hidden";s:1:"0";s:7:"account";a:0:{}s:11:"sociallogin";a:0:{}s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:4:"home";}}}
+</section>";s:4:"code";N;s:5:"title";s:92:"Laravel Community Cms - the best social network community to join and chat with your friends";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:121:"Laravel Community the best social network community build with laravel and october cms to join and chat with your friends";s:16:"meta_description";s:130:"Join the best community where you can chat with friends and family in your own private groups without the fear of beeing tracked .";s:9:"is_hidden";s:1:"0";s:7:"account";a:0:{}s:11:"sociallogin";a:0:{}s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:4:"home";}s:11:"Communities";a:0:{}}}

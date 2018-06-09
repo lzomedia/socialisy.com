@@ -56,10 +56,9 @@ class Communities extends ComponentBase
      * @method onGetGroups
      * @description Creates a new group
      */
-    public function onCreateGroup()
+    public function onCreateCommunity()
     {
 
-        $this->initRepository();
 
         Flash::success('The group has been reported');
 

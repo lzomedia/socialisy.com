@@ -40,15 +40,16 @@ class __TwigTemplate_824f1acb74a0a23461a135805534829f3dd966062934480cc841d2c7c30
         echo "\" class=\"url\"><small>SITEMAP</small></a>
                 </p>
                 <p>
+
                     <a href=\"";
-        // line 18
+        // line 19
         echo url("terms");
         echo "\" class=\"url\"><small>TERMS</small></a>
                 </p>
 
                 <p>
                     <a href=\"";
-        // line 22
+        // line 23
         echo url("gdpr");
         echo "\" class=\"url\"><small>GDPR</small></a>
                 </p>
@@ -61,14 +62,15 @@ class __TwigTemplate_824f1acb74a0a23461a135805534829f3dd966062934480cc841d2c7c30
                     <h6 class=\"uk-text-capitalize uk-text-bold uk-text-large uk-margin-remove\"> Support </h6>
                     <ul class=\"uk-list uk-link-text uk-left-list\">
                         <li><a href=\"";
-        // line 32
+        // line 33
         echo url("faq");
         echo "\"><i class=uk-margin-small-right uk-icon=\"icon: question;\"></i>FAQ</a></li>
-                        <li><a href=\"https://github.com/\"><i class=uk-margin-small-right uk-icon=\"icon: github;\"></i> Open source </a></li>
-                        <li><a href=\"";
-        // line 34
-        echo url("updates");
-        echo "\"><i class=uk-margin-small-right uk-icon=\"icon: rss;\"></i> Updates</a></li>
+                        <li><a href=\"https://github.com/lzomedia\"><i class=uk-margin-small-right uk-icon=\"icon: github;\"></i> Open source </a></li>
+                        <li><a href=\"https://trello.com/b/cUuR54Df/socialisycom\" target=\"_blank\">
+                                <i class=uk-margin-small-right uk-icon=\"icon: rss;\"></i>
+                                Updates & Suggestions
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -78,15 +80,15 @@ class __TwigTemplate_824f1acb74a0a23461a135805534829f3dd966062934480cc841d2c7c30
                     <h6 class=\"uk-text-capitalize uk-text-bold uk-text-large uk-margin-remove\"> Platform </h6>
                     <ul class=\"uk-list uk-link-text uk-left-list\">
                         <li><a href=\"";
-        // line 43
+        // line 48
         echo url("communities");
         echo "\"><i class=uk-margin-small-right uk-icon=\"icon: question;\"></i>Communities</a></li>
                         <li><a href=\"";
-        // line 44
+        // line 49
         echo url("members");
         echo "\"><i class=uk-margin-small-right uk-icon=\"icon: users;\"></i> Members</a></li>
                         <li><a href=\"";
-        // line 45
+        // line 50
         echo url("stories");
         echo "\"><i class=uk-margin-small-right uk-icon=\"icon: rss;\"></i> Stories</a></li>
                     </ul>
@@ -104,7 +106,7 @@ class __TwigTemplate_824f1acb74a0a23461a135805534829f3dd966062934480cc841d2c7c30
                 <a href='#' uk-icon=\"icon: dribbble\"></a>
                 <a href='#' uk-icon=\"icon: linkedin\"></a>
             </div>
-            <p>Copyright © 2018 LzoSocial. All rights reserved. Free for Commercial use (CC BY 2.0 license)</p>
+            <p>Copyright © 2018 <a href=\"https://lzomedia.com\" title=\"freelance developer\">@Lzo Media</a> All rights reserved. Free for Commercial use (CC BY 2.0 license)</p>
         </div>
     </div>
 </footer>";
@@ -122,7 +124,7 @@ class __TwigTemplate_824f1acb74a0a23461a135805534829f3dd966062934480cc841d2c7c30
 
     public function getDebugInfo()
     {
-        return array (  90 => 45,  86 => 44,  82 => 43,  70 => 34,  65 => 32,  52 => 22,  45 => 18,  39 => 15,  23 => 1,);
+        return array (  92 => 50,  88 => 49,  84 => 48,  66 => 33,  53 => 23,  46 => 19,  39 => 15,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -144,6 +146,7 @@ class __TwigTemplate_824f1acb74a0a23461a135805534829f3dd966062934480cc841d2c7c30
                     <a href=\"{{ url('sitemap.xml') }}\" class=\"url\"><small>SITEMAP</small></a>
                 </p>
                 <p>
+
                     <a href=\"{{ url('terms') }}\" class=\"url\"><small>TERMS</small></a>
                 </p>
 
@@ -159,8 +162,12 @@ class __TwigTemplate_824f1acb74a0a23461a135805534829f3dd966062934480cc841d2c7c30
                     <h6 class=\"uk-text-capitalize uk-text-bold uk-text-large uk-margin-remove\"> Support </h6>
                     <ul class=\"uk-list uk-link-text uk-left-list\">
                         <li><a href=\"{{ url('faq') }}\"><i class=uk-margin-small-right uk-icon=\"icon: question;\"></i>FAQ</a></li>
-                        <li><a href=\"https://github.com/\"><i class=uk-margin-small-right uk-icon=\"icon: github;\"></i> Open source </a></li>
-                        <li><a href=\"{{ url('updates') }}\"><i class=uk-margin-small-right uk-icon=\"icon: rss;\"></i> Updates</a></li>
+                        <li><a href=\"https://github.com/lzomedia\"><i class=uk-margin-small-right uk-icon=\"icon: github;\"></i> Open source </a></li>
+                        <li><a href=\"https://trello.com/b/cUuR54Df/socialisycom\" target=\"_blank\">
+                                <i class=uk-margin-small-right uk-icon=\"icon: rss;\"></i>
+                                Updates & Suggestions
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -187,7 +194,7 @@ class __TwigTemplate_824f1acb74a0a23461a135805534829f3dd966062934480cc841d2c7c30
                 <a href='#' uk-icon=\"icon: dribbble\"></a>
                 <a href='#' uk-icon=\"icon: linkedin\"></a>
             </div>
-            <p>Copyright © 2018 LzoSocial. All rights reserved. Free for Commercial use (CC BY 2.0 license)</p>
+            <p>Copyright © 2018 <a href=\"https://lzomedia.com\" title=\"freelance developer\">@Lzo Media</a> All rights reserved. Free for Commercial use (CC BY 2.0 license)</p>
         </div>
     </div>
 </footer>", "/shared/httpd/socialisy/htdocs/themes/network/partials/site/_footer.htm", "");
