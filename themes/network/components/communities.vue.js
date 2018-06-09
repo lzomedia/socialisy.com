@@ -1,7 +1,7 @@
 import Vue from "vue";
 import axios from 'axios';
 window.$ = window.jQuery = require('jquery');
-window.inView = require('in-view');
+
 
 
 

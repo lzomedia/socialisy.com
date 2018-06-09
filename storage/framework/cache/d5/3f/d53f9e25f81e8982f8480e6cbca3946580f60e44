@@ -1,0 +1,119 @@
+1528558785a:1:{s:27:"modals/create-community.htm";a:5:{s:8:"fileName";s:27:"modals/create-community.htm";s:7:"content";s:2388:"<div id="create-community" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover" style="background-image: url('https://picsum.photos/1300/500/?random');" uk-height-viewport></div>
+            <div class="uk-padding">
+
+                <h2 title="create your own social media group">
+                    Create your community
+                </h2>
+
+                <form class="uk-form-stacked" data-request="onCreateGroup">
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-text">
+                            Name
+                        </label>
+                        <div class="uk-form-controls">
+                            <input name="group-name" class="uk-input" id="form-stacked-text" required type="text">
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <div class="uk-form-label">Privacy</div>
+                        <div class="uk-form-controls">
+                            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+
+                            <label><input class="uk-radio" type="radio" name="privacy" value="public"> Public</label><br>
+                            <label><input class="uk-radio" type="radio" name="privacy" value="private"> Private</label><br>
+                            <label><input class="uk-radio" type="radio" name="privacy" value="enterprise"> Enterprise</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="uk-margin">
+
+                        <label class="uk-form-label" for="form-stacked-text">
+                            Description
+                        </label>
+
+                        <textarea class="uk-textarea" rows="5"></textarea>
+                    </div>
+
+
+                    <div class="uk-margin">
+
+
+                        <button class="uk-button uk-button-danger">
+                            Create
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1528558175;s:6:"markup";s:2388:"<div id="create-community" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover" style="background-image: url('https://picsum.photos/1300/500/?random');" uk-height-viewport></div>
+            <div class="uk-padding">
+
+                <h2 title="create your own social media group">
+                    Create your community
+                </h2>
+
+                <form class="uk-form-stacked" data-request="onCreateGroup">
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label" for="form-stacked-text">
+                            Name
+                        </label>
+                        <div class="uk-form-controls">
+                            <input name="group-name" class="uk-input" id="form-stacked-text" required type="text">
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <div class="uk-form-label">Privacy</div>
+                        <div class="uk-form-controls">
+                            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+
+                            <label><input class="uk-radio" type="radio" name="privacy" value="public"> Public</label><br>
+                            <label><input class="uk-radio" type="radio" name="privacy" value="private"> Private</label><br>
+                            <label><input class="uk-radio" type="radio" name="privacy" value="enterprise"> Enterprise</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="uk-margin">
+
+                        <label class="uk-form-label" for="form-stacked-text">
+                            Description
+                        </label>
+
+                        <textarea class="uk-textarea" rows="5"></textarea>
+                    </div>
+
+
+                    <div class="uk-margin">
+
+
+                        <button class="uk-button uk-button-danger">
+                            Create
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";N;}}

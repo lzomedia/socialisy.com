@@ -136,21 +136,6 @@
          */
         mounted() {
 
-            console.log('got mounted');
-
-            var sticky = UIkit.grid('#elements',{
-                masonry: true,
-                parallax:1,
-                margin:"uk-grid-margin"
-
-
-            });
-
-
-
-            console.log(sticky);
-
-
         },
         /**
          *

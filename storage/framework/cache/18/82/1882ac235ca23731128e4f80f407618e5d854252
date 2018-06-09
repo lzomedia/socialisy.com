@@ -1,0 +1,134 @@
+1528557969a:1:{s:19:"account/default.htm";a:5:{s:8:"fileName";s:19:"account/default.htm";s:7:"content";s:1949:"{% if not user %}
+
+<div class="uk-container">
+
+    <div class="uk-text-center" uk-grid>
+        <div class="uk-width-1-2">
+            <form data-request="onSignin">
+
+
+                <fieldset class="uk-fieldset">
+                    <legend class="uk-legend uk-text-left">Login</legend>
+                    <div class="uk-margin">
+                        <div class="uk-inline uk-width-1-1">
+                            <span class="uk-form-icon uk-form-icon-flip" style="color:white" data-uk-icon="icon: user"></span>
+                            <input class="uk-input uk-form-large" name="login" required placeholder="Enter your {{ loginAttributeLabel|lower }}" type="text">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <div class="uk-inline uk-width-1-1">
+                            <span class="uk-form-icon uk-form-icon-flip"  style="color:white" data-uk-icon="icon: lock"></span>
+                            <input class="uk-input uk-form-large" name="password" required placeholder="Password" type="password">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <button type="submit" class="uk-button uk-button-primary uk-button-primary uk-button-large uk-width-1-1">LOG IN</button>
+                        <a uk-toggle="target: #register" class="uk-button uk-margin uk-button-danger uk-button-large uk-width-1-1">REGISTER</a>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="uk-width-1-2">
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- start the register modal !-->
+    {% partial 'modals/register' %}
+
+
+
+</div>
+
+{% else %}
+
+
+<div class="uk-container">
+
+
+    {% partial __SELF__ ~ '::activation_check' %}
+
+    {% partial __SELF__ ~ '::update' %}
+
+    {% partial __SELF__ ~ '::deactivate_link' %}
+
+</div>
+
+
+
+{% endif %}
+
+
+
+
+
+
+
+
+";s:5:"mtime";i:1528557363;s:6:"markup";s:1940:"{% if not user %}
+
+<div class="uk-container">
+
+    <div class="uk-text-center" uk-grid>
+        <div class="uk-width-1-2">
+            <form data-request="onSignin">
+
+
+                <fieldset class="uk-fieldset">
+                    <legend class="uk-legend uk-text-left">Login</legend>
+                    <div class="uk-margin">
+                        <div class="uk-inline uk-width-1-1">
+                            <span class="uk-form-icon uk-form-icon-flip" style="color:white" data-uk-icon="icon: user"></span>
+                            <input class="uk-input uk-form-large" name="login" required placeholder="Enter your {{ loginAttributeLabel|lower }}" type="text">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <div class="uk-inline uk-width-1-1">
+                            <span class="uk-form-icon uk-form-icon-flip"  style="color:white" data-uk-icon="icon: lock"></span>
+                            <input class="uk-input uk-form-large" name="password" required placeholder="Password" type="password">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <button type="submit" class="uk-button uk-button-primary uk-button-primary uk-button-large uk-width-1-1">LOG IN</button>
+                        <a uk-toggle="target: #register" class="uk-button uk-margin uk-button-danger uk-button-large uk-width-1-1">REGISTER</a>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="uk-width-1-2">
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- start the register modal !-->
+    {% partial 'modals/register' %}
+
+
+
+</div>
+
+{% else %}
+
+
+<div class="uk-container">
+
+
+    {% partial __SELF__ ~ '::activation_check' %}
+
+    {% partial __SELF__ ~ '::update' %}
+
+    {% partial __SELF__ ~ '::deactivate_link' %}
+
+</div>
+
+
+
+{% endif %}";s:4:"code";N;}}
