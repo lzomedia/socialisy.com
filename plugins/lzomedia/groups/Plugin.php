@@ -60,8 +60,8 @@ class Plugin extends PluginBase
     {
 
         return [
-            'LzoMedia\Groups\Components\Communities' => 'Groups',
-            'LzoMedia\Groups\Components\Group' => 'Group',
+            'LzoMedia\Communities\Components\Communities' => 'Communities',
+            'LzoMedia\Communities\Components\Community' => 'Community',
         ];
     }
 

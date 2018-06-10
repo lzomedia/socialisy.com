@@ -1,4 +1,4 @@
-1528576099a:1:{s:27:"modals/create-community.htm";a:5:{s:8:"fileName";s:27:"modals/create-community.htm";s:7:"content";s:2401:"<div id="create-community" class="uk-modal-full" uk-modal>
+1528626879a:1:{s:27:"modals/create-community.htm";a:5:{s:8:"fileName";s:27:"modals/create-community.htm";s:7:"content";s:2405:"<div id="create-community" class="uk-modal-full" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
@@ -9,7 +9,7 @@
                     Create your community
                 </h2>
 
-                <form class="uk-form-stacked" data-request="onCreateGroup">
+                <form class="uk-form-stacked" data-request="onCreateCommunity">
 
                     <div class="uk-margin">
                         <label class="uk-form-label" for="form-stacked-text">
@@ -57,7 +57,7 @@
             </div>
         </div>
     </div>
-</div>";s:5:"mtime";i:1528558489;s:6:"markup";s:2401:"<div id="create-community" class="uk-modal-full" uk-modal>
+</div>";s:5:"mtime";i:1528591429;s:6:"markup";s:2405:"<div id="create-community" class="uk-modal-full" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
@@ -68,7 +68,7 @@
                     Create your community
                 </h2>
 
-                <form class="uk-form-stacked" data-request="onCreateGroup">
+                <form class="uk-form-stacked" data-request="onCreateCommunity">
 
                     <div class="uk-margin">
                         <label class="uk-form-label" for="form-stacked-text">

@@ -20,7 +20,11 @@ window.$ = window.jQuery = require('jquery');
 import Communities from '../../components/communities.vue';
 
 
+new Vue({
+    el: '#communities',
+    render: (h) => h(Communities)
 
+});
 
 
 

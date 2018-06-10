@@ -9,6 +9,10 @@ trait SlackNotify {
     protected $slack_action = 'TB444D6C9/BB5MLUVJB/QeDfCYE7nOIPgqHPnRpGNyNI';
 
 
+    /**
+     * @param $to
+     * @param $message
+     */
     function notify($to,$message){
 
 

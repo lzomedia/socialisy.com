@@ -20,7 +20,9 @@ mix.js('assets/js/home.js', 'production/')
         processCssUrls: false
 });
 
-
+mix.autoload({
+    'jquery': ['jQuery', '$'],
+})
 
 mix.js('assets/js/stories.js', 'production/')
     .sass('assets/sass/stories.scss','production')
@@ -32,12 +34,3 @@ mix.js('assets/js/stories.js', 'production/')
     });
 
 
-
-mix.js('assets/js/dashboard.js', 'production/')
-    .sass('assets/sass/dashboard.scss','production')
-    .minify('production/dashboard.js')
-    .minify('production/dashboard.css')
-    .options({
-        purifyCss: false,
-        processCssUrls: false
-    });

@@ -32,7 +32,7 @@ class __TwigTemplate_4f42c8ce6adae87832b03c150dcb5177574821ce3c6d3f9f3266c832091
                     </h1>
                     <p>Here is a list of our recent stories join an story start chatting with friends.
                     </p>
-                    <a href=\"#\" uk-toggle=\"target: #createGroup\" class=\"uk-button uk-button-default uk-margin-top\">
+                    <a href=\"#\" uk-toggle=\"target: #create-story\" class=\"uk-button uk-button-default uk-margin-top\">
                         Create your own story
                     </a>
 
@@ -89,7 +89,7 @@ class __TwigTemplate_4f42c8ce6adae87832b03c150dcb5177574821ce3c6d3f9f3266c832091
                     </h1>
                     <p>Here is a list of our recent stories join an story start chatting with friends.
                     </p>
-                    <a href=\"#\" uk-toggle=\"target: #createGroup\" class=\"uk-button uk-button-default uk-margin-top\">
+                    <a href=\"#\" uk-toggle=\"target: #create-story\" class=\"uk-button uk-button-default uk-margin-top\">
                         Create your own story
                     </a>
 

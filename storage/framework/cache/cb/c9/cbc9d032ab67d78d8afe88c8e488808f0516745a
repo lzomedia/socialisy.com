@@ -1,4 +1,4 @@
-1528576132a:1:{s:8:"home.htm";a:15:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:6880:"title = "Laravel Community Cms - the best social network community to join and chat with your friends"
+1528626879a:1:{s:8:"home.htm";a:15:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:6976:"title = "Laravel Community Cms - the best social network community to join and chat with your friends"
 url = "/"
 layout = "default"
 meta_title = "Laravel Community the best social network community build with laravel and october cms to join and chat with your friends"
@@ -29,12 +29,13 @@ redirect = "home"
                 </p>
 
 
+                {% if not user %}
+                    <a href="#" uk-toggle="target: #register" class="uk-button uk-button-default uk-margin-top">
+                        Register
+                    </a>
+                    {% partial 'modals/register' %}
+                {% endif %}
 
-                <a href="#" uk-toggle="target: #register" class="uk-button uk-button-default uk-margin-top">
-                    Register
-                </a>
-
-                {% partial 'modals/register' %}
             </div>
         </div>
 
@@ -45,7 +46,7 @@ redirect = "home"
         <header class="uk-text-center">
             <h1 class="uk-heading-primary">Price</h1>
             <p class="uk-width-3-5 uk-margin-auto">
-                Our Product is the easiest way for creating and managing communities. Our advance plans give you more tools to get the job \done.
+                Our Product is the easiest way for creating and managing communities. Our advance plans give you more tools to get the job done.
             </p>
         </header>
         <div class="uk-grid uk-grid-small uk-child-width-1-3@m uk-margin-medium-top uk-grid-match" data-uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > .uk-card; delay: 200" data-uk-grid="">
@@ -87,7 +88,7 @@ redirect = "home"
                     <div class="uk-card-body uk-flex-1">
                         <div class="uk-flex uk-flex-middle uk-flex-center">
 										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
-											<span style="font-size: 0.5em">$</span> 0. <small>99</small>
+											<span style="font-size: 0.5em">$</span> 2. <small>99</small>
 										</span>
                         </div>
                         <div class="uk-text-small uk-text-center uk-text-muted">Per community billed annually</div>
@@ -113,7 +114,7 @@ redirect = "home"
                     <div class="uk-card-body uk-flex-1">
                         <div class="uk-flex uk-flex-middle uk-flex-center">
 										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
-											<span style="font-size: 0.5em">$</span>3. <small>99</small>
+											<span style="font-size: 0.5em">$</span>4. <small>99</small>
 										</span>
                         </div>
                         <div class="uk-text-small uk-text-center uk-text-muted">Per community billed annually</div>
@@ -133,11 +134,10 @@ redirect = "home"
 
         </div>
         <div class="uk-text-left uk-section-small">
-            *<small>With tokens you can buy stuff ... </small>
-
+            *<small>With tokens you can rent stuff by offering covering... </small>
         </div>
     </div>
-</section>";s:5:"mtime";i:1528575529;s:6:"markup";s:6344:"<section class="uk-section uk-section-small uk-padding-remove">
+</section>";s:5:"mtime";i:1528584453;s:6:"markup";s:6440:"<section class="uk-section uk-section-small uk-padding-remove">
     <div class="uk-height-large uk-cover-container" style="height:100vh">
         <img src="https://picsum.photos/1300/500/?random" alt="Alt img" data-uk-cover="" class="uk-cover" style="width: 1171px; height: 450px;">
         <div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-light uk-text-center">
@@ -154,12 +154,13 @@ redirect = "home"
                 </p>
 
 
+                {% if not user %}
+                    <a href="#" uk-toggle="target: #register" class="uk-button uk-button-default uk-margin-top">
+                        Register
+                    </a>
+                    {% partial 'modals/register' %}
+                {% endif %}
 
-                <a href="#" uk-toggle="target: #register" class="uk-button uk-button-default uk-margin-top">
-                    Register
-                </a>
-
-                {% partial 'modals/register' %}
             </div>
         </div>
 
@@ -170,7 +171,7 @@ redirect = "home"
         <header class="uk-text-center">
             <h1 class="uk-heading-primary">Price</h1>
             <p class="uk-width-3-5 uk-margin-auto">
-                Our Product is the easiest way for creating and managing communities. Our advance plans give you more tools to get the job \done.
+                Our Product is the easiest way for creating and managing communities. Our advance plans give you more tools to get the job done.
             </p>
         </header>
         <div class="uk-grid uk-grid-small uk-child-width-1-3@m uk-margin-medium-top uk-grid-match" data-uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > .uk-card; delay: 200" data-uk-grid="">
@@ -212,7 +213,7 @@ redirect = "home"
                     <div class="uk-card-body uk-flex-1">
                         <div class="uk-flex uk-flex-middle uk-flex-center">
 										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
-											<span style="font-size: 0.5em">$</span> 0. <small>99</small>
+											<span style="font-size: 0.5em">$</span> 2. <small>99</small>
 										</span>
                         </div>
                         <div class="uk-text-small uk-text-center uk-text-muted">Per community billed annually</div>
@@ -238,7 +239,7 @@ redirect = "home"
                     <div class="uk-card-body uk-flex-1">
                         <div class="uk-flex uk-flex-middle uk-flex-center">
 										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
-											<span style="font-size: 0.5em">$</span>3. <small>99</small>
+											<span style="font-size: 0.5em">$</span>4. <small>99</small>
 										</span>
                         </div>
                         <div class="uk-text-small uk-text-center uk-text-muted">Per community billed annually</div>
@@ -258,8 +259,7 @@ redirect = "home"
 
         </div>
         <div class="uk-text-left uk-section-small">
-            *<small>With tokens you can buy stuff ... </small>
-
+            *<small>With tokens you can rent stuff by offering covering... </small>
         </div>
     </div>
 </section>";s:4:"code";N;s:5:"title";s:92:"Laravel Community Cms - the best social network community to join and chat with your friends";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:121:"Laravel Community the best social network community build with laravel and october cms to join and chat with your friends";s:16:"meta_description";s:130:"Join the best community where you can chat with friends and family in your own private groups without the fear of beeing tracked .";s:9:"is_hidden";s:1:"0";s:7:"account";a:0:{}s:11:"sociallogin";a:0:{}s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:4:"home";}s:11:"Communities";a:0:{}}}

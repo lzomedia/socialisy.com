@@ -31,7 +31,7 @@ class __TwigTemplate_2046252b28454ad5607148c39d508f0bcb2b9cb0e5253bccbfb94ef024a
                     Create your community
                 </h2>
 
-                <form class=\"uk-form-stacked\" data-request=\"onCreateGroup\">
+                <form class=\"uk-form-stacked\" data-request=\"onCreateCommunity\">
 
                     <div class=\"uk-margin\">
                         <label class=\"uk-form-label\" for=\"form-stacked-text\">
@@ -105,7 +105,7 @@ class __TwigTemplate_2046252b28454ad5607148c39d508f0bcb2b9cb0e5253bccbfb94ef024a
                     Create your community
                 </h2>
 
-                <form class=\"uk-form-stacked\" data-request=\"onCreateGroup\">
+                <form class=\"uk-form-stacked\" data-request=\"onCreateCommunity\">
 
                     <div class=\"uk-margin\">
                         <label class=\"uk-form-label\" for=\"form-stacked-text\">

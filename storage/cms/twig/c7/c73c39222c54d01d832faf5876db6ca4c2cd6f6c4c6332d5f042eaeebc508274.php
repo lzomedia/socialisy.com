@@ -78,7 +78,7 @@ class __TwigTemplate_e3361305588f11a17ea08606f7c48b7ec690dab3472fd69ff0a1adafe2e
                         </fieldset>
                     </form>
                 </div>
-                <div class=\"uk-width-1-2@l uk-hidden@s uk-visible@l\">
+                <div class=\"uk-width-1-2@l  uk-visible@s\">
 
                     <h2 class=\"_5iyx\">Social Trixie</h2>
 
@@ -87,6 +87,7 @@ class __TwigTemplate_e3361305588f11a17ea08606f7c48b7ec690dab3472fd69ff0a1adafe2e
                     </h4>
 
                     <img class=\"img\" src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GwFs3_KxNjS.png\" alt=\"\" width=\"537\" height=\"195\">
+                    <div class=\"clear\"></div>
                 </div>
             </div>
         </div>
@@ -96,16 +97,16 @@ class __TwigTemplate_e3361305588f11a17ea08606f7c48b7ec690dab3472fd69ff0a1adafe2e
 
     <!-- start the register modal !-->
     ";
-            // line 72
+            // line 73
             $context['__cms_partial_params'] = [];
             echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("modals/register"            , $context['__cms_partial_params']            , true            );
             unset($context['__cms_partial_params']);
-            // line 73
+            // line 74
             echo "</div>
 </div>
 ";
         } else {
-            // line 76
+            // line 77
             echo "
 
 <div class=\"uk-section uk-section-primary uk-light\" style=\"height:100vh;padding-top:20vh\">
@@ -119,25 +120,25 @@ class __TwigTemplate_e3361305588f11a17ea08606f7c48b7ec690dab3472fd69ff0a1adafe2e
 
 
             ";
-            // line 88
+            // line 89
             $context['__cms_partial_params'] = [];
             echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction((($context["__SELF__"] ?? null) . "::activation_check")            , $context['__cms_partial_params']            , true            );
             unset($context['__cms_partial_params']);
-            // line 89
+            // line 90
             echo "
             ";
-            // line 90
+            // line 91
             $context['__cms_partial_params'] = [];
             echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction((($context["__SELF__"] ?? null) . "::update")            , $context['__cms_partial_params']            , true            );
             unset($context['__cms_partial_params']);
-            // line 91
+            // line 92
             echo "
             ";
-            // line 92
+            // line 93
             $context['__cms_partial_params'] = [];
             echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction((($context["__SELF__"] ?? null) . "::deactivate_link")            , $context['__cms_partial_params']            , true            );
             unset($context['__cms_partial_params']);
-            // line 93
+            // line 94
             echo "
             </div>
         </div>
@@ -162,7 +163,7 @@ class __TwigTemplate_e3361305588f11a17ea08606f7c48b7ec690dab3472fd69ff0a1adafe2e
 
     public function getDebugInfo()
     {
-        return array (  141 => 93,  137 => 92,  134 => 91,  130 => 90,  127 => 89,  123 => 88,  109 => 76,  104 => 73,  100 => 72,  58 => 33,  25 => 2,  23 => 1,);
+        return array (  142 => 94,  138 => 93,  135 => 92,  131 => 91,  128 => 90,  124 => 89,  110 => 77,  105 => 74,  101 => 73,  58 => 33,  25 => 2,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -221,7 +222,7 @@ class __TwigTemplate_e3361305588f11a17ea08606f7c48b7ec690dab3472fd69ff0a1adafe2e
                         </fieldset>
                     </form>
                 </div>
-                <div class=\"uk-width-1-2@l uk-hidden@s uk-visible@l\">
+                <div class=\"uk-width-1-2@l  uk-visible@s\">
 
                     <h2 class=\"_5iyx\">Social Trixie</h2>
 
@@ -230,6 +231,7 @@ class __TwigTemplate_e3361305588f11a17ea08606f7c48b7ec690dab3472fd69ff0a1adafe2e
                     </h4>
 
                     <img class=\"img\" src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GwFs3_KxNjS.png\" alt=\"\" width=\"537\" height=\"195\">
+                    <div class=\"clear\"></div>
                 </div>
             </div>
         </div>

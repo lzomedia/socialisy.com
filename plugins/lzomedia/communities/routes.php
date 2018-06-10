@@ -26,7 +26,7 @@ Route::get('/robot/{key?}',  array('as' => 'robot.start', function($key = null)
 }));
 
 //@method onGetCommunities
-Route::get('/api/onGetGroups', function () {
+Route::get('/api/onGetCommunities', function () {
 
 
     $communities =  new \LzoMedia\Communities\Components\Communities();

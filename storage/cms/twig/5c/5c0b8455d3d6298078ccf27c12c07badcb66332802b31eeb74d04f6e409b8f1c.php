@@ -27,7 +27,7 @@ class __TwigTemplate_d41a176e7f11d351b885b57625613fe4839f3855dde987cae3bbe36e463
             <div data-uk-scrollspy=\"cls: uk-animation-slide-bottom-small\" class=\"uk-scrollspy-inview uk-animation-slide-bottom-small\" style=\"\">
 
                 <h1 class=\"uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent uk-heading-line uk-text-center\">
-                    <span><i uk-icon=icon:star></i> Recent Communities <i uk-icon=icon:star></i></span>
+                    <span>Recent Communities</span>
                 </h1>
                 <p>Here is a list of our newest social communities don't hesitate to join our full of fun community and start chatting with your friends.
                 </p>
@@ -52,11 +52,7 @@ class __TwigTemplate_d41a176e7f11d351b885b57625613fe4839f3855dde987cae3bbe36e463
         <div class=\"uk-container\">
 
 
-            <div id=\"fixtest\"></div>
-
-
-
-            <div id=\"top-groups\"></div>
+            <div id=\"communities\"></div>
 
         </div>
     </div>
@@ -87,7 +83,7 @@ class __TwigTemplate_d41a176e7f11d351b885b57625613fe4839f3855dde987cae3bbe36e463
             <div data-uk-scrollspy=\"cls: uk-animation-slide-bottom-small\" class=\"uk-scrollspy-inview uk-animation-slide-bottom-small\" style=\"\">
 
                 <h1 class=\"uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent uk-heading-line uk-text-center\">
-                    <span><i uk-icon=icon:star></i> Recent Communities <i uk-icon=icon:star></i></span>
+                    <span>Recent Communities</span>
                 </h1>
                 <p>Here is a list of our newest social communities don't hesitate to join our full of fun community and start chatting with your friends.
                 </p>
@@ -107,11 +103,7 @@ class __TwigTemplate_d41a176e7f11d351b885b57625613fe4839f3855dde987cae3bbe36e463
         <div class=\"uk-container\">
 
 
-            <div id=\"fixtest\"></div>
-
-
-
-            <div id=\"top-groups\"></div>
+            <div id=\"communities\"></div>
 
         </div>
     </div>

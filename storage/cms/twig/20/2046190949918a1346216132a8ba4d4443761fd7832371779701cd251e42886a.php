@@ -24,7 +24,7 @@ class __TwigTemplate_c69c3e31f920ed8d3f8862f6733e8d954b8393b3150426b918641ba1bbd
     <div class=\"uk-offcanvas-bar\">
         <button class=\"uk-offcanvas-close\" type=button uk-close></button>
         <ul class=\"uk-nav uk-nav-default\">
-            <li class=\"uk-nav-header\">Social Twizy</li>
+            <li class=\"uk-nav-header\">Social Trixi</li>
             <li class=\"uk-nav-divider\"></li>
             <li>
                 <a href=\"";
@@ -87,7 +87,7 @@ class __TwigTemplate_c69c3e31f920ed8d3f8862f6733e8d954b8393b3150426b918641ba1bbd
     <div class=\"uk-offcanvas-bar\">
         <button class=\"uk-offcanvas-close\" type=button uk-close></button>
         <ul class=\"uk-nav uk-nav-default\">
-            <li class=\"uk-nav-header\">Social Twizy</li>
+            <li class=\"uk-nav-header\">Social Trixi</li>
             <li class=\"uk-nav-divider\"></li>
             <li>
                 <a href=\"{{ url('communities') }}\"><span class=\"uk-margin-small-right\" uk-icon=\"icon: users\"></span>

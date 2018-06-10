@@ -9,6 +9,7 @@ use October\Rain\Support\Facades\Flash;
 
 use LzoMedia\Groups\Models\Group;
 
+use RainLab\User\Facades\Auth;
 
 class Communities extends ComponentBase
 {
@@ -60,7 +61,24 @@ class Communities extends ComponentBase
     {
 
 
-        Flash::success('The group has been reported');
+        $loggedIn = Auth::check();
+
+        if($loggedIn){
+
+
+
+
+            Flash::success('The community was created');
+
+
+        }
+
+        $user = Auth::register([
+            'name' => 'Some User',
+            'email' => 'some@website.tld',
+            'password' => 'changeme',
+            'password_confirmation' => 'changeme',
+        ]);
 
 
         return redirect('communities');

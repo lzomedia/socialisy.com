@@ -1,4 +1,4 @@
-1528575813a:1:{s:11:"stories.htm";a:12:{s:8:"fileName";s:11:"stories.htm";s:7:"content";s:1776:"title = "Socialisy the best social network community to join and chat with your friends"
+1528626879a:1:{s:11:"stories.htm";a:12:{s:8:"fileName";s:11:"stories.htm";s:7:"content";s:1777:"title = "Socialisy the best social network community to join and chat with your friends"
 url = "/stories"
 layout = "default"
 meta_title = "Socialisy the best social network community to join and chat with your friends"
@@ -23,7 +23,7 @@ redirect = "home"
                     </h1>
                     <p>Here is a list of our recent stories join an story start chatting with friends.
                     </p>
-                    <a href="#" uk-toggle="target: #createGroup" class="uk-button uk-button-default uk-margin-top">
+                    <a href="#" uk-toggle="target: #create-story" class="uk-button uk-button-default uk-margin-top">
                         Create your own story
                     </a>
 
@@ -45,7 +45,7 @@ redirect = "home"
     </div>
 </section>
 
-";s:5:"mtime";i:1528557558;s:6:"markup";s:1473:"<section class="uk-section uk-section-small uk-padding-remove">
+";s:5:"mtime";i:1528580012;s:6:"markup";s:1474:"<section class="uk-section uk-section-small uk-padding-remove">
 
         <div class="uk-height-large uk-cover-container uk-border-rounded">
             <div id="particles-js" data-uk-cover="" class="uk-cover" ></div>
@@ -57,7 +57,7 @@ redirect = "home"
                     </h1>
                     <p>Here is a list of our recent stories join an story start chatting with friends.
                     </p>
-                    <a href="#" uk-toggle="target: #createGroup" class="uk-button uk-button-default uk-margin-top">
+                    <a href="#" uk-toggle="target: #create-story" class="uk-button uk-button-default uk-margin-top">
                         Create your own story
                     </a>
 

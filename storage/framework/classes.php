@@ -162,7 +162,7 @@
   'LzoMedia\\Groups\\Repository\\GroupsRepository' => 'plugins/lzomedia/groups/repository/GroupsRepository.php',
   'LzoMedia\\Groups\\Groups' => 'plugins/lzomedia/groups/Groups.php',
   'backend\\Controllers\\index' => 'modules/backend/controllers/index.php',
-  'lzomedia\\groups\\Controllers\\groupsmanager' => 'plugins/lzomedia/groups/controllers/groupsmanager.php',
+  'lzomedia\\groups\\Controllers\\CommunitiesManager' => 'plugins/lzomedia/groups/controllers/groupsmanager.php',
   'system\\Controllers\\settings' => 'modules/system/controllers/settings.php',
   'RainLab\\User\\Models\\UserGroup' => 'plugins/rainlab/user/models/UserGroup.php',
   'RainLab\\Forum\\Models\\Member' => 'plugins/rainlab/forum/models/Member.php',

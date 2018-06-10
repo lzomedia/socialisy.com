@@ -25,21 +25,6 @@ class ImportPosts implements SelfHandling, ShouldQueue {
 	public function fire( $job, $data ) {
 
 
-		$group = $data['group'];
-
-		$token = $data['token'];
-
-		/// start the import of the posts
-		$posts = new FacebookExtractor;
-
-		$response = $posts->posts($group, $token);
-
-		foreach ($response as $post){
-
-			die($post);
-
-		}
-
 
 	}
 

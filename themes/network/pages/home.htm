@@ -29,12 +29,13 @@ redirect = "home"
                 </p>
 
 
+                {% if not user %}
+                    <a href="#" uk-toggle="target: #register" class="uk-button uk-button-default uk-margin-top">
+                        Register
+                    </a>
+                    {% partial 'modals/register' %}
+                {% endif %}
 
-                <a href="#" uk-toggle="target: #register" class="uk-button uk-button-default uk-margin-top">
-                    Register
-                </a>
-
-                {% partial 'modals/register' %}
             </div>
         </div>
 
@@ -45,7 +46,7 @@ redirect = "home"
         <header class="uk-text-center">
             <h1 class="uk-heading-primary">Price</h1>
             <p class="uk-width-3-5 uk-margin-auto">
-                Our Product is the easiest way for creating and managing communities. Our advance plans give you more tools to get the job \done.
+                Our Product is the easiest way for creating and managing communities. Our advance plans give you more tools to get the job done.
             </p>
         </header>
         <div class="uk-grid uk-grid-small uk-child-width-1-3@m uk-margin-medium-top uk-grid-match" data-uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > .uk-card; delay: 200" data-uk-grid="">
@@ -87,7 +88,7 @@ redirect = "home"
                     <div class="uk-card-body uk-flex-1">
                         <div class="uk-flex uk-flex-middle uk-flex-center">
 										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
-											<span style="font-size: 0.5em">$</span> 0. <small>99</small>
+											<span style="font-size: 0.5em">$</span> 2. <small>99</small>
 										</span>
                         </div>
                         <div class="uk-text-small uk-text-center uk-text-muted">Per community billed annually</div>
@@ -113,7 +114,7 @@ redirect = "home"
                     <div class="uk-card-body uk-flex-1">
                         <div class="uk-flex uk-flex-middle uk-flex-center">
 										<span style="font-size: 4rem; font-weight: 200; line-height: 1em">
-											<span style="font-size: 0.5em">$</span>3. <small>99</small>
+											<span style="font-size: 0.5em">$</span>4. <small>99</small>
 										</span>
                         </div>
                         <div class="uk-text-small uk-text-center uk-text-muted">Per community billed annually</div>
@@ -133,8 +134,7 @@ redirect = "home"
 
         </div>
         <div class="uk-text-left uk-section-small">
-            *<small>With tokens you can buy stuff ... </small>
-
+            *<small>With tokens you can rent stuff by offering covering... </small>
         </div>
     </div>
 </section>

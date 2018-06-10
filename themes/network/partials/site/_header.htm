@@ -26,6 +26,12 @@
                                 Influencers
                             </a>
                         </li>
+                        <li>
+                            <a href="{{ url('rentals') }}" title="recent members">
+                                <span class="uk-icon uk-margin-small-right" uk-icon="icon: cart"></span>
+                                Rentals
+                            </a>
+                        </li>
                     </ul>
 
                 </div>
@@ -70,16 +76,14 @@
 
                     <!-- search modal !-->
                     {% partial 'modals/search_modal' %}
-                    {% partial 'site/_side_menu' %}
 
+                    {% partial 'site/_side_menu' %}
 
                     {% if user %}
 
-                    <div class="uk-inline uk-visible@l">
-                        <span uk-toggle="target: #offcanvas-flip" class="uk-margin-small-right uk-icon" uk-icon="icon: mail">
-                            <small class="uk-text-danger notification-circle"> 23 </small>
-                        </span>
-                    </div>
+                        <!-- notification modal !-->
+                        {% partial 'modals/_notifications' %}
+
 
                     {% endif %}
 

@@ -60,6 +60,15 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                                 Influencers
                             </a>
                         </li>
+                        <li>
+                            <a href=\"";
+        // line 30
+        echo url("rentals");
+        echo "\" title=\"recent members\">
+                                <span class=\"uk-icon uk-margin-small-right\" uk-icon=\"icon: cart\"></span>
+                                Rentals
+                            </a>
+                        </li>
                     </ul>
 
                 </div>
@@ -73,15 +82,15 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                         <li>
 
                             ";
-        // line 41
+        // line 47
         if ( !($context["user"] ?? null)) {
-            // line 42
+            // line 48
             echo "                                <a href=\"";
             echo url("account");
             echo "\" data-uk-icon=\"icon:user\"></a>
                             ";
         } else {
-            // line 44
+            // line 50
             echo "
                             <a href=\"#\" data-uk-icon=\"icon:user\"></a>
 
@@ -89,16 +98,16 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                                 <ul class=\"uk-nav uk-navbar-dropdown-nav\">
                                     <li class=\"uk-nav-header uk-text-small uk-text-primary\">Your Account</li>
                                     <li><a href=\"";
-            // line 50
+            // line 56
             echo url("account");
             echo "\"><span data-uk-icon=\"icon: pencil\"></span> Edit</a></li>
                                     <li class=\"uk-nav-divider\"></li>
                                     <li><a href=\"";
-            // line 52
+            // line 58
             echo url("friends");
             echo "\"><span data-uk-icon=\"icon: user\"></span> Your Friends</a></li>
                                     <li><a href=\"";
-            // line 53
+            // line 59
             echo url("messages");
             echo "\"><span data-uk-icon=\"icon: mail\"></span> Messages</a></li>
                                     <li class=\"uk-nav-divider\"></li>
@@ -114,7 +123,7 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
 
                             ";
         }
-        // line 66
+        // line 72
         echo "                        </li>
 
                     </ul>
@@ -122,32 +131,36 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
 
                     <!-- search modal !-->
                     ";
-        // line 72
+        // line 78
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("modals/search_modal"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 73
-        echo "                    ";
+        // line 79
+        echo "
+                    ";
+        // line 80
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/_side_menu"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 74
+        // line 81
         echo "
-
                     ";
-        // line 76
+        // line 82
         if (($context["user"] ?? null)) {
-            // line 77
+            // line 83
             echo "
-                    <div class=\"uk-inline uk-visible@l\">
-                        <span uk-toggle=\"target: #offcanvas-flip\" class=\"uk-margin-small-right uk-icon\" uk-icon=\"icon: mail\">
-                            <small class=\"uk-text-danger notification-circle\"> 23 </small>
-                        </span>
-                    </div>
+                        <!-- notification modal !-->
+                        ";
+            // line 85
+            $context['__cms_partial_params'] = [];
+            echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("modals/_notifications"            , $context['__cms_partial_params']            , true            );
+            unset($context['__cms_partial_params']);
+            // line 86
+            echo "
 
                     ";
         }
-        // line 85
+        // line 89
         echo "
                     <!-- to enable mobile only add uk-hidden@s !-->
                     <a class=\"uk-navbar-toggle uk-hidden@s uk-hidden@m \" uk-toggle=\"target: #offcanvas-usage\">
@@ -173,7 +186,7 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
 
     public function getDebugInfo()
     {
-        return array (  151 => 85,  141 => 77,  139 => 76,  135 => 74,  130 => 73,  126 => 72,  118 => 66,  102 => 53,  98 => 52,  93 => 50,  85 => 44,  79 => 42,  77 => 41,  57 => 24,  48 => 18,  39 => 12,  30 => 6,  23 => 1,);
+        return array (  164 => 89,  159 => 86,  155 => 85,  151 => 83,  149 => 82,  146 => 81,  142 => 80,  139 => 79,  135 => 78,  127 => 72,  111 => 59,  107 => 58,  102 => 56,  94 => 50,  88 => 48,  86 => 47,  66 => 30,  57 => 24,  48 => 18,  39 => 12,  30 => 6,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -204,6 +217,12 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
                             <a href=\"{{ url('members') }}\" title=\"recent members\">
                                 <span class=\"uk-icon uk-margin-small-right\" uk-icon=\"icon: users\"></span>
                                 Influencers
+                            </a>
+                        </li>
+                        <li>
+                            <a href=\"{{ url('rentals') }}\" title=\"recent members\">
+                                <span class=\"uk-icon uk-margin-small-right\" uk-icon=\"icon: cart\"></span>
+                                Rentals
                             </a>
                         </li>
                     </ul>
@@ -250,16 +269,14 @@ class __TwigTemplate_623d0936138feda1ceb7b2f91466a7783b0de82aaa3b3018ca9099caae4
 
                     <!-- search modal !-->
                     {% partial 'modals/search_modal' %}
-                    {% partial 'site/_side_menu' %}
 
+                    {% partial 'site/_side_menu' %}
 
                     {% if user %}
 
-                    <div class=\"uk-inline uk-visible@l\">
-                        <span uk-toggle=\"target: #offcanvas-flip\" class=\"uk-margin-small-right uk-icon\" uk-icon=\"icon: mail\">
-                            <small class=\"uk-text-danger notification-circle\"> 23 </small>
-                        </span>
-                    </div>
+                        <!-- notification modal !-->
+                        {% partial 'modals/_notifications' %}
+
 
                     {% endif %}
 

@@ -1,4 +1,4 @@
-1528576027a:1:{s:19:"account/default.htm";a:5:{s:8:"fileName";s:19:"account/default.htm";s:7:"content";s:3441:"{% if not user %}
+1528626640a:1:{s:19:"account/default.htm";a:5:{s:8:"fileName";s:19:"account/default.htm";s:7:"content";s:3476:"{% if not user %}
 
 <div class="uk-section uk-section-primary uk-light" style="height:100vh;padding-top:20vh">
 
@@ -52,7 +52,7 @@
                         </fieldset>
                     </form>
                 </div>
-                <div class="uk-width-1-2@l uk-hidden@s uk-visible@l">
+                <div class="uk-width-1-2@l  uk-visible@s">
 
                     <h2 class="_5iyx">Social Trixie</h2>
 
@@ -61,6 +61,7 @@
                     </h4>
 
                     <img class="img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GwFs3_KxNjS.png" alt="" width="537" height="195">
+                    <div class="clear"></div>
                 </div>
             </div>
         </div>
@@ -107,7 +108,7 @@
 
 
 
-";s:5:"mtime";i:1528575425;s:6:"markup";s:3432:"{% if not user %}
+";s:5:"mtime";i:1528580486;s:6:"markup";s:3467:"{% if not user %}
 
 <div class="uk-section uk-section-primary uk-light" style="height:100vh;padding-top:20vh">
 
@@ -161,7 +162,7 @@
                         </fieldset>
                     </form>
                 </div>
-                <div class="uk-width-1-2@l uk-hidden@s uk-visible@l">
+                <div class="uk-width-1-2@l  uk-visible@s">
 
                     <h2 class="_5iyx">Social Trixie</h2>
 
@@ -170,6 +171,7 @@
                     </h4>
 
                     <img class="img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GwFs3_KxNjS.png" alt="" width="537" height="195">
+                    <div class="clear"></div>
                 </div>
             </div>
         </div>

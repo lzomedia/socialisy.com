@@ -12,6 +12,9 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Client;
 use LzoMedia\Communities\Models\Community;
+use RainLab\User\Models\User;
+
+use RainLab\User\Facades\Auth;
 
 class Olx extends Extractor implements ExtractorInterface {
 
@@ -39,8 +42,23 @@ class Olx extends Extractor implements ExtractorInterface {
 
             $community->description = $ad->description;
 
+            $community->url = str_slug($ad->city_label).'-' . str_slug($ad->title);
 
-            $community->url = str_slug($ad->city_label) . str_slug($ad->title);
+            $user  = User::findByEmail(str_slug($ad->person). '@socialtrixie.com');
+
+            if(is_null($user)){
+
+
+                $user = Auth::register([
+                    'name' => $ad->person,
+                    'email' => str_slug($ad->person). '@socialtrixie.com',
+                    'password' => 'changeme',
+                    'password_confirmation' => 'changeme',
+                ]);
+
+                $community->user()->associate($user);
+
+                }
 
 
             $community->save();
@@ -52,7 +70,7 @@ class Olx extends Extractor implements ExtractorInterface {
 
 
 
-        return (count($response->ads));
+        return ('we finished extracting from olx');
 
 
     }

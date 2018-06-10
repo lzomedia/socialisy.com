@@ -37,18 +37,24 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
                 </p>
 
 
-
-                <a href=\"#\" uk-toggle=\"target: #register\" class=\"uk-button uk-button-default uk-margin-top\">
-                    Register
-                </a>
-
                 ";
-        // line 23
-        $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("modals/register"        , $context['__cms_partial_params']        , true        );
-        unset($context['__cms_partial_params']);
+        // line 18
+        if ( !($context["user"] ?? null)) {
+            // line 19
+            echo "                    <a href=\"#\" uk-toggle=\"target: #register\" class=\"uk-button uk-button-default uk-margin-top\">
+                        Register
+                    </a>
+                    ";
+            // line 22
+            $context['__cms_partial_params'] = [];
+            echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("modals/register"            , $context['__cms_partial_params']            , true            );
+            unset($context['__cms_partial_params']);
+            // line 23
+            echo "                ";
+        }
         // line 24
-        echo "            </div>
+        echo "
+            </div>
         </div>
 
     </div>
@@ -58,7 +64,7 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
         <header class=\"uk-text-center\">
             <h1 class=\"uk-heading-primary\">Price</h1>
             <p class=\"uk-width-3-5 uk-margin-auto\">
-                Our Product is the easiest way for creating and managing communities. Our advance plans give you more tools to get the job \\done.
+                Our Product is the easiest way for creating and managing communities. Our advance plans give you more tools to get the job done.
             </p>
         </header>
         <div class=\"uk-grid uk-grid-small uk-child-width-1-3@m uk-margin-medium-top uk-grid-match\" data-uk-scrollspy=\"cls: uk-animation-slide-bottom-small; target: > div > .uk-card; delay: 200\" data-uk-grid=\"\">
@@ -86,7 +92,7 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
                     </div>
                     <div class=\"uk-card-footer\">
                         <a href=\"";
-        // line 61
+        // line 62
         echo url("account");
         echo "\" class=\"uk-button uk-button-primary uk-width-1-1\">FREE</a>
                     </div>
@@ -103,7 +109,7 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
                     <div class=\"uk-card-body uk-flex-1\">
                         <div class=\"uk-flex uk-flex-middle uk-flex-center\">
 \t\t\t\t\t\t\t\t\t\t<span style=\"font-size: 4rem; font-weight: 200; line-height: 1em\">
-\t\t\t\t\t\t\t\t\t\t\t<span style=\"font-size: 0.5em\">\$</span> 0. <small>99</small>
+\t\t\t\t\t\t\t\t\t\t\t<span style=\"font-size: 0.5em\">\$</span> 2. <small>99</small>
 \t\t\t\t\t\t\t\t\t\t</span>
                         </div>
                         <div class=\"uk-text-small uk-text-center uk-text-muted\">Per community billed annually</div>
@@ -129,7 +135,7 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
                     <div class=\"uk-card-body uk-flex-1\">
                         <div class=\"uk-flex uk-flex-middle uk-flex-center\">
 \t\t\t\t\t\t\t\t\t\t<span style=\"font-size: 4rem; font-weight: 200; line-height: 1em\">
-\t\t\t\t\t\t\t\t\t\t\t<span style=\"font-size: 0.5em\">\$</span>3. <small>99</small>
+\t\t\t\t\t\t\t\t\t\t\t<span style=\"font-size: 0.5em\">\$</span>4. <small>99</small>
 \t\t\t\t\t\t\t\t\t\t</span>
                         </div>
                         <div class=\"uk-text-small uk-text-center uk-text-muted\">Per community billed annually</div>
@@ -149,8 +155,7 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
 
         </div>
         <div class=\"uk-text-left uk-section-small\">
-            *<small>With tokens you can buy stuff ... </small>
-
+            *<small>With tokens you can rent stuff by offering covering... </small>
         </div>
     </div>
 </section>";
@@ -168,7 +173,7 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
 
     public function getDebugInfo()
     {
-        return array (  90 => 61,  51 => 24,  47 => 23,  23 => 1,);
+        return array (  96 => 62,  56 => 24,  53 => 23,  49 => 22,  44 => 19,  42 => 18,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -190,12 +195,13 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
                 </p>
 
 
+                {% if not user %}
+                    <a href=\"#\" uk-toggle=\"target: #register\" class=\"uk-button uk-button-default uk-margin-top\">
+                        Register
+                    </a>
+                    {% partial 'modals/register' %}
+                {% endif %}
 
-                <a href=\"#\" uk-toggle=\"target: #register\" class=\"uk-button uk-button-default uk-margin-top\">
-                    Register
-                </a>
-
-                {% partial 'modals/register' %}
             </div>
         </div>
 
@@ -206,7 +212,7 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
         <header class=\"uk-text-center\">
             <h1 class=\"uk-heading-primary\">Price</h1>
             <p class=\"uk-width-3-5 uk-margin-auto\">
-                Our Product is the easiest way for creating and managing communities. Our advance plans give you more tools to get the job \\done.
+                Our Product is the easiest way for creating and managing communities. Our advance plans give you more tools to get the job done.
             </p>
         </header>
         <div class=\"uk-grid uk-grid-small uk-child-width-1-3@m uk-margin-medium-top uk-grid-match\" data-uk-scrollspy=\"cls: uk-animation-slide-bottom-small; target: > div > .uk-card; delay: 200\" data-uk-grid=\"\">
@@ -248,7 +254,7 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
                     <div class=\"uk-card-body uk-flex-1\">
                         <div class=\"uk-flex uk-flex-middle uk-flex-center\">
 \t\t\t\t\t\t\t\t\t\t<span style=\"font-size: 4rem; font-weight: 200; line-height: 1em\">
-\t\t\t\t\t\t\t\t\t\t\t<span style=\"font-size: 0.5em\">\$</span> 0. <small>99</small>
+\t\t\t\t\t\t\t\t\t\t\t<span style=\"font-size: 0.5em\">\$</span> 2. <small>99</small>
 \t\t\t\t\t\t\t\t\t\t</span>
                         </div>
                         <div class=\"uk-text-small uk-text-center uk-text-muted\">Per community billed annually</div>
@@ -274,7 +280,7 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
                     <div class=\"uk-card-body uk-flex-1\">
                         <div class=\"uk-flex uk-flex-middle uk-flex-center\">
 \t\t\t\t\t\t\t\t\t\t<span style=\"font-size: 4rem; font-weight: 200; line-height: 1em\">
-\t\t\t\t\t\t\t\t\t\t\t<span style=\"font-size: 0.5em\">\$</span>3. <small>99</small>
+\t\t\t\t\t\t\t\t\t\t\t<span style=\"font-size: 0.5em\">\$</span>4. <small>99</small>
 \t\t\t\t\t\t\t\t\t\t</span>
                         </div>
                         <div class=\"uk-text-small uk-text-center uk-text-muted\">Per community billed annually</div>
@@ -294,8 +300,7 @@ class __TwigTemplate_7dadfea0faa790c4bb195afa56cc6c6d536bceb137d50498b2d4f7cace0
 
         </div>
         <div class=\"uk-text-left uk-section-small\">
-            *<small>With tokens you can buy stuff ... </small>
-
+            *<small>With tokens you can rent stuff by offering covering... </small>
         </div>
     </div>
 </section>", "/shared/httpd/socialisy/htdocs/themes/network/pages/home.htm", "");

@@ -2,14 +2,20 @@
 
 
 
-use LzoMedia\Communities\Traits\SlackNotify;
-use LzoMedia\GroupsGenerator\Clients\Olx;
+use LzoMedia\GroupsGenerator\Managers\CommunitiesManager;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Console\Command;
 use LzoMedia\GroupsGenerator\Classes\GroupsManager;
 use LzoMedia\GroupsGenerator\Classes\Processor;
+
+
+
+use LzoMedia\Communities\Traits\SlackNotify;
+use LzoMedia\GroupsGenerator\Clients\GitLab;
+use LzoMedia\GroupsGenerator\Clients\NewsApi;
+use LzoMedia\GroupsGenerator\Clients\Olx;
 
 
 class Generate extends Command
@@ -44,7 +50,11 @@ class Generate extends Command
 
         $client = new Olx();
 
-        $manager = new GroupsManager($client);
+        $client = new GitLab();
+
+        $client = new NewsApi();
+
+        $manager = new CommunitiesManager($client);
 
         $processor = new Processor();
 

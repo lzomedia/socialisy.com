@@ -1,8 +1,0 @@
-# ===================================
-#  Field Definitions
-# ===================================
-
-fields:
-    related_object:
-        label: Related object
-        type: dropdown

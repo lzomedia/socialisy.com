@@ -1,4 +1,4 @@
-1528575490a:1:{s:23:"modals/create-story.htm";a:5:{s:8:"fileName";s:23:"modals/create-story.htm";s:7:"content";s:2421:"<div id="create-post" class="uk-modal-full" uk-modal>
+1528593199a:1:{s:23:"modals/create-story.htm";a:5:{s:8:"fileName";s:23:"modals/create-story.htm";s:7:"content";s:2422:"<div id="create-story" class="uk-modal-full" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
@@ -53,7 +53,7 @@
             </div>
         </div>
     </div>
-</div>";s:5:"mtime";i:1528557558;s:6:"markup";s:2421:"<div id="create-post" class="uk-modal-full" uk-modal>
+</div>";s:5:"mtime";i:1528580036;s:6:"markup";s:2422:"<div id="create-story" class="uk-modal-full" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
