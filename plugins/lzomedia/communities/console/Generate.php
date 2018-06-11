@@ -47,23 +47,9 @@ class Generate extends Command
     public function handle()
     {
 
+        $this->olx();
 
-        $client = new Olx();
-
-        $client = new GitLab();
-
-        $client = new NewsApi();
-
-        $manager = new CommunitiesManager($client);
-
-        $processor = new Processor();
-
-        $processor->setManager($manager);
-
-        $response =  $processor->start();
-
-
-        $this->notify($this->slack_action, $response);
+        $this->gitlab();
 
 
     }
@@ -78,4 +64,33 @@ class Generate extends Command
     }
 
 
+    public function gitlab()
+    {
+        $client = new GitLab();
+
+        $manager = new CommunitiesManager($client);
+
+        $processor = new Processor();
+
+        $processor->setManager($manager);
+
+        $response =  $processor->start();
+
+
+        $this->notify($this->slack_action, $response);
+    }
+
+    public function olx()
+    {
+
+        $client     = new Olx();
+        $manager    = new CommunitiesManager($client);
+        $processor  = new Processor();
+        $processor  ->setManager($manager);
+        $response   =  $processor->start();
+
+        $this->notify($this->slack_action, $response);
+    }
+
 }
+

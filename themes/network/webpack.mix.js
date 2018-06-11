@@ -10,6 +10,9 @@ let mix = require('laravel-mix');
  | file for your application, as well as bundling up your JS files.
  |
  */
+mix.autoload({
+    'jquery': ['jQuery', '$'],
+})
 
 mix.js('assets/js/home.js', 'production/')
     .sass('assets/sass/home.scss','production')
@@ -20,17 +23,30 @@ mix.js('assets/js/home.js', 'production/')
         processCssUrls: false
 });
 
-mix.autoload({
-    'jquery': ['jQuery', '$'],
-})
-
-mix.js('assets/js/stories.js', 'production/')
-    .sass('assets/sass/stories.scss','production')
-    .minify('production/stories.js')
-    .minify('production/stories.css')
+mix.js('assets/js/account.js', 'production/')
+    .sass('assets/sass/account.scss','production')
+    .minify('production/account.js')
+    .disableNotifications()
     .options({
         purifyCss: false,
         processCssUrls: false
     });
 
 
+mix.js('assets/js/communities.js', 'production/')
+    .sass('assets/sass/communities.scss','production')
+    .minify('production/communities.js')
+    .disableNotifications()
+    .options({
+        purifyCss: false,
+        processCssUrls: false
+    });
+
+mix.js('assets/js/stories.js', 'production/')
+    .sass('assets/sass/stories.scss','production')
+    .minify('production/stories.js')
+    .disableNotifications()
+    .options({
+        purifyCss: false,
+        processCssUrls: false
+    });

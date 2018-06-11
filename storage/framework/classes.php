@@ -180,7 +180,7 @@
   'LzoMedia\\Groups\\Components\\DisplayMyGroups' => 'plugins/lzomedia/groups/components/DisplayMyGroups.php',
   'RainLab\\MailChimp\\Components\\Signup' => 'plugins/rainlab/mailchimp/components/Signup.php',
   'RainLab\\User\\Components\\ResetPassword' => 'plugins/rainlab/user/components/ResetPassword.php',
-  'lzomedia\\groups\\Controllers\\postsmanager' => 'plugins/lzomedia/groups/controllers/postsmanager.php',
+  'lzomedia\\groups\\Controllers\\StoriesManager' => 'plugins/lzomedia/groups/controllers/postsmanager.php',
   'LzoMedia\\Groups\\Models\\PostsManager' => 'plugins/lzomedia/groups/models/PostsManager.php',
   'Cms\\Models\\ThemeData' => 'modules/cms/models/ThemeData.php',
   'System\\Classes\\SystemController' => 'modules/system/classes/SystemController.php',
@@ -294,4 +294,6 @@
   'LzoMedia\\Communities\\Components\\Community' => 'plugins/lzomedia/communities/components/Community.php',
   'keios\\multisite\\Plugin' => 'plugins/keios/multisite/Plugin.php',
   'Keios\\Multisite\\Models\\Setting' => 'plugins/keios/multisite/models/Setting.php',
+  'LzoMedia\\Communities\\Components\\Stories' => 'plugins/lzomedia/communities/components/Stories.php',
+  'LzoMedia\\Communities\\Models\\Stories' => 'plugins/lzomedia/communities/models/Stories.php',
 );

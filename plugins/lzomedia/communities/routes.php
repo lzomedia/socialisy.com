@@ -36,3 +36,18 @@ Route::get('/api/onGetCommunities', function () {
     return $data['groups'];
 
 });
+
+
+
+
+//@method onGetCommunities
+Route::get('/api/onGetStories', function () {
+
+
+    $communities =  new \LzoMedia\Communities\Components\Stories();
+
+    $data['stories'] = $communities->initRepository(24);
+
+    return $data['stories'];
+
+});

@@ -30,18 +30,17 @@ class __TwigTemplate_4f42c8ce6adae87832b03c150dcb5177574821ce3c6d3f9f3266c832091
                     <h1 class=\"uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent uk-heading-line uk-text-center\">
                         <span><i uk-icon=icon:star></i> Recent Stories <i uk-icon=icon:star></i></span>
                     </h1>
-                    <p>Here is a list of our recent stories join an story start chatting with friends.
-                    </p>
+                    <p>Here is a list of our recent stories that people are chatting about.</p>
                     <a href=\"#\" uk-toggle=\"target: #create-story\" class=\"uk-button uk-button-default uk-margin-top\">
                         Create your own story
                     </a>
 
                     ";
-        // line 17
+        // line 16
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("modals/create-story"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 18
+        // line 17
         echo "                </div>
             </div>
 
@@ -51,9 +50,8 @@ class __TwigTemplate_4f42c8ce6adae87832b03c150dcb5177574821ce3c6d3f9f3266c832091
 <section class=\"uk-section-default top-streamers\">
     <div class=\"uk-section uk-section-small uk-background-cover\">
         <div class=uk-container>
-            <!-- Start the listing of the groups !-->
-
-            @Section to come.
+            <!-- Start the listing of the stories !-->
+            <div id=\"stories\"></div>
 
         </div>
     </div>
@@ -72,7 +70,7 @@ class __TwigTemplate_4f42c8ce6adae87832b03c150dcb5177574821ce3c6d3f9f3266c832091
 
     public function getDebugInfo()
     {
-        return array (  45 => 18,  41 => 17,  23 => 1,);
+        return array (  44 => 17,  40 => 16,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -87,8 +85,7 @@ class __TwigTemplate_4f42c8ce6adae87832b03c150dcb5177574821ce3c6d3f9f3266c832091
                     <h1 class=\"uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent uk-heading-line uk-text-center\">
                         <span><i uk-icon=icon:star></i> Recent Stories <i uk-icon=icon:star></i></span>
                     </h1>
-                    <p>Here is a list of our recent stories join an story start chatting with friends.
-                    </p>
+                    <p>Here is a list of our recent stories that people are chatting about.</p>
                     <a href=\"#\" uk-toggle=\"target: #create-story\" class=\"uk-button uk-button-default uk-margin-top\">
                         Create your own story
                     </a>
@@ -103,9 +100,8 @@ class __TwigTemplate_4f42c8ce6adae87832b03c150dcb5177574821ce3c6d3f9f3266c832091
 <section class=\"uk-section-default top-streamers\">
     <div class=\"uk-section uk-section-small uk-background-cover\">
         <div class=uk-container>
-            <!-- Start the listing of the groups !-->
-
-            @Section to come.
+            <!-- Start the listing of the stories !-->
+            <div id=\"stories\"></div>
 
         </div>
     </div>

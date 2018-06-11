@@ -35,4 +35,24 @@ class Stories extends Model
     }
 
 
+
+    public function comments()
+    {
+        return $this->hasMany('LzoMedia\Communities\Models\StoryComments');
+    }
+
+
+    public function tags()
+    {
+        return $this->hasMany('LzoMedia\Communities\Models\StoryTags');
+    }
+
+
+    public function categories()
+    {
+        return $this->hasMany('LzoMedia\Communities\Models\StoryCategories');
+    }
+
+
+
 }

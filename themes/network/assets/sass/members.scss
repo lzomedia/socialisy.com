@@ -1,8 +1,8 @@
-@import "vars";
-// 2. Import default variables and available mixins.
 
 @import "../../node_modules/uikit/src/scss/variables-theme.scss";
 @import "../../node_modules/uikit/src/scss/mixins-theme.scss";
+@import "vars";
+// 2. Import default variables and available mixins.
 
 // 3. Your custom mixin overwrites.
 @mixin hook-card() {
@@ -27,13 +27,5 @@
 
 @import "helpers";
 
-
-.uk-section-default {
-  background: #f2f2f2;
-}
-
-.side-menu-header{
-  margin-bottom: 4vh;
-}
 
 

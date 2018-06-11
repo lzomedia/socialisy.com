@@ -1,8 +1,11 @@
-1528626879a:1:{s:11:"account.htm";a:12:{s:8:"fileName";s:11:"account.htm";s:7:"content";s:266:"title = "Account"
+1528757938a:1:{s:11:"account.htm";a:14:{s:8:"fileName";s:11:"account.htm";s:7:"content";s:305:"title = "Account"
 url = "/account/:code?"
-layout = "account"
+layout = "default"
 description = "Create an account on your favorite groups network"
 is_hidden = 0
+css ='account.css'
+js='account.js'
+
 
 [account]
 redirect = "account"
@@ -12,4 +15,4 @@ forceSecure = 0
 [sociallogin]
 ==
 
-{% component 'account' %}";s:5:"mtime";i:1528573452;s:6:"markup";s:25:"{% component 'account' %}";s:4:"code";N;s:5:"title";s:7:"Account";s:3:"url";s:15:"/account/:code?";s:6:"layout";s:7:"account";s:11:"description";s:49:"Create an account on your favorite groups network";s:9:"is_hidden";s:1:"0";s:7:"account";a:3:{s:8:"redirect";s:7:"account";s:9:"paramCode";s:4:"code";s:11:"forceSecure";s:1:"0";}s:11:"sociallogin";a:0:{}}}
+{% component 'account' %}";s:5:"mtime";i:1528662594;s:6:"markup";s:25:"{% component 'account' %}";s:4:"code";N;s:5:"title";s:7:"Account";s:3:"url";s:15:"/account/:code?";s:6:"layout";s:7:"default";s:11:"description";s:49:"Create an account on your favorite groups network";s:9:"is_hidden";s:1:"0";s:3:"css";s:11:"account.css";s:2:"js";s:10:"account.js";s:7:"account";a:3:{s:8:"redirect";s:7:"account";s:9:"paramCode";s:4:"code";s:11:"forceSecure";s:1:"0";}s:11:"sociallogin";a:0:{}}}

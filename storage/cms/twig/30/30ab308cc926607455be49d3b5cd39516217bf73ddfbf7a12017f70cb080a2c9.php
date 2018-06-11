@@ -152,7 +152,7 @@ class __TwigTemplate_623a3ecc8720fafb521cca62c3d45e26e1b9a4ea886f21dbbc63e875ca2
 <!-- /#wrapper -->
 <script src=\"";
         // line 82
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/production/dashboard.min.js");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/production/account.min.js");
         echo "\"></script>
 ";
         // line 83
@@ -267,7 +267,7 @@ class __TwigTemplate_623a3ecc8720fafb521cca62c3d45e26e1b9a4ea886f21dbbc63e875ca2
 </div>
 
 <!-- /#wrapper -->
-<script src=\"{{ '/production/dashboard.min.js' | theme }}\"></script>
+<script src=\"{{ '/production/account.min.js' | theme }}\"></script>
 {% framework extras %}
 
 

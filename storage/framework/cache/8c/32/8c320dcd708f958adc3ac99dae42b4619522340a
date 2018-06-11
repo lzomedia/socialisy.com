@@ -1,37 +1,33 @@
-1528592336a:1:{s:25:"modals/_notifications.htm";a:5:{s:8:"fileName";s:25:"modals/_notifications.htm";s:7:"content";s:746:"
+1528757939a:1:{s:25:"modals/_notifications.htm";a:5:{s:8:"fileName";s:25:"modals/_notifications.htm";s:7:"content";s:507:"
 <div class="uk-offcanvas-content">
 
     <a type="button" uk-toggle="target: #offcanvas-flip">
-        <small class="uk-text-danger uk-badge" style="background: transparent;font-size: 12px" uk-icon="icon: mail" > 23 </small>
-    </button>
+        <small class="uk-text-danger uk-badge" style="background: transparent;font-size: 12px" uk-icon="icon: mail" ></small>
+    </a>
 
     <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
         <div class="uk-offcanvas-bar">
 
             <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-            <h3>Title</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            @todo implement notifications system
 
         </div>
     </div>
 
 </div>
-";s:5:"mtime";i:1528584927;s:6:"markup";s:744:"<div class="uk-offcanvas-content">
+";s:5:"mtime";i:1528631772;s:6:"markup";s:505:"<div class="uk-offcanvas-content">
 
     <a type="button" uk-toggle="target: #offcanvas-flip">
-        <small class="uk-text-danger uk-badge" style="background: transparent;font-size: 12px" uk-icon="icon: mail" > 23 </small>
-    </button>
+        <small class="uk-text-danger uk-badge" style="background: transparent;font-size: 12px" uk-icon="icon: mail" ></small>
+    </a>
 
     <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
         <div class="uk-offcanvas-bar">
 
             <button class="uk-offcanvas-close" type="button" uk-close></button>
 
-            <h3>Title</h3>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            @todo implement notifications system
 
         </div>
     </div>

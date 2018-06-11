@@ -100,7 +100,9 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
     <!-- THEME CSS -->
     <link rel=\"stylesheet\" href=\"";
         // line 46
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("production/home.min.css");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("production/");
+        echo "/";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "css", array()), "html", null, true);
         echo "\">
 
 
@@ -120,85 +122,92 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
             foreach ($messages as $message) {
                 $context["type"] = $type;                $context["message"] = $message;                // line 60
                 echo "
-    <div data-control=\"flash-message\" onload=\"UIkit.notification({message: '  ";
-                // line 61
+
+    <!-- test !-->
+    <div data-control=\"flash-message\" data-interval=\"10\">
+
+        <scripts>
+            \$(window).on('load', function(response) {
+
+                UIkit.notification({message: '";
+                // line 68
                 echo twig_escape_filter($this->env, ($context["message"] ?? null), "html", null, true);
                 echo "', status: '";
                 echo twig_escape_filter($this->env, ($context["type"] ?? null), "html", null, true);
-                echo "'})\" class=\"flash-message ease-out ";
-                echo twig_escape_filter($this->env, ($context["type"] ?? null), "html", null, true);
-                echo "\" data-interval=\"10\">
-        ";
-                // line 62
-                echo twig_escape_filter($this->env, ($context["message"] ?? null), "html", null, true);
-                echo "
+                echo "'});
+
+            });
+
+        </scripts>
+
     </div>
 
 
     ";
             }
         }
-        $context["type"] = $_type;        $context["message"] = $_message;        // line 67
+        $context["type"] = $_type;        $context["message"] = $_message;        // line 78
         echo "
 
     <!--- Header !-->
     ";
-        // line 70
-        $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/_header.htm"        , $context['__cms_partial_params']        , true        );
-        unset($context['__cms_partial_params']);
-        // line 71
-        echo "
-
-    <!-- Page !-->
-    ";
-        // line 74
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 75
-        echo "
-
-    <!--- Footer !-->
-    ";
-        // line 78
-        $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/_footer.htm"        , $context['__cms_partial_params']        , true        );
-        unset($context['__cms_partial_params']);
-        // line 79
-        echo "
-    <!-- Side Menu !-->
-    ";
         // line 81
         $context['__cms_partial_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/_side_menu.htm"        , $context['__cms_partial_params']        , true        );
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/_header.htm"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
         // line 82
         echo "
 
-    <!-- Notification Side Menu !-->
+    <!-- Page !-->
     ";
         // line 85
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        // line 86
+        echo "
+
+    <!--- Footer !-->
+    ";
+        // line 89
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/_footer.htm"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 90
+        echo "
+    <!-- Side Menu !-->
+    ";
+        // line 92
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/_side_menu.htm"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 93
+        echo "
+
+    <!-- Notification Side Menu !-->
+    ";
+        // line 96
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/_notifications.htm"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 86
+        // line 97
         echo "
 </div>
 <!-- /#wrapper -->
 <script src=\"";
-        // line 89
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/production/home.min.js");
+        // line 100
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/production/");
+        echo "/";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", array()), "js", array()), "html", null, true);
         echo "\"></script>
 ";
-        // line 90
+        // line 101
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
-        // line 91
+        // line 102
         echo "
-
 
 </body>
 </html>";
@@ -216,7 +225,7 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
 
     public function getDebugInfo()
     {
-        return array (  200 => 91,  193 => 90,  189 => 89,  184 => 86,  180 => 85,  175 => 82,  171 => 81,  167 => 79,  163 => 78,  158 => 75,  156 => 74,  151 => 71,  147 => 70,  142 => 67,  133 => 62,  125 => 61,  122 => 60,  119 => 59,  103 => 46,  93 => 39,  89 => 38,  78 => 30,  73 => 28,  65 => 23,  61 => 22,  56 => 20,  49 => 16,  45 => 15,  41 => 14,  34 => 10,  23 => 1,);
+        return array (  210 => 102,  203 => 101,  197 => 100,  192 => 97,  188 => 96,  183 => 93,  179 => 92,  175 => 90,  171 => 89,  166 => 86,  164 => 85,  159 => 82,  155 => 81,  150 => 78,  134 => 68,  124 => 60,  121 => 59,  103 => 46,  93 => 39,  89 => 38,  78 => 30,  73 => 28,  65 => 23,  61 => 22,  56 => 20,  49 => 16,  45 => 15,  41 => 14,  34 => 10,  23 => 1,);
     }
 
     public function getSourceContext()
@@ -266,7 +275,7 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
 
 
     <!-- THEME CSS -->
-    <link rel=\"stylesheet\" href=\"{{ 'production/home.min.css' | theme }}\">
+    <link rel=\"stylesheet\" href=\"{{ 'production/' | theme }}/{{ this.page.css }}\">
 
 
 </head>
@@ -281,8 +290,19 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
     <!-- Flash -->
     {% flash %}
 
-    <div data-control=\"flash-message\" onload=\"UIkit.notification({message: '  {{ message }}', status: '{{ type }}'})\" class=\"flash-message ease-out {{ type }}\" data-interval=\"10\">
-        {{ message }}
+
+    <!-- test !-->
+    <div data-control=\"flash-message\" data-interval=\"10\">
+
+        <scripts>
+            \$(window).on('load', function(response) {
+
+                UIkit.notification({message: '{{ message }}', status: '{{ type }}'});
+
+            });
+
+        </scripts>
+
     </div>
 
 
@@ -309,9 +329,8 @@ class __TwigTemplate_e4d6e2f49cf3dda86fcfc16604cf3b0ca3adc77697bebb2bca396c484a4
 
 </div>
 <!-- /#wrapper -->
-<script src=\"{{ '/production/home.min.js' | theme }}\"></script>
+<script src=\"{{ '/production/' | theme }}/{{ this.page.js }}\"></script>
 {% framework extras %}
-
 
 
 </body>

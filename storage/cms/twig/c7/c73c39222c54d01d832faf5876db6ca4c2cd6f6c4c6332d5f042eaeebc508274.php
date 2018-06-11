@@ -23,7 +23,7 @@ class __TwigTemplate_e3361305588f11a17ea08606f7c48b7ec690dab3472fd69ff0a1adafe2e
         if ( !($context["user"] ?? null)) {
             // line 2
             echo "
-<div class=\"uk-section uk-section-primary uk-light\" style=\"height:100vh;padding-top:20vh\">
+<div class=\"uk-section uk-section-secondary uk-light\" style=\"height:100vh;padding-top:20vh\">
 
     <div class=\"uk-container\">
 
@@ -170,7 +170,7 @@ class __TwigTemplate_e3361305588f11a17ea08606f7c48b7ec690dab3472fd69ff0a1adafe2e
     {
         return new Twig_Source("{% if not user %}
 
-<div class=\"uk-section uk-section-primary uk-light\" style=\"height:100vh;padding-top:20vh\">
+<div class=\"uk-section uk-section-secondary uk-light\" style=\"height:100vh;padding-top:20vh\">
 
     <div class=\"uk-container\">
 

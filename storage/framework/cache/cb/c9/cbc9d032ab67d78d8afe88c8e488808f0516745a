@@ -1,8 +1,12 @@
-1528626879a:1:{s:8:"home.htm";a:15:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:6976:"title = "Laravel Community Cms - the best social network community to join and chat with your friends"
+1528757938a:1:{s:8:"home.htm";a:17:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:7012:"title = "Laravel Community Cms - the best social network community to join and chat with your friends"
 url = "/"
 layout = "default"
 meta_title = "Laravel Community the best social network community build with laravel and october cms to join and chat with your friends"
 meta_description = "Join the best community where you can chat with friends and family in your own private groups without the fear of beeing tracked ."
+
+css ='home.css'
+js ='home.js'
+
 is_hidden = 0
 [account]
 [sociallogin]
@@ -137,7 +141,7 @@ redirect = "home"
             *<small>With tokens you can rent stuff by offering covering... </small>
         </div>
     </div>
-</section>";s:5:"mtime";i:1528584453;s:6:"markup";s:6440:"<section class="uk-section uk-section-small uk-padding-remove">
+</section>";s:5:"mtime";i:1528648624;s:6:"markup";s:6440:"<section class="uk-section uk-section-small uk-padding-remove">
     <div class="uk-height-large uk-cover-container" style="height:100vh">
         <img src="https://picsum.photos/1300/500/?random" alt="Alt img" data-uk-cover="" class="uk-cover" style="width: 1171px; height: 450px;">
         <div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-light uk-text-center">
@@ -262,4 +266,4 @@ redirect = "home"
             *<small>With tokens you can rent stuff by offering covering... </small>
         </div>
     </div>
-</section>";s:4:"code";N;s:5:"title";s:92:"Laravel Community Cms - the best social network community to join and chat with your friends";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:121:"Laravel Community the best social network community build with laravel and october cms to join and chat with your friends";s:16:"meta_description";s:130:"Join the best community where you can chat with friends and family in your own private groups without the fear of beeing tracked .";s:9:"is_hidden";s:1:"0";s:7:"account";a:0:{}s:11:"sociallogin";a:0:{}s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:4:"home";}s:11:"Communities";a:0:{}}}
+</section>";s:4:"code";N;s:5:"title";s:92:"Laravel Community Cms - the best social network community to join and chat with your friends";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:10:"meta_title";s:121:"Laravel Community the best social network community build with laravel and october cms to join and chat with your friends";s:16:"meta_description";s:130:"Join the best community where you can chat with friends and family in your own private groups without the fear of beeing tracked .";s:3:"css";s:8:"home.css";s:2:"js";s:7:"home.js";s:9:"is_hidden";s:1:"0";s:7:"account";a:0:{}s:11:"sociallogin";a:0:{}s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:4:"home";}s:11:"Communities";a:0:{}}}

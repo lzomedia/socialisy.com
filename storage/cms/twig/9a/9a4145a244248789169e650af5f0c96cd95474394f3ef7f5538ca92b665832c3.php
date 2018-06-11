@@ -38,21 +38,12 @@ class __TwigTemplate_2046252b28454ad5607148c39d508f0bcb2b9cb0e5253bccbfb94ef024a
                             Name
                         </label>
                         <div class=\"uk-form-controls\">
-                            <input name=\"group-name\" class=\"uk-input\" id=\"form-stacked-text\" required type=\"text\">
+                            <input name=\"name\" class=\"uk-input\" id=\"form-stacked-text\" required type=\"text\">
                         </div>
                     </div>
 
-                    <div class=\"uk-margin\">
-                        <div class=\"uk-form-label\">Privacy</div>
-                        <div class=\"uk-form-controls\">
-                            <div class=\"uk-margin uk-grid-small uk-child-width-auto uk-grid\">
 
-                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"personal\"> Personal</label><br>
-                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"profesional\"> Professional</label><br>
-                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"enterprise\"> Enterprise</label>
-                            </div>
-                        </div>
-                    </div>
+                    <input name=\"image\" hidden value=\"https://picsum.photos/300/300/?random\" class=\"uk-input\"  required type=\"text\">
 
 
                     <div class=\"uk-margin\">
@@ -61,7 +52,7 @@ class __TwigTemplate_2046252b28454ad5607148c39d508f0bcb2b9cb0e5253bccbfb94ef024a
                             Description
                         </label>
 
-                        <textarea class=\"uk-textarea\" rows=\"5\"></textarea>
+                        <textarea name=\"description\" class=\"uk-textarea\" rows=\"5\"></textarea>
                     </div>
 
 
@@ -112,21 +103,12 @@ class __TwigTemplate_2046252b28454ad5607148c39d508f0bcb2b9cb0e5253bccbfb94ef024a
                             Name
                         </label>
                         <div class=\"uk-form-controls\">
-                            <input name=\"group-name\" class=\"uk-input\" id=\"form-stacked-text\" required type=\"text\">
+                            <input name=\"name\" class=\"uk-input\" id=\"form-stacked-text\" required type=\"text\">
                         </div>
                     </div>
 
-                    <div class=\"uk-margin\">
-                        <div class=\"uk-form-label\">Privacy</div>
-                        <div class=\"uk-form-controls\">
-                            <div class=\"uk-margin uk-grid-small uk-child-width-auto uk-grid\">
 
-                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"personal\"> Personal</label><br>
-                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"profesional\"> Professional</label><br>
-                            <label><input class=\"uk-radio\" type=\"radio\" name=\"privacy\" value=\"enterprise\"> Enterprise</label>
-                            </div>
-                        </div>
-                    </div>
+                    <input name=\"image\" hidden value=\"https://picsum.photos/300/300/?random\" class=\"uk-input\"  required type=\"text\">
 
 
                     <div class=\"uk-margin\">
@@ -135,7 +117,7 @@ class __TwigTemplate_2046252b28454ad5607148c39d508f0bcb2b9cb0e5253bccbfb94ef024a
                             Description
                         </label>
 
-                        <textarea class=\"uk-textarea\" rows=\"5\"></textarea>
+                        <textarea name=\"description\" class=\"uk-textarea\" rows=\"5\"></textarea>
                     </div>
 
 

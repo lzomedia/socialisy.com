@@ -1,14 +1,17 @@
-1528626879a:1:{s:11:"members.htm";a:12:{s:8:"fileName";s:11:"members.htm";s:7:"content";s:2864:"title = "Network Members of Social Trixie"
+1528757938a:1:{s:11:"members.htm";a:13:{s:8:"fileName";s:11:"members.htm";s:7:"content";s:2887:"title = "Network Members of Social Trixie"
 url = "/members"
 layout = "default"
 meta_title = "Socialisy the best social network community to join and chat with your friends"
 is_hidden = 0
 
+js = 'members.js'
+css = 'members.css'
+
 [session]
 security = "all"
 redirect = "home"
 
-[DisplayStories]
+
 
 ==
 <section class="uk-section uk-section-small uk-padding-remove">
@@ -72,7 +75,7 @@ redirect = "home"
         </div>
     </div>
 </section>
-";s:5:"mtime";i:1528557558;s:6:"markup";s:2608:"<section class="uk-section uk-section-small uk-padding-remove">
+";s:5:"mtime";i:1528644556;s:6:"markup";s:2608:"<section class="uk-section uk-section-small uk-padding-remove">
 
         <div class="uk-height-large uk-cover-container uk-border-rounded">
             <div id="particles-js" data-uk-cover="" class="uk-cover" ></div>
@@ -132,4 +135,4 @@ redirect = "home"
 
         </div>
     </div>
-</section>";s:4:"code";N;s:5:"title";s:32:"Network Members of Social Trixie";s:3:"url";s:8:"/members";s:6:"layout";s:7:"default";s:10:"meta_title";s:78:"Socialisy the best social network community to join and chat with your friends";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:4:"home";}s:14:"DisplayStories";a:0:{}}}
+</section>";s:4:"code";N;s:5:"title";s:32:"Network Members of Social Trixie";s:3:"url";s:8:"/members";s:6:"layout";s:7:"default";s:10:"meta_title";s:78:"Socialisy the best social network community to join and chat with your friends";s:9:"is_hidden";s:1:"0";s:2:"js";s:10:"members.js";s:3:"css";s:11:"members.css";s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:4:"home";}}}

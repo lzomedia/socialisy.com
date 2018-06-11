@@ -1,4 +1,4 @@
-1528626312a:1:{s:19:"modals/register.htm";a:5:{s:8:"fileName";s:19:"modals/register.htm";s:7:"content";s:2710:"<div id="register" class="uk-modal-container" uk-modal>
+1528757955a:1:{s:19:"modals/register.htm";a:5:{s:8:"fileName";s:19:"modals/register.htm";s:7:"content";s:2710:"<div id="register" class="uk-modal-container" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
             <div class="uk-padding">
@@ -65,7 +65,7 @@
            </div>
         </div>
     </div>
-</div>";s:5:"mtime";i:1528574448;s:6:"markup";s:2710:"<div id="register" class="uk-modal-container" uk-modal>
+</div>";s:5:"mtime";i:1528626695;s:6:"markup";s:2710:"<div id="register" class="uk-modal-container" uk-modal>
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
             <div class="uk-padding">

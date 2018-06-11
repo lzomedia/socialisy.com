@@ -1,81 +1,89 @@
 <template>
 
-    <div class="come" data-filter=".data-uk-filter-control=">
-
-        <div class="uk-grid uk-animation-toggle uk-grid-medium uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l  uk-child-width-1-6@xl uk-grid-match js-filter" data-uk-grid="masonry: true" data-uk-sortable="handle: .drag-icon">
-
-            <div class="row">
+    <!-- start the filter !-->
+    <div id="filter" uk-filter="target: .js-filter">
 
 
-                <div class="">
-                    <ul class="uk-subnav uk-subnav-pill" >
-                        <li class="uk-active" data-uk-filter-control><a href="#">Show All</a></li>
-                        <li data-uk-filter-control=".yahoo"><a href="#">Yahoo</a></li>
-                        <li data-uk-filter-control=".facebook"><a href="#">Facebook</a></li>
-                        <li data-uk-filter-control=".news"><a href="#">News</a></li>
-                        <li data-uk-filter-control=".ads"><a href="#">Ads</a></li>
-                    </ul>
-                </div>
 
-            </div>
-            <div v-for="group in groups" :class="group.type">
-                <div class="uk-card uk-card-small uk-card-default">
-                    <div class="uk-card-header">
-                        <div class="uk-grid uk-grid-small uk-text-small" data-uk-grid="">
-                            <div class="uk-width-expand uk-first-column">
-                            <span class="cat-txt">
-                                {{ group.type| capitalize }}
-                            </span>
-                            </div>
-                            <div class="uk-width-auto uk-text-right uk-text-muted">
-                            <span data-uk-icon="icon:clock; ratio: 0.8" class="uk-icon">
-                                {{ group.created_at | formatTime }}
-                            </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-card-media">
-                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0" uk-parallax="sepia: 100;">
-                            <img :src="group.image | defaultImage" width="400" data-uk-img :alt="group.name">
-                            <div v-if="group.image | defaultImage" class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary">
-                                <span data-uk-icon="icon:heart; ratio: 0.8"></span> 12.345
-                                <span data-uk-icon="icon:comment; ratio: 0.8"></span> 12.345
-                            </div>
-                        </div>
-                    </div>
+        <div class="uk-container uk-container-expand uk-align-center filter-bar">
 
-                    <div class="uk-card-body">
-                        <h6 class="uk-margin-small-bottom uk-margin-remove-adjacent uk-text-bold">
-                            {{group.name}}
-                        </h6>
-                        <p class="uk-text-small uk-text-muted">
-                            {{group.description}}
-                        </p>
-                    </div>
-                    <div class="uk-card-footer">
-                        <div class="uk-grid uk-grid-small uk-grid-divider uk-flex uk-flex-middle" data-uk-grid="">
-                            <div class="uk-width-expand uk-text-small uk-first-column">
-                                {{ group.user.name }}
-                            </div>
-                            <div class="uk-width-auto uk-text-right">
-                                <a data-uk-tooltip="title: Drag this card" href="#" class="uk-icon-link drag-icon uk-icon" data-uk-icon="icon:move; ratio: 1" title="" aria-expanded="false">
+            <div class="uk-grid-small uk-flex-middle " uk-grid>
 
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="uk-text-nowrap">
+
+                    <span class="uk-active" uk-filter-control="sort: data-name">
+                        <a class="uk-icon-link" href="#" uk-icon="icon: arrow-down"></a>
+                    </span>
+                    <span uk-filter-control="sort: data-name; order: desc">
+                        <a class="uk-icon-link" href="#" uk-icon="icon: arrow-up"></a>
+                    </span>
+
+
                 </div>
             </div>
 
         </div>
 
-        <div class="uk-align-center uk-animation-toggle uk-flex-center">
 
-            <a v-on:click="viewMoreGroups(1)" class="btn-load-more uk-button uk-button-primary uk-animation-fade">
-                View More <span class="uk-margin-small-left uk-icon" uk-icon="icon: more"></span>
-            </a>
+
+
+
+        <div class="uk-container uk-container-expand">
+            <ul class="js-filter uk-grid-match uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-3@l uk-text-center uk-grid-small" uk-grid="masonry: true">
+                <li data-color="blue"
+                    data-size="small"
+                    data-name="B"
+                    v-for="group in stories" :class="group.type" :data-category="group.type">
+
+
+                    <div class="uk-card uk-card-small uk-card-default uk-box-shadow-large picture-item">
+                        <div class="uk-card-media uk-inline" v-if="group.image != null">
+
+                            <div class="uk-inline">
+                                <img :src="group.image | defaultImage" width="400" data-uk-img :alt="group.name">
+                            </div>
+
+                        </div>
+                        <div class="uk-card-body" v-if="group.message != ''">
+                            <span class="uk-icon" data-uk-icon="icon:user;"></span> {{group.user.name}}
+                            <p class="uk-text-small uk-text-muted">
+                                {{group.message }}
+                            </p>
+                        </div>
+                        <div class="uk-card-footer">
+                            <div class="uk-grid uk-grid-small uk-grid-divider uk-flex uk-flex-middle" data-uk-grid="">
+
+
+                                <div class="uk-width-auto uk-text-right">
+                                    <a data-request="onLike"  class="">
+                                        <span class="uk-icon" data-uk-icon="icon:heart;ration:3">
+
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+
+            </ul>
 
         </div>
+
+
+        <div class="container uk-align-center">
+
+            <div class="uk-align-center uk-animation-toggle" data-uk-grid="">
+
+                <a id="load-more-action" v-on:click="viewMoreStories()" class="uk-align-center uk-animation-fade">
+                    View More <span class="uk-margin-small-left uk-icon" uk-icon="icon: more"></span>
+                </a>
+
+            </div>
+
+        </div>
+
 
     </div>
 
@@ -83,107 +91,129 @@
 
 
 <script>
+
+
     import axios from 'axios';
-    import moment from 'moment';
 
     export default {
+
+        /**
+         *
+         * @returns {{groups: Array, page: string, defaultImage: string, instance: string}}
+         */
         data() {
             return {
-                groups: [],
-                errors: []
+                stories:[],
+                page: '/api/onGetStories',
+                instance: '',
+                filter:'',
+
             }
         },
-        created() {
+        /**
+         *
+         */
+        beforeMount() {
 
-            this.defaultImage(0);
-            
-            this.groups = this.viewMoreGroups();
+            this.viewMoreStories();
 
+            this.comunities = [];
         },
+        /**
+         * .$el.__uikit__.grid.masonry
+         */
         methods: {
 
-            viewMoreGroups(page){
+            viewMoreStories() {
 
-                getGroups(page).then((data) => {
 
-                    this.groups = data.data;
+                let page = this.page;
+
+                getStories(page).then((response) => {
+
+                    if(response.status == 200){
+
+
+                        //console.log(response.data);
+
+
+                        this.stories = this.stories.concat(response.data.data);
+
+                        this.page = response.data.next_page_url;
+
+                        console.log(this.stories);
+
+
+
+                    }
+
+
 
                 });
 
+            },
 
-            }
+
         },
         filters: {
+
             capitalize: function (value) {
-
-
 
                 if (!value) return ''
                 value = value.toString()
                 return value.charAt(0).toUpperCase() + value.slice(1)
             },
-
-            formatTime:function (value) {
+            formatTime: function (value) {
 
                 if (value) {
-
-                    return moment(value).format('ll');
+                    return moment(value).format('gggg');
                 }
 
             },
-            defaultImage:function (value) {
+            defaultImage: function (value) {
 
-                console.log(value);
 
-                if(value == 'false'){
+                if (value == 0) {
 
-                    return false;
+                    return 'https://picsum.photos/300/300/?random';
                 }
 
                 return value;
 
             }
-        }
+        },
 
-
-    };
-
-
-
-
-    /**
-     * @method async viewMoreGroups
-     * @returns {Promise<*>}
-     */
-    async function getGroups(page) {
-
-        console.log(page);
-
-        try {
-
-            if(page){
-
-                page = '?page=' + page;
-
-            }else{
-
-                page = '?page=' + 1;
-            }
-
-            const response = await axios.get('/api/onGetStories' + page);
-
-
-            return response.data;
-
-        } catch (error) {
-
-            console.error(error);
-
-        }
     }
 
 
+    /**
+     * @method async getStories
+     * @returns {Promise<*>}
+     */
+    async function getStories(page) {
+
+        try {
+
+            return await axios.get(page);
+
+        } catch (error) {
+
+
+
+        }
+
+    }
+
+
+    $(window).on('ajaxErrorMessage', function(event, message){
+
+        // This can be any custom JavaScript you want
+        alert('Something bad happened, mate, here it is: ' + message);
+
+        // This will stop the default alert() message
+        event.preventDefault();
+
+    })
+
 </script>
-
-
 

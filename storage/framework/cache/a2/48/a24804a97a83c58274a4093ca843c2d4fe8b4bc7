@@ -1,4 +1,4 @@
-1528626879a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2322:"description = "Default layout"
+1528757938a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2411:"description = "Default layout"
 [session]
 ==
 <!DOCTYPE html>
@@ -46,7 +46,7 @@
 
 
     <!-- THEME CSS -->
-    <link rel="stylesheet" href="{{ 'production/home.min.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'production/' | theme }}/{{ this.page.css }}">
 
 
 </head>
@@ -61,8 +61,19 @@
     <!-- Flash -->
     {% flash %}
 
-    <div data-control="flash-message" onload="UIkit.notification({message: '  {{ message }}', status: '{{ type }}'})" class="flash-message ease-out {{ type }}" data-interval="10">
-        {{ message }}
+
+    <!-- test !-->
+    <div data-control="flash-message" data-interval="10">
+
+        <scripts>
+            $(window).on('load', function(response) {
+
+                UIkit.notification({message: '{{ message }}', status: '{{ type }}'});
+
+            });
+
+        </scripts>
+
     </div>
 
 
@@ -89,13 +100,12 @@
 
 </div>
 <!-- /#wrapper -->
-<script src="{{ '/production/home.min.js' | theme }}"></script>
+<script src="{{ '/production/' | theme }}/{{ this.page.js }}"></script>
 {% framework extras %}
 
 
-
 </body>
-</html>";s:5:"mtime";i:1528567690;s:6:"markup";s:2278:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1528643435;s:6:"markup";s:2367:"<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- META -->
@@ -140,7 +150,7 @@
 
 
     <!-- THEME CSS -->
-    <link rel="stylesheet" href="{{ 'production/home.min.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'production/' | theme }}/{{ this.page.css }}">
 
 
 </head>
@@ -155,8 +165,19 @@
     <!-- Flash -->
     {% flash %}
 
-    <div data-control="flash-message" onload="UIkit.notification({message: '  {{ message }}', status: '{{ type }}'})" class="flash-message ease-out {{ type }}" data-interval="10">
-        {{ message }}
+
+    <!-- test !-->
+    <div data-control="flash-message" data-interval="10">
+
+        <scripts>
+            $(window).on('load', function(response) {
+
+                UIkit.notification({message: '{{ message }}', status: '{{ type }}'});
+
+            });
+
+        </scripts>
+
     </div>
 
 
@@ -183,9 +204,8 @@
 
 </div>
 <!-- /#wrapper -->
-<script src="{{ '/production/home.min.js' | theme }}"></script>
+<script src="{{ '/production/' | theme }}/{{ this.page.js }}"></script>
 {% framework extras %}
-
 
 
 </body>

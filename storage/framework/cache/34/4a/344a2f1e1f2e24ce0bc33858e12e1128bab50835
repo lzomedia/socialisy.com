@@ -1,0 +1,21 @@
+1528757938a:1:{s:12:"discover.htm";a:12:{s:8:"fileName";s:12:"discover.htm";s:7:"content";s:333:"title = "Social Trixie the best social network community to join and chat with your friends"
+url = "/story/:url"
+layout = "default"
+meta_title = "Social Trixie the best social network community to join and chat with your friends"
+is_hidden = 0
+
+[session]
+security = "all"
+redirect = "home"
+
+[Story]
+
+==
+
+
+{% component 'Story' %}
+
+
+
+
+";s:5:"mtime";i:1528626695;s:6:"markup";s:23:"{% component 'Story' %}";s:4:"code";N;s:5:"title";s:82:"Social Trixie the best social network community to join and chat with your friends";s:3:"url";s:11:"/story/:url";s:6:"layout";s:7:"default";s:10:"meta_title";s:82:"Social Trixie the best social network community to join and chat with your friends";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:4:"home";}s:5:"Story";a:0:{}}}

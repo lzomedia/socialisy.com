@@ -6,7 +6,7 @@ use Backend\Classes\Controller;
 /**
  * Posts Manager Back-end Controller
  */
-class PostsManager extends Controller
+class StoriesManager extends Controller
 {
     public $implement = [
         'Backend.Behaviors.FormController',
@@ -20,6 +20,6 @@ class PostsManager extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('LzoMedia.Groups', 'groups', 'postsmanager');
+        BackendMenu::setContext('LzoMedia.Communities', 'communities', 'stories-manager');
     }
 }

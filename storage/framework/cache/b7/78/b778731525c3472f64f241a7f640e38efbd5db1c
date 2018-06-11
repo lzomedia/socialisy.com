@@ -1,4 +1,4 @@
-1528626879a:1:{s:11:"rentals.htm";a:12:{s:8:"fileName";s:11:"rentals.htm";s:7:"content";s:2780:"title = "The social network that is good for something"
+1528757938a:1:{s:11:"rentals.htm";a:12:{s:8:"fileName";s:11:"rentals.htm";s:7:"content";s:2780:"title = "The social network that is good for something"
 url = "/rentals"
 layout = "default"
 meta_title = "Social Trixi the best social network community to join and chat with your friends"
@@ -73,7 +73,7 @@ redirect = "home"
         </div>
     </div>
 </section>
-";s:5:"mtime";i:1528580401;s:6:"markup";s:2508:"<section class="uk-section uk-section-small uk-padding-remove">
+";s:5:"mtime";i:1528626695;s:6:"markup";s:2508:"<section class="uk-section uk-section-small uk-padding-remove">
 
         <div class="uk-height-large uk-cover-container uk-border-rounded">
             <div id="particles-js" data-uk-cover="" class="uk-cover" ></div>

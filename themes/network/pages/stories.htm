@@ -1,14 +1,19 @@
-title = "Socialisy the best social network community to join and chat with your friends"
+title = "Social trixi the best social network community to join and chat with your friends"
 url = "/stories"
 layout = "default"
-meta_title = "Socialisy the best social network community to join and chat with your friends"
+meta_title = "Social trixi the best social network community to join and chat with your friends"
+
+
+js = "stories.js"
+css = "stories.css"
+
 is_hidden = 0
 
 [session]
 security = "all"
 redirect = "home"
 
-[DisplayStories]
+[Stories]
 
 ==
 <section class="uk-section uk-section-small uk-padding-remove">
@@ -21,8 +26,7 @@ redirect = "home"
                     <h1 class="uk-margin-top uk-margin-small-bottom uk-margin-remove-adjacent uk-heading-line uk-text-center">
                         <span><i uk-icon=icon:star></i> Recent Stories <i uk-icon=icon:star></i></span>
                     </h1>
-                    <p>Here is a list of our recent stories join an story start chatting with friends.
-                    </p>
+                    <p>Here is a list of our recent stories that people are chatting about.</p>
                     <a href="#" uk-toggle="target: #create-story" class="uk-button uk-button-default uk-margin-top">
                         Create your own story
                     </a>
@@ -37,9 +41,8 @@ redirect = "home"
 <section class="uk-section-default top-streamers">
     <div class="uk-section uk-section-small uk-background-cover">
         <div class=uk-container>
-            <!-- Start the listing of the groups !-->
-
-            @Section to come.
+            <!-- Start the listing of the stories !-->
+            <div id="stories"></div>
 
         </div>
     </div>

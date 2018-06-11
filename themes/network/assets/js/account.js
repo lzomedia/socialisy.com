@@ -1,10 +1,11 @@
 import UIkit from 'uikit';
 
+import Vue from 'vue';
+
 import Icons from 'uikit/dist/js/uikit-icons';
 
+
+// loads the Icon plugin
 UIkit.use(Icons);
 
-
-console.log("welcome to the account page");
-
-
+window.$ = window.jQuery = require('jquery');

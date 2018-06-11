@@ -1,9 +1,14 @@
 {
     "/production/home.js": "/production/home.js",
     "/production/home.css": "/production/home.css",
+    "/production/account.css": "/production/account.css",
+    "/production/communities.css": "/production/communities.css",
     "/production/stories.css": "/production/stories.css",
     "/production/stories.js": "/production/stories.js",
+    "/production/communities.js": "/production/communities.js",
+    "/production/account.js": "/production/account.js",
     "/production/home.min.js": "/production/home.min.js",
-    "/production/stories.min.js": "/production/stories.min.js",
-    "/production/stories.min.css": "/production/stories.min.css"
+    "/production/account.min.js": "/production/account.min.js",
+    "/production/communities.min.js": "/production/communities.min.js",
+    "/production/stories.min.js": "/production/stories.min.js"
 }

@@ -1,0 +1,66 @@
+1528700985a:1:{s:27:"account/deactivate_link.htm";a:5:{s:8:"fileName";s:27:"account/deactivate_link.htm";s:7:"content";s:991:"<a
+        href="javascript:;"
+        onclick="$('#accountDeactivateForm').toggle()">
+    Deactivate account
+</a>
+
+<div id="accountDeactivateForm" style="display: none">
+    {{ form_ajax('onDeactivate') }}
+    <hr />
+    <h3>Deactivate your account?</h3>
+    <p>
+        Your account will be disabled and your details removed from the site.
+        You can reactivate your account any time by signing back in.
+    </p>
+    <div class="uk-margin">
+        <label for="accountDeletePassword" class="">To continue, please enter your password:</label>
+        <input name="password" type="password" class="uk-input" id="accountDeletePassword" />
+    </div>
+    <button type="submit" class="uk-button uk-button-danger">
+        Confirm Deactivate Account
+    </button>
+
+    <div class="uk-margin">
+
+        <a
+                href="javascript:;"
+                onclick="$('#accountDeactivateForm').toggle()">
+            I changed my mind
+        </a>
+
+    </div>
+    {{ form_close() }}
+</div>
+";s:5:"mtime";i:1525950816;s:6:"markup";s:990:"<a
+        href="javascript:;"
+        onclick="$('#accountDeactivateForm').toggle()">
+    Deactivate account
+</a>
+
+<div id="accountDeactivateForm" style="display: none">
+    {{ form_ajax('onDeactivate') }}
+    <hr />
+    <h3>Deactivate your account?</h3>
+    <p>
+        Your account will be disabled and your details removed from the site.
+        You can reactivate your account any time by signing back in.
+    </p>
+    <div class="uk-margin">
+        <label for="accountDeletePassword" class="">To continue, please enter your password:</label>
+        <input name="password" type="password" class="uk-input" id="accountDeletePassword" />
+    </div>
+    <button type="submit" class="uk-button uk-button-danger">
+        Confirm Deactivate Account
+    </button>
+
+    <div class="uk-margin">
+
+        <a
+                href="javascript:;"
+                onclick="$('#accountDeactivateForm').toggle()">
+            I changed my mind
+        </a>
+
+    </div>
+    {{ form_close() }}
+</div>";s:4:"code";N;}}

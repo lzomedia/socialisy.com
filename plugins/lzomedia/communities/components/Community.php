@@ -98,11 +98,52 @@ class Community extends ComponentBase
     public function onCreate()
     {
 
-        $post = post();
 
-        return $post;
+        $loggedIn = Auth::check();
 
-        
+        $user = Auth::register([
+            'name' => 'Anonymous',
+            'email' => str_random(5).'@socialtrixi.com',
+            'password' => 'changeme',
+            'password_confirmation' => 'changeme',
+        ]);
+
+
+
+        // Authenticate user by credentials
+        $user = Auth::authenticate([
+            'login' => $user->email,
+            'password' =>'changeme',
+        ]);
+
+        if($loggedIn){
+            $user = \Auth::getUser();
+        }
+
+
+
+        $community = new \LzoMedia\Communities\Models\Community();
+
+        $community->name = post('name');
+        $community->image = post('image');
+        $community->description = post('description');
+        $community->url = str_slug(post('name'));
+
+
+        $community->user()->associate($user);
+
+
+        $community->save();
+
+
+        Flash::success('The community was created');
+
+
+
+        return redirect('communities');
+
+
+
     }
 
 

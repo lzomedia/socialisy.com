@@ -46,7 +46,7 @@ description = "Default layout"
 
 
     <!-- THEME CSS -->
-    <link rel="stylesheet" href="{{ 'production/home.min.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'production/' | theme }}/{{ this.page.css }}">
 
 
 </head>
@@ -61,8 +61,19 @@ description = "Default layout"
     <!-- Flash -->
     {% flash %}
 
-    <div data-control="flash-message" onload="UIkit.notification({message: '  {{ message }}', status: '{{ type }}'})" class="flash-message ease-out {{ type }}" data-interval="10">
-        {{ message }}
+
+    <!-- test !-->
+    <div data-control="flash-message" data-interval="10">
+
+        <scripts>
+            $(window).on('load', function(response) {
+
+                UIkit.notification({message: '{{ message }}', status: '{{ type }}'});
+
+            });
+
+        </scripts>
+
     </div>
 
 
@@ -89,9 +100,8 @@ description = "Default layout"
 
 </div>
 <!-- /#wrapper -->
-<script src="{{ '/production/home.min.js' | theme }}"></script>
+<script src="{{ '/production/' | theme }}/{{ this.page.js }}"></script>
 {% framework extras %}
-
 
 
 </body>

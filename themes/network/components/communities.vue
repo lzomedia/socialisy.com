@@ -66,7 +66,7 @@
 
 
                                 <div class="uk-width-auto uk-text-right">
-                                    <a href="#" class="">
+                                    <a data-request="onJoinCommunity"  class="">
                                         <span class="uk-icon" data-uk-icon="icon:plus;"></span>
                                     </a>
                                 </div>
@@ -100,6 +100,8 @@
 
 
 <script>
+
+
     import axios from 'axios';
 
     export default {

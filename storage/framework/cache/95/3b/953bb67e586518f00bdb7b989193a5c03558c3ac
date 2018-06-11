@@ -1,4 +1,4 @@
-1528626879a:1:{s:19:"site/_side_menu.htm";a:5:{s:8:"fileName";s:19:"site/_side_menu.htm";s:7:"content";s:1255:"<div id="offcanvas-usage" uk-offcanvas="mode: slide; overlay: true;flip: true">
+1528757939a:1:{s:19:"site/_side_menu.htm";a:5:{s:8:"fileName";s:19:"site/_side_menu.htm";s:7:"content";s:1255:"<div id="offcanvas-usage" uk-offcanvas="mode: slide; overlay: true;flip: true">
     <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type=button uk-close></button>
         <ul class="uk-nav uk-nav-default">
@@ -30,7 +30,7 @@
         </ul>
     </div>
 </div>
-";s:5:"mtime";i:1528580562;s:6:"markup";s:1254:"<div id="offcanvas-usage" uk-offcanvas="mode: slide; overlay: true;flip: true">
+";s:5:"mtime";i:1528626695;s:6:"markup";s:1254:"<div id="offcanvas-usage" uk-offcanvas="mode: slide; overlay: true;flip: true">
     <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type=button uk-close></button>
         <ul class="uk-nav uk-nav-default">

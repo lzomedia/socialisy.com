@@ -1,8 +1,12 @@
-1528626879a:1:{s:15:"communities.htm";a:12:{s:8:"fileName";s:15:"communities.htm";s:7:"content";s:1751:"title = "Social Trixie the best social network community cms join and chat with your friends"
+1528757938a:1:{s:15:"communities.htm";a:14:{s:8:"fileName";s:15:"communities.htm";s:7:"content";s:1799:"title = "Social Trixie the best social network community cms join and chat with your friends"
 url = "/communities"
 layout = "default"
 meta_title = "Social Trixie the best social network community cms come and join and test it."
 is_hidden = 0
+js = "communities.js"
+css = "communities.css"
+
+
 
 [session]
 security = "all"
@@ -45,7 +49,7 @@ redirect = "home"
     </div>
 </section>
 
-";s:5:"mtime";i:1528580777;s:6:"markup";s:1441:"<section class="uk-section uk-section-small uk-padding-remove">
+";s:5:"mtime";i:1528643474;s:6:"markup";s:1441:"<section class="uk-section uk-section-small uk-padding-remove">
     <div class="uk-height-large uk-cover-container uk-border-rounded">
         <img src="https://picsum.photos/1300/500/?random" alt="Alt img" data-uk-cover="" class="uk-cover" style="width: 1171px; height: 450px;">
         <div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-light uk-text-center">
@@ -76,4 +80,4 @@ redirect = "home"
 
         </div>
     </div>
-</section>";s:4:"code";N;s:5:"title";s:83:"Social Trixie the best social network community cms join and chat with your friends";s:3:"url";s:12:"/communities";s:6:"layout";s:7:"default";s:10:"meta_title";s:78:"Social Trixie the best social network community cms come and join and test it.";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:4:"home";}s:11:"Communities";a:0:{}}}
+</section>";s:4:"code";N;s:5:"title";s:83:"Social Trixie the best social network community cms join and chat with your friends";s:3:"url";s:12:"/communities";s:6:"layout";s:7:"default";s:10:"meta_title";s:78:"Social Trixie the best social network community cms come and join and test it.";s:9:"is_hidden";s:1:"0";s:2:"js";s:14:"communities.js";s:3:"css";s:15:"communities.css";s:7:"session";a:2:{s:8:"security";s:3:"all";s:8:"redirect";s:4:"home";}s:11:"Communities";a:0:{}}}

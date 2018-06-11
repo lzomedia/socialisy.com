@@ -62,6 +62,7 @@ class Plugin extends PluginBase
         return [
             'LzoMedia\Communities\Components\Communities' => 'Communities',
             'LzoMedia\Communities\Components\Community' => 'Community',
+            'LzoMedia\Communities\Components\Stories' => 'Stories',
         ];
     }
 
